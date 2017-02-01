@@ -1,4 +1,4 @@
-**Dito natin lagay mga notes natin :)**
+﻿**Dito natin lagay mga notes natin :)**
 
 Internet	- global network of networks(google)
 - hierarcy, infrasturcture
@@ -66,30 +66,33 @@ HTTP - jointly developed by the 23c and the IETF
 	Version history
 	HTTP 0.9 (1991)
 	HTTP 1.0 (RFC 1945, edited may 1996)
-	HTTP 1.1
-	HTTP 2
+	HTTP 1.1 (RFC 2068 Rewritten specifications on Jan 1997)
+	HTTP 2 (RFC 7540 May 2015)
+o	Patterned by SPDY
+o	Backwards compatible with HTTP 1.1
 	-HTTP runs on top of TCP/IP, port 80 by default. Port 443 for HTTPS (HTTP over SSL/TLS)
+-Socket is the combination of IP address and a port 
+-Port numbers range from 0-1024
 	-IANA
 	-HTTP is based on client-server architecture
 •	Clients AKA user agents
--web browsers, web crawlers/spiders (google bot) , other end user tools
+-web browsers, web crawlers/spiders (google bot), other end user tools
 •	Servers
--engine servers, proxy servers, gateways,tunnels
+-engine servers, proxy servers, gateways, tunnels
 	-HTTP uses a request-response standard protocol
 •	The client sends an HTTP request message to the server
-•	The server processes the  request and replus with an HTTP response message
+•	The server processes the request and replies with an HTTP response message
 •	Pull push poll
 -HTTP is a stateless communications protocol
-•	Servers do not keep info about clients in between
+•	Servers do not keep info about clients in between requests
 -HTTP provides support for other functionalities such as 
 •	Cache control
-•	Content media type (mime) specification
+•	Content media type (MIME – multipurpose internet mail extension) specification
 •	Language and character specification
-•	Cont/transfer codings
+•	Context/transfer codings
 •	Content negotiation
 	web Server
 Web Client  
 Semantic web - next step
 	            - uses natural language
-
 
