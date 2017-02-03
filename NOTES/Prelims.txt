@@ -60,7 +60,9 @@ USETNET - worldwide distributed discussion system
 
 HTML - 
 URL –
-HTTP FUNDAMENTALS
+
+===============================HTTP FUNDAMENTALS========================================
+
 HTTP - jointly developed by the 23c and the IETF
 	- standard way of communicating
 	Version history
@@ -91,8 +93,28 @@ o	Backwards compatible with HTTP 1.1
 •	Language and character specification
 •	Context/transfer codings
 •	Content negotiation
+•	Client server protocol negotiations
+•	Persistent connection
+•	Request pipelining
+•	Authentication/autorization
+
 	web Server
 Web Client  
 Semantic web - next step
 	            - uses natural language
 
+
+================HTTP RESOURCE ADDRESSING=================
+Http resources are identified doing URI’s (RFC 3986) or more specifically HTTP URIs
+•	Scheme (http/https)
+•	Authority
+o	User information or authentication credentials (deprecated).
+•	host
+•	domain  name (resolved to an IP address using DNS) of the server where the resource resides (or will be created).
+•	Port number
+•	Path – path to resource (resolved relative to the document root on the server)
+o	May refer to a static/dynamic resource
+•	Query
+o	Typically provided as key value pair with (&) separators between key/value pairs
+o	May be URL – encoded.
+•	Fragment identifier (bookmark) - #
