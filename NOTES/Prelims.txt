@@ -118,3 +118,24 @@ o	May refer to a static/dynamic resource
 o	Typically provided as key value pair with (&) separators between key/value pairs
 o	May be URL – encoded.
 •	Fragment identifier (bookmark) - #
+
+=====================================HTTP REQUEST MESSAGE=====================================
+•	Request time
+o	Method
+o	Request URI
+o	HTTP Protocol Version
+•	Message Headers (general, request, and/or entity headers)
+o	HTTP 1.1 requres at least the host request header to be provided
+•	Empty line (CRLF)
+•	Message Body
+
+=====================================TTP RESPONSE MESSAGE=====================================
+
+•	Status Line
+o	HTTP Protocol Version
+o	Status Code 
+o	Reason Phrase
+•	Message Headers (general, request, and/or entity headers)
+•	Empty Line
+•	Message Body
+=====================================HTTP REQUEST METHODS =====================================(Search it up)
