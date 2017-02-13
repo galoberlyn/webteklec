@@ -139,3 +139,22 @@ o	Reason Phrase
 •	Empty Line
 •	Message Body
 =====================================HTTP REQUEST METHODS =====================================(Search it up)
+HTTP REQUEST METHODS 
+•	Put
+o	Store the enclosed entity in the message body under the specified request URI
+•	Delete
+o	Delete a data in a server
+•	Options
+o	To know what the option request type that is allowed to the client
+•	Trace
+o	Request a loopback of the request (request the server to echo back to the client the received request message)
+•	Connect
+o	Request the establishment of a tunnel
+•	Safe methods
+o	Not affecting any data
+•	Idempoted methods
+o	Repeatedf execution, same result
+•	Cacheable methods
+•	Extension Methods
+o	WEBDAV RFC 4918
+o	Propfind, proppicthc,mkcol,copy,move,lock,unlock.
