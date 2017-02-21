@@ -1,0 +1,235 @@
+﻿**Dito natin lagay mga notes natin :)**
+
+Internet	- global network of networks(google)
+- hierarcy, infrasturcture
+INTER NETWORKING
+inter - outside
+intra - within the border
+Network	- interconnected devices ('nodes')
+        		- share data
+Interconnected technologies – Wired /Wireless.
+Protocols –rules to interact to each other.
+Store and Forward (S &F)-  send message without establishing connection.
+characterized by
+1.Hardware
+	a. nodes - the actual devices i.e computers 
+		   IoT - Internet of Things
+	b.Interconnected Technologies - Wired - utp, fiber; Wireless - infrared,bluetooth
+2.software
+	a.protocols
+	b.device drivers -software that run active (something missing here)
+
+computer to computer  - serial communication
+	             		- one cable, send data with 1s and 0s
+Problems of wired and wireless - susceptible to noise
+LAN - Local Area Network
+interconnection of networks with the use of ISPs
+different ISPs can connect with each other
+connection between countries - underwater(preferred)/ satellite
+
+1969 - modern internet was  born
+circuit switch network -- used by old telephones
+store and forward - cellphones (texting)
+
+IPv4 - 32-bit
+IPv6 - 64-bit
+
+Early 1960's --> DARPA (Defense Advanced Research Project Agency) --> packet switch
+		circuit switch - relaying and keeping the connection
+		packet switching
+	 	send and forward --> send-->store-->send-->...until it reaches the destination
+	
+ARPANET (Advanced Research Project Agency NETwork) --> 4 computers communicate
+First popular app --> email - 1972
+
+World Wide Web 	- information system that uses Hypertext links
+	       		- information system on the internet
+	    	 	- allows documents to be connected to other documents  by hyperlinks
+- was created for researchers and scientist to share their findings and research
+	       		- back then it is more textual
+
+Wide Area Information Service (WAIS)  - multiple server locations
+				    	 - early information service
+
+Gopher (protocol) - application layer protocol
+		     - similar to WAIS
+		     - hierarchical in nature
+		     - distibuting, seraching, retrieving
+		     - a TCP/IP application layer protocol designed for distributing searches and retrieving documents over the internet
+
+USETNET - worldwide distributed discussion system
+	   - similar to discussion groups
+Semantic Web – analyzes the meaning of the searches.
+
+1989 (Sir Tim Berners-Lee) --> HTTP, HTML, URL
+
+HTML – HyperText Markup Languge
+URL – Uniform Resource Locator
+HTTP FUNDAMENTALS
+HTTP - jointly developed by the 23c and the IETF
+	- standard way of communicating
+ITCF – Internet Engineering Task Force
+	Version history
+	HTTP 0.9 (1991)
+	HTTP 1.0 (RFC 1945, edited may 1996)
+	HTTP 1.1 (RFC 2068 Rewritten specifications on Jan 1997)
+	HTTP 2 (RFC 7540 May 2015)
+o	Patterned by SPDY
+o	Backwards compatible with HTTP 1.1
+	-HTTP runs on top of TCP/IP, port 80 by default. Port 443 for HTTPS (HTTP over SSL/TLS)
+-Socket is the combination of IP address and a port 
+-Port numbers range from 0-1024
+	-IANA
+	-HTTP is based on client-server architecture
+•	Clients AKA user agents
+-web browsers, web crawlers/spiders (google bot), other end user tools
+•	Servers
+-engine servers, proxy servers, gateways, tunnels
+	-HTTP uses a request-response standard protocol
+•	The client sends an HTTP request message to the server
+•	The server processes the request and replies with an HTTP response message
+•	Pull push poll
+-HTTP is a stateless communications protocol
+•	Servers do not keep info about clients in between requests
+-HTTP provides support for other functionalities such as 
+•	Cache control
+•	Content media type (MIME – multipurpose internet mail extension) specification
+•	Language and character specification
+•	Context/transfer codings
+•	Content negotiation
+•	Client server protocol negotiations
+•	Persistent connection
+•	Request pipelining
+•	Authentication/autorization
+	web Server
+Web Client  
+Semantic web - next step
+	            - uses natural language
+HTTP RESOURCE ADDRESSING
+Http resources are identified doing URI’s (RFC 3986) or more specifically HTTP URIs
+•	Scheme (http/https)
+•	Authority
+o	User information or authentication credentials (deprecated).
+•	host
+•	domain  name (resolved to an IP address using DNS) of the server where the resource resides (or will be created).
+•	Port number
+•	Path – path to resource (resolved relative to the document root on the server)
+o	May refer to a static/dynamic resource
+•	Query
+o	Typically provided as key value pair with (&) separators between key/value pairs
+o	May be URL – encoded.
+•	Fragment identifier (bookmark) - #
+HTTP REQUEST MESSAGE
+•	Request time
+o	Method
+o	Request URI
+o	HTTP Protocol Version
+•	Message Headers (general, request, and/or entity headers)
+o	HTTP 1.1 requres at least the host request header to be provided
+•	Empty line (CRLF)
+•	Message Body
+
+HTTP RESPONSE MESSAGE
+
+•	Status Line
+o	HTTP Protocol Version
+o	Status Code 
+o	Reason Phrase
+•	Message Headers (general, request, and/or entity headers)
+•	Empty Line
+•	Message Body
+Status Code:
+	Informational (1xx) – 100(Continue), 101(Switching protocol)
+	Success (2xx) -
+	Redirection (3xx) -304(Not modified)
+	Client Error (4xx)- 400(Bad Request), 401(Client Error)
+	Server Error (5xx)
+HTTP REQUEST METHODS 
+•	Put
+o	Store the enclosed entity in the message body under the specified request URI
+•	Delete
+o	Delete a data in a server
+•	Options
+o	To know what the option request type that is allowed to the client
+•	Trace
+o	Request a loopback of the request (request the server to echo back to the client the received request message)
+•	Connect
+o	Request the establishment of a tunnel
+•	Safe methods
+o	Not affecting any data
+•	Idempoted methods
+o	Repeatedf execution, same result
+•	Cacheable methods
+•	Extension Methods
+o	WEBDAV RFC 4918
+o	Propfind, proppicthc,mkcol,copy,move,lock,unlock.
+
+HTTP Message Headers
+	Response Header Fields
+	Used by servers
+	Response messages 
+•	Accept Ranges
+•	Age
+•	Etag
+•	Location
+o	used for redirection
+•	Proxy Authenticate
+•	Retry-after
+•	Server
+•	Vary
+•	WWW Authenticate
+
+Entity Header Fields
+•	Allow
+•	Content Encoding
+•	Content Language 
+•	Content Length
+•	Content Location
+•	Content-MD5
+•	Content Range
+•	Content Type
+•	Expires
+•	Last Modifier
+
+
+
+
+HyperText Markup Language (HTML)
+-  by Tim Burners Lee
+- is the standard markup language for creating web pages and web applications.
+- takes document using markup.
+- Structure & Content (Main focus)
+-Presentational / aesthetic (old format)
+Website- is a collection of web resources such as wen pages and web applications.
+	- it is being host.
+World Wide Web Consortium (W3C) – Tim Burners Lee
+-	Is an international community that develops open standards to ensure the long-term growth of the web.
+Not already recommended codes in HTML:
+•	Character entities:
+o	&nbsp –tab
+o	&lt – less than
+o	&gt – greater than
+•	<br>
+•	Tables –for tabular presentation.
+
+HTML versions:
+Current – 5.1
+HTML 1.0 – 1989
+	2.0 – Nov 1995 RFC18661L
+	3.0 – superseded by 3.2
+	4.0 – December, 1997
+	4.1 – 1999
+
+Extensible HyperText Markup Language (XHTML)
+Version: 1.0 – January 26, 2000
+		Revised August 1, 2002
+-	It is used for data interchange
+-	Wrappers up structure of a document
+Ian Hidson – proposed to go back to HTML
+- WHATWG 
+	- later becomes HTML5 that is standardized in 2014
+
+HTML 4.0
+•	Transitional – depreciated
+•	Strict
+•	Frameset
