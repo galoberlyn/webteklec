@@ -120,7 +120,7 @@ o	Typically provided as key value pair with (&) separators between key/value pai
 o	May be URL – encoded.
 •	Fragment identifier (bookmark) - #
 HTTP REQUEST MESSAGE
-•	Request line
+•	Request Line
 o	Method
 o	Request URI
 o	HTTP Protocol Version
@@ -138,6 +138,87 @@ o	Reason Phrase
 •	Message Headers (general, request, and/or entity headers)
 •	Empty Line
 •	Message Body
+Status Code:
+	Informational (1xx) – 100(Continue), 101(Switching protocol)
+	Success (2xx) -
+	Redirection (3xx) -304(Not modified)
+	Client Error (4xx)- 400(Bad Request), 401(Client Error)
+	Server Error (5xx)
+HTTP REQUEST METHODS 
+•	Put
+o	Store the enclosed entity in the message body under the specified request URI
+•	Delete
+o	Delete a data in a server
+•	Options
+o	To know what the option request type that is allowed to the client
+•	Trace
+o	Request a loopback of the request (request the server to echo back to the client the received request message)
+•	Connect
+o	Request the establishment of a tunnel
+•	Safe methods
+o	Not affecting any data
+•	Idempoted methods
+o	Repeatedf execution, same result
+•	Cacheable methods
+•	Extension Methods
+o	WEBDAV RFC 4918
+o	Propfind, proppicthc,mkcol,copy,move,lock,unlock.
+
+
+
+
+HTTP Message Headers
+General Header fields
+	  Cache-Control           no cache 
+                      | Connection-keep alive                
+                      | Date                      tue, nov 1, 1001
+                      | Pragma                   
+                      | Trailer                  
+                      | Transfer-Encoding        
+                      | Upgrade                 switch protocols
+                      | Via                      
+                      | Warning                
+Request Header Fields
+•	Accept 				 text/plain
+•	Accept-charset			Unicode-8859
+•	Accept encoding			gzip
+•	Accept language			en,fil
+•	Authorization			basic [hash]
+•	Proxy-authorization			credentials
+•	If match				etag
+•	If non-match
+•	If range				etag+date
+•	If modified since			http-date
+•	If unmodified since
+
+•	Referrer				http://www.tutorialspoint.org/http/index.htm
+
+Response Header Fields
+	Used by servers
+	Response messages 
+
+•	Accept Ranges			bytes
+•	Age				delta-seconds
+•	Etag
+•	Location			http://www.tutorialspoint.org/http/index.htm
+o	used for redirection
+•	Proxy Authenticate		challenge
+•	Retry-after			HTTP-date | delta-seconds
+•	Server
+•	Vary(depende sa request)	Accept-Language, Accept-Enconding
+•	WWW Authenticate		challenge
+
+Entity Header Fields
+•	Allow				HTTP METHOD
+•	Content Encoding		gzip
+•	Content Language 		fil, en
+•	Content Length			bytes
+•	Content Location		URI
+•	Content-MD5(checking the integrity of the message) 	parang etag yung syntax			
+•	Content Range(depende sa gusto mong range)	first 500 bytes(0-499)
+•	Content Type			text/html
+•	Expires				date
+•	Last Modifier		date
 HTTP STATUS CODE
 Informational
 •	100 continue
@@ -173,7 +254,7 @@ Client Error
 •	410 Gone
 •	411 Length Required
 •	412 Precondition failed
-•	4413 Request Entity Too Large
+•	413 Request Entity Too Large
 •	414 Request-URI too large
 •	415 Unsupported Media Type
 •	416 Request Range not satisfied
@@ -185,54 +266,6 @@ Server Error
 •	503 Service Unavailable
 •	504 Gateway Time-out
 •	505 Http Variation not supported
-
-HTTP REQUEST METHODS 
-•	Put
-o	Store the enclosed entity in the message body under the specified request URI
-•	Delete
-o	Delete a data in a server
-•	Options
-o	To know what the option request type that is allowed to the client
-•	Trace
-o	Request a loopback of the request (request the server to echo back to the client the received request message)
-•	Connect
-o	Request the establishment of a tunnel
-•	Safe methods
-o	Not affecting any data
-•	Idempoted methods
-o	Repeatedf execution, same result
-•	Cacheable methods
-•	Extension Methods
-o	WEBDAV RFC 4918
-o	Propfind, proppicthc,mkcol,copy,move,lock,unlock.
-
-HTTP Message Headers
-	Response Header Fields
-	Used by servers
-	Response messages 
-•	Accept Ranges
-•	Age
-•	Etag
-•	Location
-o	used for redirection
-•	Proxy Authenticate
-•	Retry-after
-•	Server
-•	Vary
-•	WWW Authenticate
-
-Entity Header Fields
-•	Allow
-•	Content Encoding
-•	Content Language 
-•	Content Length
-•	Content Location
-•	Content-MD5
-•	Content Range
-•	Content Type
-•	Expires
-•	Last Modifier
-
 
 
 
