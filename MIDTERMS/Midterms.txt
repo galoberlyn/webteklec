@@ -1,0 +1,41 @@
+MIDTERMS
+HyperText Markup Language (HTML)
+-  by Tim Burners Lee
+- is the standard markup language for creating web pages and web applications.
+- takes document using markup.
+- Structure & Content (Main focus)
+-Presentational / aesthetic (old format)
+Website- is a collection of web resources such as wen pages and web applications.
+	- it is being host.
+World Wide Web Consortium (W3C) – Tim Burners Lee
+-	Is an international community that develops open standards to ensure the long-term growth of the web.
+Not already recommended codes in HTML:
+•	Character entities:
+o	&nbsp –tab
+o	&lt – less than
+o	&gt – greater than
+•	<br>
+•	Tables –for tabular presentation.
+
+HTML versions:
+Current – 5.1
+HTML 1.0 – 1989
+	2.0 – Nov 1995 RFC18661L
+	3.0 – superseded by 3.2
+	4.0 – December, 1997
+	4.1 – 1999
+
+Extensible HyperText Markup Language (XHTML)
+Version: 1.0 – January 26, 2000
+		Revised August 1, 2002
+-	It is used for data interchange
+-	Wrappers up structure of a document
+Ian Hidson – proposed to go back to HTML
+- WHATWG 
+	- later becomes HTML5 that is standardized in 2014
+
+HTML 4.0
+•	Transitional – depreciated
+•	Strict
+•	Frameset
+
