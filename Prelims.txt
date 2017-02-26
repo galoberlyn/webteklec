@@ -120,7 +120,7 @@ o	Typically provided as key value pair with (&) separators between key/value pai
 o	May be URL – encoded.
 •	Fragment identifier (bookmark) - #
 HTTP REQUEST MESSAGE
-•	Request time
+•	Request line
 o	Method
 o	Request URI
 o	HTTP Protocol Version
