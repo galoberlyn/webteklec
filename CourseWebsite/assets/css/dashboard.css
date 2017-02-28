@@ -1,0 +1,60 @@
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../fonts/CaviarDreams.ttf);
+}
+@font-face{
+    font-family: aliens;
+    src: url(../fonts/aliens.ttf);
+}
+@font-face{
+    font-family: basictitlefont;
+    src: url(../fonts/basictitlefont.ttf);
+}
+body {
+    background-image: url(../img/paral.jpg);
+    background-color: #f4f4f4;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header p{
+    font-style: italic;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    font-family: "CaviarDreams";
+}
+nav img{
+    float: left;
+}
+nav li{
+    float: right;
+    margin-top: 3px;
+}
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 12px;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+nav li a:hover{
+    background-color: #111;
+    transform: scale(1.3);
+}
+#dashboard {
+    text-align: center;
+    width: 100%;
+    text-shadow: 2px 2px #000000; 
+    height: 350px;
+    color: #D3D3D3;
+    margin-top: 23%;
+    font-family: "consolas";
+}
