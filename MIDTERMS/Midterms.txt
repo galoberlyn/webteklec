@@ -39,3 +39,11 @@ HTML 4.0
 •	Strict
 •	Frameset
 
+The Elements of HTML
+
+Summary of HTML Elements
+Html
+	head
+		title, base, link, meta, style
+	Body
+		(search)
