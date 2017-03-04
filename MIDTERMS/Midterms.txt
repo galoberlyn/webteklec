@@ -1,4 +1,4 @@
-MIDTERMS
+﻿MIDTERMS
 HyperText Markup Language (HTML)
 -  by Tim Burners Lee
 - is the standard markup language for creating web pages and web applications.
@@ -38,7 +38,6 @@ HTML 4.0
 •	Transitional – depreciated
 •	Strict
 •	Frameset
-
 The Elements of HTML
 
 Summary of HTML Elements
@@ -46,4 +45,25 @@ Html
 	head
 		title, base, link, meta, style
 	Body
-		(search)
+		article, aside, nav, section
+		header, footer
+		main
+		address	
+		div
+		h1, h2, h3, h4, h5, h6
+
+		p
+		hr
+		pre
+		blockquote
+
+		ol, ul
+			li
+		dl
+			dt, dd
+
+		figure
+			figcaption
+
+		a
+		
