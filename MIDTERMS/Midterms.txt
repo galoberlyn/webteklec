@@ -66,4 +66,70 @@ Html
 			figcaption
 
 		a
+
 		
+Simple Selector
+	-either a type selector or universal selector followed by zero or more attribute selector , ID selectors or pseudo  classes.
+	
+	Selector - chain of simple selector separated by combinators.
+	
+	Type selector - mathches the name of a document language element type. 
+	Universal selector - written "*", matches the name of any element type.
+	Attribute selector
+		[att] 
+		[att=val]
+		[att~=val]
+		[att|=val]
+	ID selector
+		 - match an element instance based on its identifier. 
+		 -A CSS ID selector contains a "#" followed by ID value.
+	Pseudo classes
+		-classify elements on characteristic other than their name, attributes or content.
+		- there's is implicit class associated with.
+		Dynamic pseudo class
+			-link pseudo class
+				link - link that have not yet visited.
+				visited - link that have been visited.
+			-user action pseudo class	
+				- hover
+				-action - active a link
+				-focus -  move particular element
+			-target pseudo classes
+				- target
+			- language pseudo classes
+				:lang()
+		UI element states pseudo classes
+			-:enabled
+			-:disabled
+			-:checked
+			-
+		Structural 
+			-:root
+			-:first-child
+			-:last-child
+			-only-child
+			-:nth-child
+			-:nth-last-child
+			-:first-of-type
+			-:last-of-type
+			-:only-of-type
+			-:nth-of-type
+			-:nth-last-type
+			-:empty
+			negation
+				:not() - negates the logic of the selector.
+	Combinators
+		descendant combinator (whitespace i.e. space, tab, line feed, carriage return, form feed)
+		child combinator(>)
+			adjacent sibling combinator (+)
+			general sibling combinator (~)
+	Pseudo elements
+		::first-letter		:first-letter
+		::first-line		:first-line
+		::before		:before
+		:: after		:after
+
+CSS Rule Precedence
+		
+
+	
