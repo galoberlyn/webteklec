@@ -8,14 +8,14 @@ HyperText Markup Language (HTML)
 Website- is a collection of web resources such as wen pages and web applications.
 	- it is being host.
 World Wide Web Consortium (W3C) – Tim Burners Lee
--	Is an international community that develops open standards to ensure the long-term growth of the web.
+Is an international community that develops open standards to ensure the long-term growth of the web.
 Not already recommended codes in HTML:
-•	Character entities:
-o	&nbsp –tab
-o	&lt – less than
-o	&gt – greater than
-•	<br>
-•	Tables –for tabular presentation.
+Character entities:
+&nbsp –tab
+&lt – less than
+&gt – greater than
+<br>
+Tables –for tabular presentation.
 
 HTML versions:
 Current – 5.1
@@ -28,16 +28,16 @@ HTML 1.0 – 1989
 Extensible HyperText Markup Language (XHTML)
 Version: 1.0 – January 26, 2000
 		Revised August 1, 2002
--	It is used for data interchange
--	Wrappers up structure of a document
+It is used for data interchange
+Wrappers up structure of a document
 Ian Hidson – proposed to go back to HTML
 - WHATWG 
 	- later becomes HTML5 that is standardized in 2014
 
 HTML 4.0
-•	Transitional – depreciated
-•	Strict
-•	Frameset
+Transitional – depreciated
+Strict
+Frameset
 The Elements of HTML
 
 Summary of HTML Elements
@@ -66,44 +66,76 @@ Html
 			figcaption
 
 		a
+		em, strong, small
+		cite, q
+		dfn, abbr
+		ruby, rb, rt, rtc, rp --→ ruby anotations
+		data, time
+		code, vaar, samp, kbd
+		sup, sub
+		l, b, u, mark
+		bai, bdo
+		span
 
 		
+		table
+			caption
+			colgroup, col
+CASCADING STYLE SHEET (CSS)
+CSS 
+language used to specify the presentational aspects
+Developed by Hakon Wium Lie (CHSS) and Bert Bos (SSP)
+Versions
+css 1 , css 2.1, css3
+CSS Preprocessors, CSS Frameworks
+Sass, Less, 960 Grid System, Bootstrap, Foundation, Materializa, etc
+===HTML/XHTML STYLESHEETS===
+author styles (external stylesheets,embedded styles, inline styles)
+user style
+user agent styles (example default css 2.1 stylesheet for HTML 4)
+* Reset CSS – overide the default stylesheet
+===CSS Statements===
+At-Rules
+@charset, @font-face @import ‘global.css’
+css rule sets (a.k.a CSS rules, style rules)
+consults of a selector, followed by a declaration block.
+===CSS Selectors===
 Simple Selector
-	-either a type selector or universal selector followed by zero or more attribute selector , ID selectors or pseudo  classes.
-	
-	Selector - chain of simple selector separated by combinators.
-	
-	Type selector - mathches the name of a document language element type. 
-	Universal selector - written "*", matches the name of any element type.
-	Attribute selector
+either a type selector or universal selector followed by zero or more attribute selector , ID selectors or pseudo  classes.
+Selector 
+chain of simple selector separated by combinators.
+Type selector 
+matches the name of a document language element type. 
+Universal selector 
+written "*", matches the name of any element type.
+Attribute selector
 		[att] 
 		[att=val]
 		[att~=val]
 		[att|=val]
-	ID selector
+ID selector
 		 - match an element instance based on its identifier. 
 		 -A CSS ID selector contains a "#" followed by ID value.
-	Pseudo classes
-		-classify elements on characteristic other than their name, attributes or content.
-		- there's is implicit class associated with.
-		Dynamic pseudo class
-			-link pseudo class
-				link - link that have not yet visited.
-				visited - link that have been visited.
-			-user action pseudo class	
-				- hover
-				-action - active a link
-				-focus -  move particular element
-			-target pseudo classes
-				- target
-			- language pseudo classes
+Pseudo classes 
+classify elements on characteristic other than their name, attributes or content.
+there's is implicit class associated with.
+Dynamic pseudo class
+ink pseudo class
+link - link that have not yet visited.
+visited - link that have been visited.
+user action pseudo class	
+hover
+action - active a link
+focus -  move particular element
+target pseudo classes
+language pseudo classes
 				:lang()
-		UI element states pseudo classes
+UI element states pseudo classes
 			-:enabled
 			-:disabled
 			-:checked
 			-
-		Structural 
+Structural 
 			-:root
 			-:first-child
 			-:last-child
@@ -118,9 +150,9 @@ Simple Selector
 			-:empty
 			negation
 				:not() - negates the logic of the selector.
-	Combinators
-		descendant combinator (whitespace i.e. space, tab, line feed, carriage return, form feed)
-		child combinator(>)
+Combinators
+descendant combinator (whitespace i.e. space, tab, line feed, carriage return, form feed)
+		--child combinator(>)
 			adjacent sibling combinator (+)
 			general sibling combinator (~)
 	Pseudo elements
@@ -129,7 +161,4 @@ Simple Selector
 		::before		:before
 		:: after		:after
 
-CSS Rule Precedence
-		
-
-	
+	===CSS Rule Precedence===
