@@ -162,3 +162,48 @@ descendant combinator (whitespace i.e. space, tab, line feed, carriage return, f
 		:: after		:after
 
 	===CSS Rule Precedence===
+===CSS Rule Precedence===
+	by origin and importance
+		user agent important declarations
+		user important declarations
+		author important declarations
+		author normal declarations
+		user normal declarations
+		user agent nor mal declarations
+	by specificity
+		inline – more specific
+		number of ID selectors
+		number of class selectors, attribute selectors and pseudo selectors
+		number of type selectors and pseudo elements
+	by order
+===CSS Declarations===
+	short hand properties
+		background , font
+	vendor specific extension (aka vendor prefixes)
+	values
+	keywords
+		inherit, 
+	numbers 
+	measurements
+		length units
+			font relative
+				em, ex, ch, rem
+			viewport percentage
+				vw, vh,vmin, vmax
+			absolute lengths
+				cm,mm,q, in pt, pc, px
+		angle units
+			deg, grad, rad, turn
+		duration units
+			s, ms
+		frequency units
+			hz, khz
+		resolution units
+			dpi, dpcm, dppx
+	percentages
+	URLs and URIs
+	Colors
+		Rgb( , , ), #rgb,rgba, hsl, hsla
+	Strings
+	Functions
+		calc(), attr(), count(), linear-gradient(), translate(), scale(), rotate(), etc.
