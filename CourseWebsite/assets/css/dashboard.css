@@ -69,7 +69,7 @@ nav li a:hover{
 #dashboard {
     text-align: center;
     width: 100%;
-    height: 700px;
+    height: 100vh;
     text-shadow: 2px 2px #000000; 
     color: #D3D3D3;
     background-image: url(../img/paral.jpg);
