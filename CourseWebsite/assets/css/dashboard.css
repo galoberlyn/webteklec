@@ -126,3 +126,14 @@ nav li a:hover{
 .terms {
     text-align: center;
 }
+
+.modalheight {
+    margin-top: 18%;
+}
+
+.terms img{
+    width: 200px;
+    height: 200px;
+}
+
+/* End of Modal */
