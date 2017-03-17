@@ -116,3 +116,8 @@ nav li a:hover{
     text-align: center;
       width: 27%;
 }
+
+.footericons {
+    width: 150px;
+    height: 150px;
+}
