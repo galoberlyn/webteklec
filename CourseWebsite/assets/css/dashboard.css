@@ -121,3 +121,8 @@ nav li a:hover{
     width: 150px;
     height: 150px;
 }
+
+/*Modal CSS */
+.terms {
+    text-align: center;
+}
