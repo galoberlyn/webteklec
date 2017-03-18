@@ -1,0 +1,60 @@
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../fonts/CaviarDreams.ttf);
+}
+@font-face {
+    font-family: aliens;
+    src: url(../fonts/aliens.ttf);
+}
+@font-face {
+    font-family: basictitlefont;
+    src: url(../fonts/basictitlefont.ttf);
+}
+.separator{
+    background-color: white;
+    margin-top: 130px;
+}
+.pads {
+	padding-top: 15px;
+    width: auto ;
+    height: auto;
+    font-family: CaviarDreams;
+    background: #f2f2f2;
+}
+#header-font {
+	font-family: consolas;
+	font-size: 4em;
+}
+#header-font2{
+	font-family: ;
+	font-size: 2em;
+}
+#quote{
+	font-style: italic;
+}
+#header2{
+  background-image: url('../img/hp.jpg');
+  height: 800px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: black;
+}
+#custom {
+	font-family: basictitlefont;
+	font-size: 3em;
+	font-weight: 900px;
+}
+#custom2 {
+	font-size: 21px;
+}
+.icons{
+	height: 90px;
+	width: auto;
+	padding-bottom: 10px;
+}
