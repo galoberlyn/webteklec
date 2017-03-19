@@ -77,3 +77,11 @@ header#header3 {
   text-align: center;
   color: white;
 }
+.modalList li{
+  font-size: 25px;
+  /*background-color: #fec503;*/
+  color: black;
+}
+.modalList li:hover{
+  background-color: #fec503;
+}
