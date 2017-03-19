@@ -320,3 +320,62 @@ The World Wide Web
 	Tim Berners Lee was working in CERN with the project named ‘Enrique.’ It was him who created the WWW on 1989 in Switzerland. Availability of web server software and browser on 1991. CERN declared on April 30, 1993 that the web is free to everyone. World Wide Web Consortium was founded by Tim Berners Lee to administer the improvement of the web. Another mentionable man, Robert Cailliau makes a great impact on the creation of the web. It was very popular for billions people and access it for fact-finding. Many search engines such as Yahoo and Google takes in action, as well as commercial sites like Amazon. 
 	Many misunderstood and mistakenly think that the Internet and the World Wide Web are the same. Internet is a larger scale which is a global system of network of networks while the Web is just a part of the internet and one of the global information medium that is a global collection of documents that uses hyperlinks, URL and HTTP. 
 Reference: http://www.nethistory.info/History%20of%20the%20Internet/web.html
+
+WORLD WIDE WEB
+WORLD WIDE WEB Definition
+	According to LifeWire, “The term World Wide Web (WWW) refers to the collection of public Web sites connected to the Internet worldwide, together with the client devices such as computers and cellphones that access its content. For many years it has become known simply as the Web”. 
+	
+Reference: 
+Mitchell, B. (n.d.). The World Wide Web is not the Internet. Retrieved from 
+https://www.lifewire.com/history-of-world-wide-web-816583
+
+History 
+	Sir Tim Berners-Lee after graduating from Oxford University, he became a software engineer at CERN, an European Particle Physics Laboratory and scientist goes there and uses its accelerators but Sir Tim noticed something that they were having a hard time to share information with each other.Therefore, Sir Tim created a solution that he thought it can solved the problem. And by the use of the internet many computer were connected together and Berners-Lee thought he can use it to share information with the use of hypertext.
+In 1989, Berners-Lee has his proposal titled “Information Management: A Proposal”. At first his initial proposal was not accepted and at that time his boss was Mike Sendall and he noted at the cover “Vague but exciting”.Even web is not an official project of CERN, Mike given Berners-Lee time to work on it in 1990 and Berners-Lee began to work using a NeXT computer.
+In 1990, Berners-Lee written the three fundamental technologies that is still the basic or the foundation of the web which is HTML or HyperText Markup Protocol, URI or Uniform Resource Identifier and HTTP or HyperText Transfer Protocol. He also wrote the first web page editor/browser (“WorldWideWeb.app”) and the first web server (“httpd”) and by the end of the year, the first website was served on the open internet and in 1991 people outside the CERN were invited  to part the web community.
+In 1994, Berners-Lee moved to MIT (Massachusetts Institute of Technology) to found the W3C (World Wide Web Consortium), a community who develops open web standards. And Berners-Lee is still the director of W3C up to this time.
+
+Reference:
+History of the Web. (n.d.). Retrieved from 
+http://webfoundation.org/about/vision/history-of-the-web/
+
+Applications before WWW
+
+WAIS
+	
+What is WAIS?
+	It stands for Wide Area Information Server. It’s where it can index large amount of information and make it searchable across the network. And it is divided by three parts: client, server and protocol.
+
+Reference
+
+Christensson, P. (2006). WAIS Definition. Retrieved from https://techterms.com
+
+
+Gopher(protocol)
+It is designed as distributed document delivery system and while the documents is stored in many servers, its client software it shows to the users the hierarchy of items and directories like file system.
+
+Reference
+RFC 1436 - The Internet Gopher Protocol (a distributed document search and retrieval 
+protocol). (n.d.). Retrieved from https://tools.ietf.org/search/rfc1436
+	
+	
+
+Usenet
+
+	It a collection of newsgroups where users can post messages and the messages are distributed via usenet servers. The messages that are stored in the server stays in a certain period of time. It can be compared as internet forum like reddit but difference is the posted messages is not stored in only one server and as said the messages only retain in a certain period.
+
+Reference
+What is Usenet? (n.d.). Retrieved from http://www.usenet.org/
+
+
+
+
+
+
+
+
+
+
+
+
+
