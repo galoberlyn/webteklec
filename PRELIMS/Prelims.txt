@@ -467,6 +467,36 @@ Request-URI
 
 
 
+HTTP Response Message
+	After the HTTP client sent the request message, the server will receive and interpret the request message. 
+•	Status-Line (CRLF –terminated line consisting of three space-separated values)
+o	HTTP Protocol Version
+o	Status Code 
+o	Reason Phrase
+•	Message Headers (general, response, and/or entity headers)
+•	Empty Line ( nothing preciding CRLF)
+•	Message Body (optional)
+Status-Line
+- Compose of the version of the protocol, next to it is the HTTP status code and the meaning of the code. 
+Response Message Header
+- Each field is compose of name, separated by a colon and a field value. These field names are case-sensitive.  Message Header makes the server able to exceed additional information of the response that is not included in the Status-Line. It also gives information about the server, and the identified resource access of the Request-URI.
+Example:
+HTTP/1.1 404 Not Found
+Date: Fri, 10 Mar 2017 8:16:36 GMT
+Server: Apache/2.2.14 (Win32)
+Content-Length: 320
+Connection: Closed
+Content-Type: text/html
+<!DOCTYPE HTML>
+<html>
+<head> <title>404 Not Found</title>
+</head>
+<body>
+   <h1>Not Found</h1>
+   <p>The requested URL /t.html was not found on this server.</p>
+</body>
+</html>
+
 
 
 
