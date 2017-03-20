@@ -85,3 +85,22 @@ header#header3 {
 .modalList li:hover{
   background-color: #fec503;
 }
+
+h3.sub-topic {
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h4.sub-sub-topic {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px;    
+}
+
+h5.name {
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 5px; 
+text-transform: none;
+}
