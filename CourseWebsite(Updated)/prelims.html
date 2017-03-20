@@ -46,7 +46,7 @@
             </div>
             <!-- /.container-fluid -->
     </nav>
-    <header id="header3">
+    <header id="header4">
      <div class="container">
             <div class="intro-text">
                 <h1 id='header-font'>Prelims</h1>
@@ -57,7 +57,7 @@
     <div class="separator">
     &nbsp
     </div>
-    <!-- Services Section -->
+    <!-- internet Section -->
     <section id="internet">
         <div class="container">
             <div class="row">
@@ -82,8 +82,8 @@
        
         </div>
     </section>
-    <!-- Activities Grid Section -->
-    <section id="activities" class="bg-light-gray">
+    <!-- www Section -->
+    <section id="www" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -117,7 +117,8 @@
                 <h4 class="sub-sub-topic">
                 Wide Area Information Server
                 </h4>
-                
+                <img class="img-center" src="../CourseWebsite(Updated)/img/wais.png"/>
+                <p class="img-ref">Lesson 11. (n.d.). Retrieved from http://www.aitel.hist.no/prosjekter/ekstern/mecpol/poi/lessons/11/ </p>
                 <p>
                     WAIS is where it can index large amount of information and make it searchable across the network. And it is divided by three parts: client, server and protocol.
                 </p>
@@ -141,8 +142,8 @@
     
         </div>
     </section>
-    <!-- About Section -->
-    <section id="about">
+    <!-- http Section -->
+    <section id="http">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -195,35 +196,221 @@
             <h4 class="sub-sub-sub-topic">HTTP provides support for other functionalities such as:</h4>
 
                 
-            <h5 class="name"></h5>    
-            <h5 class="name"></h5>    
-            <h5 class="name"></h5>    
-            <h5 class="name"></h5>    
-            <h5 class="name"></h5>    
-            <h5 class="name"></h5>    
-            <h5 class="name"></h5>    
-            <h5 class="name"></h5>    
-            <h5 class="name"></h5>    
+            <h5 class="name">Cache control</h5>  
+                <p>
+                It allows a client or a server to transmit a variety of directives in either requests or responses. These directives typically override the default caching algorithm. 
+                </p>
+            <h5 class="name">Content media type (MIME – multipurpose internet mail extension) specification</h5>    
+                <p>
+                HTTP uses Internet Media Types in the Content-Type and Accept header fields in order to provide open and extensible data typing and type negotiation.
+                </p>
+            <h5 class="name">Language and character specification</h5>    
+                <p>
+                HTTP uses the same definition of the term “character set” as described for MIME. Fot language is composed of 1 or more parts: A primary language tag and a possibly explicitly excluded.
+                </p>
+            <h5 class="name">Context/transfer codings</h5>    
+                <p>
+                Content codings allows a document to be compressed or otherwise usefully transformed without losing the identity of its underlying media type and without loss of information. And Transfer Codings value is used to determine an encoding transformation that has been or may need to be applied to an entity-body in order to ensure “safe transport” through the network
+                </p>
+            <h5 class="name">Content negotiation</h5>    
+                <p>
+                    HTTP responses includes an entity which contains information for interpretation by a human user.
+                </p>
+            <h5 class="name">Client server protocol negotiations</h5>    
+                <p>
+                    advantageous when the algorithm for selecting from among the available representations is difficult to describe to the user agent, or when the server desires to send its "best guess" to the client along with the first response
+                </p>
+            <h5 class="name">Persistent connection</h5>    
+                <p>
+                Keeping the connection open and connection can be closed by the server or the client
 
+                </p>
+            <h5 class="name">Request pipelining</h5>   
+                <p>
+                It allows the client to send request without waiting for response because server responds at the same order. 
+                </p>
+            
+            <h5 class="name">Authentication/authorization</h5>    
+                <p>
+                It provides several optional challenge-response authentication mechanisms which the server can challenge the client request by the client providing the authentication information.
+
+                </p>
              <div class='separator'> </div>
             <h3 class="sub-topic">
                 HTTP Resource Adressing
             </h3>
-            <pre>https://webtek2017.org:80:/info/profile.php?id#3456#addr</pre>
-            
+            <pre>
+            https://webtek2017.org:80:/info/profile.php?id=3456#addr
+            |____||__________________||________________||_____||___|
+              |            |                |              |     |
+            Scheme     Authority          Path           Query Fragment
+            </pre>
+                
+            <p>
+                Identified using URIs under RFC 3986    
+            </p>
+            <h4 class="sub-sub-topic">
+                Scheme
+            </h4>
+            <p>
+                Each URI starts with a scheme name which refers to a specification for assigning identifier within that scheme.
+		          Scheme name consists of sequence of characters starts with a letter and followed by any combination of alphanumerics, numerics, plus sign (“+”), period (“.”) or a hyphen (“-”).
+            </p>
+              <h4 class="sub-sub-topic">
+                Authority
+            </h4>
+                <h5 class="name">User Information</h3>
+            <p>
+                Consists  of user name and optionally, scheme specific information on how to get authorization to access the resource
+            </p>
+                <h5 class="name">Host</h3>
+                <p>
+                    A host identified by a registered name is a sequence of characters	 usually intended for lookup within a locally defined host or service name registry, though the URI's scheme‐specific semantics may require that a specific registry (or fixed name table) be used instead.
+                </p>
+                
+              <h4 class="sub-sub-topic">
+                Port
+            </h4>
+            <p>
+                Designated by an optional port number in decimal following the host and delimited from it by a single colon (“:”) character. Some ports have numbers that are pre-assigned to them by the IANA, and these are called the "well-known ports" which are specified in RFC 1700.
+
+            </p>
+                
+            <h4 class="sub-sub-topic">
+                Path
+            </h4>
+            <p>
+                A path consists of a sequence of path segments separated by a slash ("/") character. A path is always defined for a URI, though the defined path may be empty (zero length).
+
+            </p>
+                
+            <h4 class="sub-sub-topic">
+                Query 
+            </h4>
+            <p>
+                Indicated by the first question mark (“?”) character and terminated by a number sign (“#”) character or by the end of the URI.
+
+            </p>
+                
+            <h4 class="sub-sub-topic">
+                Fragment
+            </h4>
+            <p>
+                Allows indirect identification of a secondary resource by reference to a primary resource and additional identifying information.
+            </p>
+                
+                
+                
              <div class='separator'> </div>
             <h3 class="sub-topic">
                 HTTP Request Message
             </h3>
             
+                <p>
+                A HTTP request message from an HTTP client sends to a server. It includes the method to be applied to the resource, the identifier of the resource, and the protocol version in use (www.w3.org, 2014).  It includes the following, Request-Line, Message Headers, Empty Lines and Message Body. 
+                </p>
+                <p>
+                <ul class="nostyle">
+                    <li>Request Line: Get http://www.org/ HTTP/1.1</li>
+                    <li>Header: Host: www.webtek.org</li>
+                    <li>Extension Header: Upgrade-Insecure-Request: 1</li>
+                    <li>Message Body: licenseID=string&content=string&/paramsXML=string</li>
+                 
+                </ul>
             
+                
+                Request-Line (CRFL-terminated line consisting of three space - separated values)
+                It starts with the method token that is either standard or extended. 
+                Next is the Request-URI with the HTTP Protocol version. It ends with CRFL-terminated. 
+                It is separated by three SP values.
+                </p>
+
+                <h4 class="sub-sub-topic">
+                Request Method
+                </h4>	
+        
+                <P>
+                    Identified by the Request-URI, it shows the method that is to be used on the resource. The method should always be in uppercase because it is case-sensitive.
+
+                </P>
+            <h4 class="sub-sub-topic">
+                Request-URI
+            </h4>	
+        
+                <P>
+                    Request-Uniform Resource Identifier, the resource which will be pertain the request will be identified. It has four options that is dependent on the request. 
+
+                </P>
              <div class='separator'> </div>
             
             <h3 class="sub-topic">
                 HTTP Response Message
             </h3>
             
+            <P>
+                After the HTTP client sent the request message, the server will receive and interpret the request message. 
+            </P>
             
+        
+            <ul>
+            <li>Status-Line (CRLF –terminated line consisting of three space-separated values)
+                <ul>
+                    <li>HTTP Protocol Version</li>
+                    <li>Status Code </li>
+                    <li>Reason Phrase</li>
+                </ul>    
+            </li>
+            <li>Message Headers (general, response, and/or entity headers)</li>
+            <li>Empty Line ( nothing preceding CRLF)</li>
+            <li>Message Body (optional)</li>
+            </ul>
+        
+        
+                <h4 class="sub-sub-topic">
+                Status-Line
+                </h4>	
+        
+                <P>
+                     Compose of the version of the protocol, next to it is the HTTP status code and the meaning of the code. 
+
+                </P>
+            <h4 class="sub-sub-topic">
+                Response Message Header
+        </h4>	
+        
+                <P>
+                    Each field is compose of name, separated by a colon and a field value. These field names are case-sensitive.  Message Header makes the server able to exceed additional information of the response that is not included in the Status-Line. It also gives information about the server, and the identified resource access of the Request-URI.
+                </P>
+           <p>
+        
+            
+            Example:
+            <ul class="nostyle">
+                <li>HTTP/1.1 404 Not Found</li>
+                <li>Date: Fri, 10 Mar 2017 8:16:36 GMT</li>
+                <li>Server: Apache/2.2.14 (Win32)</li>
+                <li>Content-Length: 320</li>
+                <li>Connection: Closed</li>
+                <li>Content-Type: text/html</li>
+                <xmp>
+               <!DOCTYPE HTML>
+                <html>
+                    <head> <title>404 Not Found</title>
+                    </head>
+                    <body>
+                        <h1>Not Found</h1>
+                        <p>The requested URL /t.html was not found on this server.</p>
+                    </body>
+                </html>
+                </xmp>
+            </ul>
+   
+        </p>
+            
+
+            
+            
+
              <div class='separator'> </div>
             <h3 class="sub-topic">
                 HTTP Request Methods
@@ -231,34 +418,59 @@
             
             
              <h4 class="sub-sub-topic">
-                GET
+                Standard Methods
             </h4>
+            <h5 class="name">GET</h5>
+            <p>
+                The GET method means retrieve whatever information that iis identified by the RequestURI.
+            </p>
+            <h5 class="name">HEAD</h5>
+            <p>
+                The HEAD method is identical to GET except that the server MUST NOT return a message body in the response.
+            </p>
+            <h5 class="name">POST</h5>
+            <p>
+                The POST method is used to request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the RequestURI in the Request-Line
+
+            </p>
+            <h5 class="name">PUT</h5>
+            <p>
+                The PUT method requests that the enclosed entity be stored under the supplied Request-URI.	
+
+            </p>
+            <h5 class="name">DELETE</h5>
+            <p>
+                The DELETE method requests that the origin server delete the resource identified by the RequestURI.
+            </p>
+            <h5 class="name">OPTION</h5>
+            <p>
+                This method allows the client to determine the options and/or requirements associated with a resource, or the capabilities of a server, without implying a resource action or initiating a resource retrieval.
+            </p>
+            <h5 class="name">TRACE</h5>
+            <p>
+                The TRACE method is used to invoke a remote, application layer loopback of the request message.
+            </p>
+            <h5 class="name">CONNECT</h5>
+            <p>
+                This specification reserves the method name CONNECT for use with a proxy that can dynamically switch to being a tunnel.
+
+            </p>
                 
                <h4 class="sub-sub-topic">
-                HEAD
+                Safe Methods
             </h4>  
+                <P>
+                    It doesn’t affect the resource.
+                </P>
                 
-                
-                   <h4 class="sub-sub-topic">
-                POST
+            <h4 class="sub-sub-topic">
+                Idempotent Methods
             </h4>  
+                <P>
+                	Repeated execution to get the same result.
+                </P>
                 
-                
-                   <h4 class="sub-sub-topic">
-                DELETE
-            </h4>  
-                
-                   <h4 class="sub-sub-topic">
-                OPTION
-            </h4>  
-                
-                   <h4 class="sub-sub-topic">
-                TRACE
-            </h4>  
-                
-                   <h4 class="sub-sub-topic">
-                CONNECT
-            </h4>  
+                   
             
              <div class='separator'> </div>
             
@@ -302,7 +514,12 @@
                 
                   <h5 class="name">Transfer-Encoding</h5>
                 <p>
-
+                    Indicates what type of transformation has been applied to the message body in order it is safely transfer it from the sender to the receipt.
+                </p>
+                
+                   <h5 class="name">Chunked Transfer-Encoding</h5>
+                <p>
+                   Chunked encoding- it can be use to know how large is the resource.
                 </p>
                 
                   <h5 class="name">Upgrade</h5>
@@ -325,36 +542,210 @@
                 REQUEST HEADER FIELDS
             </h4>
                 
-                  <h5 class="name">Connection</h5>
+                  <h5 class="name">Accept </h5>
                 <p>
-
+                    Indicates which internet media types are allowed for the response and to assign preferences to them.    
                 </p>
                 
-                  <h5 class="name">Connection</h5>
+                  <h5 class="name">Accept-Charset</h5>
                 <p>
-
+                    Indicates which character encodings are allowed for the response and assign preferences to them.
                 </p>
                 
-                  <h5 class="name">Connection</h5>
+                  <h5 class="name">Accept-Encoding</h5>
                 <p>
-
+                    Indicates which data format transformations or compression is allowed for the response.
                 </p>
                 
-                  <h5 class="name">Connection</h5>
+                  <h5 class="name">Accept-Language</h5>
                 <p>
-
+                    Specifies which natural languages are allowed for the response.
                 </p>
                 
-            
+                  <h5 class="name">Authorization</h5>
+                <p>
+                    Consists of the credentials containing the authentication information of the client.
+                </p>
+                
+                  <h5 class="name">Expect</h5>
+                <p>
+                    Indicates that particular server behaviors are required by the client.
+                </p>
+                
+                  <h5 class="name">From</h5>
+                <p>
+                    Address for the user-agent who controls the requesting browser .
+                </p>
+                
+                  <h5 class="name">Host</h5>
+                <p>
+                    Specifies the internet host and the port number of the resources that is being requested. 
+                </p>
+                  <h5 class="name">If-Match</h5>
+                <p>
+                    If  a client previously obtained entities it can verify that one of the entities is current by including a list of their associated entity tags.
+                </p>
+                
+                  <h5 class="name">If-Modified-Since</h5>
+                <p>
+                    If the requested variant has not been changed since the client accessed, the server will not return the entity but an information about it. 
+                </p>
+                
+                  <h5 class="name">If-None-Match</h5>
+                <p>
+                    A client can verify that none of the previously obtained entities is including the a list of their associated entity tags.
+                </p>
+                
+                  <h5 class="name">If-Range</h5>
+                <p>
+                    A client can specify what should the server would send to the user. 
+                </p>
+                  <h5 class="name">If-Unmodified-Since</h5>
+                <p>
+                    If the requested variant has been modified the server will not perform operation by give information about it.
+                </p>
+                
+                  <h5 class="name">Max-Forwards</h5>
+                <p>
+                    It limit the number of proxies or gateways that can forward the request to the next inbound server.
+                </p>
+                
+                  <h5 class="name">Proxy-Authorization</h5>
+                <p>
+                    Used by the user-agent to identify itself to a proxy which requires authentication
+                </p>
+                  <h5 class="name">Range</h5>
+                <p>
+                    Specify what part by indicating the ranges.
+                </p>
+                
+                  <h5 class="name">Referer</h5>
+                <p>
+                    The address of the resource from which the Request-URI was obtained.
+                </p>
+                
+                  <h5 class="name">TE</h5>
+                <p>
+                    Indicates what extension transfer encoding the client accept in the response.
+                </p>
+                
+                  <h5 class="name">User-Agent</h5>
+                <p>
+                    Information of the client where the request came from.
+                </p>
              <h4 class="sub-sub-topic">
                 RESPONSE HEADER FIELDS
             </h4>
             
-            
+                
+                 <h5 class="name">Accept-Ranges</h5>
+                <p>
+                    It determines the server’s acceptance of the range request for the resource.
+
+                </p>
+                
+                  <h5 class="name">Age</h5>
+                <p>
+                    The amount of time since the response was generated at the origin server.
+
+
+                </p>
+                
+                  <h5 class="name">ETag</h5>
+                <p>
+                    The current value of the entity tag for the requested variant. It is for caching purposes.
+
+                </p>
+                
+                  <h5 class="name">Location</h5>
+                <p>
+                    Redirect the recipient to a location for the completion of the request.
+
+                </p>
+                
+                  <h5 class="name">Proxy-Authenticate</h5>
+                <p>
+                    Indicates the authentication and parameters applicable to the proxy for this Request-URI.
+                </p>
+                
+                  <h5 class="name">Retry-After</h5>
+                <p>
+                    Indicates how long the service will unavailable. Usually use in maintenance of the web site.
+
+                </p>
+                
+                  <h5 class="name">Server</h5>
+                <p>
+                    Information of the software used by origin server to grant the request.
+                </p>
+                
+                  <h5 class="name">Vary</h5>
+                <p>
+                    Indicates the set of request-header fields that fully determines, while the response is fresh, whether a cache is permitted to use the response to reply to a subsequent request without revalidation
+
+                </p>
+                  <h5 class="name">WWW-Authenticate</h5>
+                <p>
+                    Consists of at least one challenge that indicates the authentication and parameters applicable to the Request-URI.
+
+                </p>
+                
+                  
              <h4 class="sub-sub-topic">
                 ENTITY HEADER FIELDS
             </h4>
             
+             <h5 class="name">Allow</h5>
+                <p>
+                    List of method that is supported by the resource identified by the Request-URI.
+
+                </p>
+                
+                  <h5 class="name">Content-Encoding</h5>
+                <p>
+                    Modifier to the media type, to indicate what type of compression have been applied to the body.
+                </p>
+                
+                  <h5 class="name">Content-Language</h5>
+                <p>
+                    Specifies what is the natural languages for intended users for the enclosed entity.
+
+                </p>
+                
+                  <h5 class="name">Content-Length</h5>
+                <p>
+                    Indicate the size of the entity body that is sent.
+                    
+                </p>
+                
+                  <h5 class="name">Content-Location</h5>
+                <p>
+                    Gives the resource location for the entity.
+                </p>
+                
+                  <h5 class="name">Content-MD5</h5>
+                <p>
+                    Providing an end-to-end message integrity check of the entity body.
+                </p>
+                
+                  <h5 class="name">Content-Range</h5>
+                <p>
+                    Sent partial entity body which is requested by the client.
+                </p>
+                
+                  <h5 class="name">Content-Type</h5>
+                <p>
+                    Indicates the media type of the entity body.
+                </p>
+                  <h5 class="name">Expires</h5>
+                <p>
+                    Gives the date/time which the response is out of date. It is for caching purposes.  
+                </p>
+                    <h5 class="name">Last-Modified</h5>
+                <p>
+                    Indicates the date and time the content is modified.
+                </p>
+               
              <div class='separator'> </div>
             
             <h3 class="sub-topic">
@@ -612,6 +1003,7 @@
                             <h5 class="name">Payment Required</h5>
                         
                             <p>
+                                This code is reserved for future use.
                             </p>
                         </td>    
                     </tr>
@@ -858,23 +1250,81 @@
         </div>
     </section>
 
+<!-- reference Section -->
+    <section id="reference" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+            
+            <div class="container">
+                <h3 class="sub-topic">
+                References 
+                </h3>
+                <ul>
+                    <li>
+                        Sanjoysanyal. (2008). HTTP Basics. Retrieved from https://www.slideshare.net/sanjoysanyal/http-basics
+                    </li>
+                    <li>
+                        Mitchell, B. (n.d.). Explaining HTTP: The protocol that makes the Internet work. Retrieved from https://www.lifewire.com/hypertext-transfer-protocol-817944
+                    </li>
+                    <li>
+                    What is HTTP (HyperText Transfer Protocol)? (n.d.). Retrieved from http://www.computerhope.com/jargon/h/http.htm
+
+                    </li>
+                    <li>
+                    Krishnan, K. (2014). An Introduction to HTTP. Retrieved from https://www.slideshare.net/Keerthana17/an-introduction-to-http?next_slideshow=1
+
+                    </li>
+                    <li>
+                    What is HTTP (HyperText Transfer Protocol)? (n.d.). Retrieved from http://www.computerhope.com/jargon/h/http.htm
+
+                    </li>
+                    <li>
+                    What is Usenet? (n.d.). Retrieved from http://www.usenet.org/
+                    </li>
+                    <li>
+                    RFC 1436 - The Internet Gopher Protocol (a distributed document search and retrieval protocol). (n.d.). Retrieved from https://tools.ietf.org/search/rfc1436
+
+                    </li>
+                    <li>
+                    Christensson, P. (2006). WAIS Definition. Retrieved from https://techterms.com
+                    </li>
+                    <li>
+                    History of the Web. (n.d.). Retrieved from http://webfoundation.org/about/vision/history-of-the-web/
+
+                    </li>
+                    <li>
+                    Mitchell, B. (n.d.). The World Wide Web is not the Internet. Retrieved from https://www.lifewire.com/history-of-world-wide-web-816583
+
+                    </li>
+                    <li>
+                        Webopedia Staff. (n.d.). Well-Known TCP Port Numbers. Retrieved from http://www.webopedia.com/quick_ref/portnumbers.asp
+                    </li>
+                    <li>
+                    
+                        Berners-Lee, et al. (2005). RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax.  Retrieved  from https://tools.ietf.org/html/rfc3986
+                    </li>
+                    <li>
+                        Berners-Lee, et al. (1999). Hypertext Transfer Protocol -- HTTP/1.1. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616.html
+                    
+                    </li>
+                    <li>
+                      HTTP - Status Codes(n.d.). Retrieved from https://www.tutorialspoint.com/http/http_status_codes.htm
+                    </li>
+                    <li>
+                    Khare, et. al. (2000). Retrieved from https://www.ietf.org/rfc/rfc2817.txt
+                    </li>
+                 
+                </ul>
+                
+            </div>
+    
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4"> <span class="copyright">Copyright &copy; Your Website 2017</span> </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a> </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a> </li>
-                        <li><a href="#">Terms of Use</a> </li>
-                    </ul>
-                </div>
+                <div class="text-center"> <span class="copyright">Copyright &copy; Web Systems and Technologies 2017</span> </div>
             </div>
         </div>
     </footer>

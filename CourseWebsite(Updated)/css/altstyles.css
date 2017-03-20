@@ -77,6 +77,20 @@ header#header3 {
   text-align: center;
   color: white;
 }
+
+header#header4 {
+  background-image: url('../img/web.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+
 .modalList li{
   font-size: 25px;
   /*background-color: #fec503;*/
@@ -104,4 +118,20 @@ h5.name {
   margin-top: 0;
   margin-bottom: 5px; 
 text-transform: none;
+}
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
+.nostyle {
+    list-style-type: none;
+}
+
+.img-ref {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
 }
