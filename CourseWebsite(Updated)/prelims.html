@@ -31,27 +31,32 @@
 
 <body id="page-top" class="index">
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button> <a class="navbar-brand page-scroll" href="index.html">Webtek</a> </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-    
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
+       <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button> <a class="navbar-brand page-scroll" href="#page-top">Webtek</a> </div>
+                    <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li> <a class="page-scroll" href="index.html">Home</a> </li>
+             </div>
+            </div>
+            <!-- /.container-fluid -->
     </nav>
-    <!-- Header -->
-  <!--  <header>
-        <div class="container">
+    <header id="header3">
+     <div class="container">
             <div class="intro-text">
-                <h1 id='header-font'>PRELIMS</h1>
-                <br> <a href="#internet" class="page-scroll btn btn-xl">Let's get Started</a> </div>
+                <h1 id='header-font'>Prelims</h1>
+                <h2 id='header-font2'>Discussions in the Prelims</h2>
+                <br> <a href=".separator" class="page-scroll btn btn-xl">Start!</a> </div>
         </div>
     </header>
--->
-    <!-- sepator -->
+    <div class="separator">
+    &nbsp
+    </div>
     <!-- Services Section -->
     <section id="internet">
         <div class="container">
@@ -150,11 +155,56 @@
                 HTTP Fundamentals
             </h3>
             
-            
+            <h4 class="sub-sub-topic">HTTP</h4>
             <p>
-                Something here
+                It is an application layer protocol that allows user of the World Wide Web to share information found in web pages. Its standard port connection is port 80 and  and for HTTPS its port 443.
             </p>
+            <h4 class="sub-sub-topic">Overview</h4>
+            <p>
+            The standards development of HTTP was coordinated by the Internet Engineering Task Force (IETF) and the World Wide Web Consortium (W3C), culminating in the publication of a series of Requests for Comments (RFCs) RFC 2616 (June 1999) defined in HTTP/1.1, the version of HTTP most commonly used today. In June 2014, RFC 2616 was retired and HTTP/1.1 was redefined by new RFCs 7230-7235. HTTP/2 is currently in draft form.    
+            </p>
+            <h4 class="sub-sub-topic">VERSION HISTORY</h4>
+            <P>
+                <ul>
+                <li>HTTP/0.9 was the first version of the HTTP, and was introduced in 1991.</li>
+                <li>HTTP/1.0 is specified in RFC 1945, and was introduced in 1996.</li>
+                <li>HTTP/1.1 is specified in RFC 2616, and was officially released in January 1997</li>
+                <li>HTTP 2.0 - became an approved standard in 2015. It maintains backward compatibility with HTTP 1.1 but offers additional performance enhancements.</li>
+                </ul>    
+            </P>
+                
+            <h4 class="sub-sub-sub-topic">Characteristics of HTTP</h4>
             
+            <h5 class="name">Request-response mechanism</h5>  
+                <p>
+                The client sends a request to the server then the server generates a response for each request of the client.
+                </p>
+            <h5 class="name">Resource Identification</h5>    
+                <p>
+                    Every http request includes a URI.
+                </p>
+            <h5 class="name">Statelessness</h5>    
+                <p>
+                    In a session the server doesn’t store any information of the client.
+                </p>
+            <h5 class="name">Metadata support</h5>    
+                <p>
+                It is about information can be exchanged in the messages.ita
+                </p>
+                
+            <h4 class="sub-sub-sub-topic">HTTP provides support for other functionalities such as:</h4>
+
+                
+            <h5 class="name"></h5>    
+            <h5 class="name"></h5>    
+            <h5 class="name"></h5>    
+            <h5 class="name"></h5>    
+            <h5 class="name"></h5>    
+            <h5 class="name"></h5>    
+            <h5 class="name"></h5>    
+            <h5 class="name"></h5>    
+            <h5 class="name"></h5>    
+
              <div class='separator'> </div>
             <h3 class="sub-topic">
                 HTTP Resource Adressing
@@ -219,15 +269,81 @@
                 <p>
                 It is consist of General Header Fields which is for both client and server side, Request Header Field Fields which is for the client side, Response Header Fields which is for the server side and the Entity Header Fields which is for entity. And each of the fields consists of name followed by colon (“:”) and the value.
                 </p>
+                
+                
             
              <h4 class="sub-sub-topic">
                 GENERAL HEADER FIELDS
             </h4>
                 
+                <h5 class="name">Cache-Control</h5>
+                <p>
+                    It used to specify directives that must be obeyed by all caching mechanism along the request/ response chain.
+                </p>
+                <h5 class="name">Connection</h5>
+                <p>
+                    Allows the sender to specify the options for a particular connection.
+                </p>
+                
+                  <h5 class="name">Date</h5>
+                <p>
+                   It indicates the date and time which the message was originated.
+                </p>
+                
+                  <h5 class="name">Pragma</h5>
+                <p>
+                    Used to include implementation which specify directives that might apply to recipient along the request/ response chain.	
+                </p>
+                
+                  <h5 class="name">Trailer</h5>
+                <p>
+                    Indicates the given set of header fields and is present in the trailer of a sage encoded with chunked transfer-coding
+                </p>
+                
+                  <h5 class="name">Transfer-Encoding</h5>
+                <p>
+
+                </p>
+                
+                  <h5 class="name">Upgrade</h5>
+                <p>
+                    It is intended for upgrading from one version to some other version. 
+                </p>
+                
+                  <h5 class="name">Via</h5>
+                <p>
+                    Use by gateways and proxies to indicate the intermediate protocol and who the recipient between the user-agent and the server.
+                </p>
+                
+                  <h5 class="name">Warning</h5>
+                <p>
+                    	Carries out information about the status of the message which may not appear in the message.
+                </p>
+                
                 
              <h4 class="sub-sub-topic">
                 REQUEST HEADER FIELDS
             </h4>
+                
+                  <h5 class="name">Connection</h5>
+                <p>
+
+                </p>
+                
+                  <h5 class="name">Connection</h5>
+                <p>
+
+                </p>
+                
+                  <h5 class="name">Connection</h5>
+                <p>
+
+                </p>
+                
+                  <h5 class="name">Connection</h5>
+                <p>
+
+                </p>
                 
             
              <h4 class="sub-sub-topic">
@@ -289,6 +405,7 @@
                             <h5 class="name">Ok</h5>
                         
                             <p>
+                                The request is OK.
                             </p>
                         </td>    
                     </tr>
@@ -298,6 +415,7 @@
                         <td>
                             <h5 class="name">Created</h5>
                             <p>
+                                The request is complete, and a new resource is created.
                             </p>
                         </td>
                     </tr> 
@@ -306,6 +424,7 @@
                         <td>
                             <h5 class="name">Accepted</h5>
                             <p>
+                                The request is accepted for processing, but the processing is not complete.
                             </p>
                         </td>
                     </tr>
@@ -315,6 +434,7 @@
                             <h5 class="name">Non-Authorative Information</h5>
                         
                             <p>
+                                The information in the entity header is from a local or third-party copy, not from the original server.
                             </p>
                         </td>    
                     </tr>
@@ -324,6 +444,7 @@
                         <td>
                             <h5 class="name">No Content</h5>
                             <p>
+                                A status code and a header are given in the response, but there is no entity-body in the reply.
                             </p>
                         </td>
                     </tr>
@@ -333,6 +454,7 @@
                             <h5 class="name">Reset Content</h5>
                         
                             <p>
+                                The browser should clear the form used for this transaction for additional input.
                             </p>
                         </td>    
                     </tr>
@@ -342,6 +464,7 @@
                         <td>
                             <h5 class="name">Partial Content</h5>
                             <p>
+                                The server is returning partial data of the size requested. Used in response to a request specifying a Range header. The server must specify the range included in the response with the Content-Range header.
                             </p>
                         </td>
                     </tr>     
@@ -364,6 +487,7 @@
                             <h5 class="name">Multiple Choice</h5>
                         
                             <p>
+                                A link list. The user can select a link and go to that location. Maximum five addresses.
                             </p>
                         </td>    
                     </tr>
@@ -373,6 +497,7 @@
                         <td>
                             <h5 class="name">Moved Permanently</h5>
                             <p>
+                                The requested page has moved to a new url.
                             </p>
                         </td>
                     </tr>
@@ -382,6 +507,7 @@
                             <h5 class="name">Found</h5>
                         
                             <p>
+                                The requested page has moved temporarily to a new url.
                             </p>
                         </td>    
                     </tr>
@@ -391,6 +517,7 @@
                         <td>
                             <h5 class="name">See Other</h5>
                             <p>
+                                The requested page can be found under a different url.
                             </p>
                         </td>
                     </tr>
@@ -400,6 +527,7 @@
                             <h5 class="name">Not Modified</h5>
                         
                             <p>
+                                This is the response code to an If-Modified-Since or If-None-Match header, where the URL has not been modified since the specified date.
                             </p>
                         </td>    
                     </tr>
@@ -409,6 +537,7 @@
                         <td>
                             <h5 class="name">Use Proxy</h5>
                             <p>
+                                The requested URL must be accessed through the proxy mentioned in the Location header.
                             </p>
                         </td>
                     </tr> 
@@ -418,6 +547,7 @@
                             <h5 class="name">Switch Proxy <sup>Unused</sup></h5>
                         
                             <p>
+                                This status code was used in the previous specification and the code is reserved.
                             </p>
                         </td>    
                     </tr>
@@ -427,6 +557,7 @@
                         <td>
                             <h5 class="name">Temporary Redirect</h5>
                             <p>
+                                The requested page has moved temporarily to a new url.
                             </p>
                         </td>
                     </tr>     
@@ -435,6 +566,7 @@
                         <td>
                             <h5 class="name">Permanent Redirect</h5>
                             <p>
+                                The requested page has been assing permanently to a new uri.
                             </p>
                         </td>
                     </tr> 
@@ -460,6 +592,7 @@
                             <h5 class="name">Bad Request</h5>
                         
                             <p>
+                                	The server did not understand the request.
                             </p>
                         </td>    
                     </tr>
@@ -469,6 +602,7 @@
                         <td>
                             <h5 class="name">Unauthorized</h5>
                             <p>
+                                The requested page needs a username and a password.
                             </p>
                         </td>
                     </tr>
@@ -487,6 +621,7 @@
                         <td>
                             <h5 class="name">Forbbiden</h5>
                             <p>
+                                Access is forbidden to the requested page.
                             </p>
                         </td>
                     </tr>
@@ -496,6 +631,7 @@
                             <h5 class="name">Not Found</h5>
                         
                             <p>
+                                The server can not find the requested page.
                             </p>
                         </td>    
                     </tr>
@@ -505,6 +641,7 @@
                         <td>
                             <h5 class="name">Method Not Allowed</h5>
                             <p>
+                                The method specified in the request is not allowed.
                             </p>
                         </td>
                     </tr> 
@@ -514,6 +651,7 @@
                             <h5 class="name">Not Acceptable</h5>
                         
                             <p>
+                                The server can only generate a response that is not accepted by the client.
                             </p>
                         </td>    
                     </tr>
@@ -523,6 +661,7 @@
                         <td>
                             <h5 class="name">Proxy Authentication Required</h5>
                             <p>
+                                You must authenticate with a proxy server before this request can be served.
                             </p>
                         </td>
                     </tr> 
@@ -532,6 +671,7 @@
                             <h5 class="name">Request Timeout</h5>
                         
                             <p>
+                                The request took longer than the server was prepared to wait.
                             </p>
                         </td>    
                     </tr>
@@ -541,6 +681,7 @@
                         <td>
                             <h5 class="name">Conflict</h5>
                             <p>
+                                The request could not be completed because of a conflict.
                             </p>
                         </td>
                     </tr>
@@ -550,6 +691,7 @@
                             <h5 class="name">Gone  </h5>
                         
                             <p>
+                                	The requested page is no longer available .
                             </p>
                         </td>    
                     </tr>
@@ -559,6 +701,7 @@
                         <td>
                             <h5 class="name">Length Required</h5>
                             <p>
+                                The "Content-Length" is not defined. The server will not accept the request without it.
                             </p>
                         </td>
                     </tr>
@@ -568,6 +711,7 @@
                             <h5 class="name">Precondition Failed</h5>
                         
                             <p>
+                                The pre condition given in the request evaluated to false by the server.
                             </p>
                         </td>    
                     </tr>
@@ -577,6 +721,7 @@
                         <td>
                             <h5 class="name"> Request Entity Too Large</h5>
                             <p>
+                                The server will not accept the request, because the request entity is too large.
                             </p>
                         </td>
                     </tr>
@@ -585,6 +730,7 @@
                         <td>
                             <h5 class="name">Request-url Too Long</h5>
                             <p>
+                                The server will not accept the request, because the url is too long. Occurs when you convert a "post" request to a "get" request with a long query information.
                             </p>
                         </td>
                     </tr> 
@@ -594,6 +740,7 @@
                             <h5 class="name">Unsupported Media Type</h5>
                         
                             <p>
+                                The server will not accept the request, because the mediatype is not supported.
                             </p>
                         </td>    
                     </tr>
@@ -604,6 +751,7 @@
                             <h5 class="name">Requested Range Not Satisfiable</h5>
                         
                             <p>
+                                The requested byte range is not available and is out of bounds.
                             </p>
                         </td>    
                     </tr>
@@ -613,6 +761,7 @@
                         <td>
                             <h5 class="name">Expectation Failed</h5>
                             <p>
+                                The expectation given in an Expect request-header field could not be met by this server.
                             </p>
                         </td>
                     </tr> 
@@ -622,6 +771,7 @@
                             <h5 class="name">Upgrade Required</h5>
                         
                             <p>
+                                A server can advertise portocol upgrade that a client must accept to complete the request.
                             </p>
                         </td>    
                     </tr>
@@ -646,6 +796,7 @@
                             <h5 class="name">Internal Server Error</h5>
                         
                             <p>
+                                The request was not completed. The server met an unexpected condition.
                             </p>
                         </td>    
                     </tr>
@@ -655,6 +806,7 @@
                         <td>
                             <h5 class="name">Not Impemented</h5>
                             <p>
+                                The request was not completed. The server did not support the functionality required.
                             </p>
                         </td>
                     </tr> 
@@ -663,6 +815,7 @@
                         <td>
                             <h5 class="name">Bad Gateway</h5>
                             <p>
+                                The request was not completed. The server received an invalid response from the upstream server.
                             </p>
                         </td>
                     </tr>
@@ -672,6 +825,7 @@
                             <h5 class="name">Service Unavailable</h5>
                         
                             <p>
+                                The request was not completed. The server is temporarily overloading or down.
                             </p>
                         </td>    
                     </tr>
@@ -681,6 +835,7 @@
                         <td>
                             <h5 class="name">Gateway Timeout</h5>
                             <p>
+                                The gateway has timed out.
                             </p>
                         </td>
                     </tr>
@@ -690,18 +845,11 @@
                             <h5 class="name">HTTP Version Not Supported</h5>
                         
                             <p>
+                                The server does not support the "http protocol" version.
                             </p>
                         </td>    
                     </tr>
-                    
-                    <tr>
-                        <td>506</td>
-                        <td>
-                            <h5 class="name">Switching Protocols</h5>
-                            <p>
-                            </p>
-                        </td>
-                    </tr>     
+                 
                     
                 </table>
                 

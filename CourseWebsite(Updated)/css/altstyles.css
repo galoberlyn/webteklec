@@ -95,7 +95,8 @@ h3.sub-topic {
 h4.sub-sub-topic {
   font-size: 18px;
   margin-top: 0;
-  margin-bottom: 15px;    
+  margin-bottom: 15px;  
+  margin-top: 15px;
 }
 
 h5.name {
