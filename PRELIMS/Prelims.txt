@@ -368,6 +368,85 @@ Reference
 What is Usenet? (n.d.). Retrieved from http://www.usenet.org/
 
 
+HTTP
+	
+
+HTTP FUNDAMENTALS
+
+HTTP 
+It is an application layer protocol that allows user of the World Wide Web to share information found in web pages. Its standard port connection is port 80 and  and for HTTPS its port 443.
+
+
+What is HTTP (HyperText Transfer Protocol)? (n.d.). Retrieved from 
+http://www.computerhope.com/jargon/h/http.htm
+
+OVERVIEW
+
+The standards development of HTTP was coordinated by the Internet Engineering Task Force (IETF) and the World Wide Web Consortium (W3C), culminating in the publication of a series of Requests for Comments (RFCs) RFC 2616 (June 1999) defined in HTTP/1.1, the version of HTTP most commonly used today. In June 2014, RFC 2616 was retired and HTTP/1.1 was redefined by new RFCs 7230-7235. HTTP/2 is currently in draft form.
+
+Krishnan, K. (2014). An Introduction to HTTP. Retrieved from 
+https://www.slideshare.net/Keerthana17/an-introduction-to-http?next_slideshow=1
+
+
+VERSION HISTORY
+	HTTP/0.9 was the first version of the HTTP, and was introduced in 1991.
+HTTP/1.0 is specified in RFC 1945, and was introduced in 1996.
+HTTP/1.1 is specified in RFC 2616, and was officially released in January 1997
+HTTP 2.0 - became an approved standard in 2015. It maintains backward compatibility with HTTP 1.1 but offers additional performance enhancements.
+
+What is HTTP (HyperText Transfer Protocol)? (n.d.). Retrieved from 
+http://www.computerhope.com/jargon/h/http.htm
+
+Mitchell, B. (n.d.). Explaining HTTP: The protocol that makes the Internet work. Retrieved from 
+https://www.lifewire.com/hypertext-transfer-protocol-817944
+
+Characteristics of HTTP
+
+Request-response mechanism
+	The client sends a request to the server then the server generates a response for each request of the client.
+
+Resource Identification
+	Every http request includes a URI.
+
+Statelessness
+	In a session the server doesn’t store any information of the client.
+
+Metadata support
+	It is about information can be exchanged in the messages.ita
+
+Sanjoysanyal. (2008). HTTP Basics. Retrieved from
+https://www.slideshare.net/sanjoysanyal/http-basics
+
+HTTP provides support for other functionalities such as:
+ 
+Cache control
+	It allows a client or a server to transmit a variety of directives in either requests or responses. These directives typically override the default caching algorithm. 
+
+Content media type (MIME – multipurpose internet mail extension) specification
+HTTP uses Internet Media Types in the Content-Type and Accept header fields in order to provide open and extensible data typing and type negotiation.
+Language and character specification
+HTTP uses the same definition of the term “character set” as described for MIME. Fot language is composed of 1 or more parts: A primary language tag and a possibly explicitly excluded.
+
+Context/transfer codings
+Content codings allows a document to be compressed or otherwise usefully transformed without losing the identity of its underlying media type and without loss of information. And Transfer Codings value is used to determine an encoding transformation that has been or may need to be applied to an entity-body in order to ensure “safe transport” through the network
+
+Content negotiation
+HTTP responses includes an entity which contains information for interpretation by a human user.
+
+Client server protocol negotiations
+advantageous when the algorithm for selecting from among the available representations is difficult to describe to the user agent, or when the server desires to send its "best guess" to the client along with the first response
+
+
+Persistent connection
+Keeping the connection open and connection can be closed by the server or the client
+
+Request pipelining
+It allows the client to send request without waiting for response because server responds at the same order. 
+
+Authentication/authorization
+It provides several optional challenge-response authentication mechanisms which the server can challenge the client request by the client providing the authentication information.
+
+
 
 
 
