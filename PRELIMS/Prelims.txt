@@ -449,6 +449,24 @@ It provides several optional challenge-response authentication mechanisms which 
 
 
 
+HTTP Request Message
+A HTTP request message from an HTTP client sends to a server. It includes the method to be applied to the resource, the identifier of the resource, and the protocol version in use (www.w3.org, 2014).  It includes the following, Request-Line, Message Headers, Empty Lines and Message Body. 
+Example:
+Request Line: Get http://www.org/ HTTP/1.1
+Header: Host: www.webtek.org
+Extension Header: Upgrade-Insecure-Request: 1
+
+Message Body: licenseID=string&content=string&/paramsXML=string
+
+Request-Line (CRFL-terminated line consisting of three space - separated values)
+	It starts with the method token that is either standard or extended. Next is the Request-URI with the HTTP Protocol version. It ends with CRFL-terminated. It is separated by three SP values.
+	Request Method
+-	Identified by the Request-URI, it shows the method that is to be used on the resource. The method should always be in uppercase because it is case-sensitive.
+Request-URI
+-	Request-Uniform Resource Identifier, the resource which will be pertain the request will be identified. It has four options that is dependent on the request. 
+
+
+
 
 
 
