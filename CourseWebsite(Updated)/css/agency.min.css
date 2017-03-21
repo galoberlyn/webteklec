@@ -850,3 +850,8 @@ img::-moz-selection {
 .glos {
     margin-left: 1%;
 }
+
+.glosheader {
+    color: gold;
+    font-size: 35px;
+}
