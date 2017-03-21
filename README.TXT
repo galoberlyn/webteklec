@@ -2,8 +2,12 @@ In Order to Run the page at its full potential, An internet connection is needed
 -> this is because some fonts are in the bootstrap library.
 
 Instructions.
-1. Extract the ZIP file Group2.ZIP
-The folder CourseWebsite will be extracted.
+1. Extract the ZIP file 9433ACourseWebsite.ZIP
+A directory and 2 files will be extracted.
+CourseWebsite 
+Prelim CommitLog 
+peer.jpg
+
 2. 
 Option A: -->Transfer the CourseWebsite directory to www directory in WAMP because 
 			Respond.js doesn't work if you view the page via file://
