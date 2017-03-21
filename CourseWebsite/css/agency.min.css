@@ -845,17 +845,3 @@ img::-moz-selection {
     background: 0 0
 }
 
-/* Glossary Padding */
-
-.glos {
-    margin-left: 1%;
-}
-
-.modalList {
-    text-align: left;
-}
-
-.gloshead {
-    color: gold;
-    font-size: 35px;
-}

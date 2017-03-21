@@ -135,3 +135,18 @@ text-transform: none;
     text-align: center;
     margin-bottom: 10px;
 }
+
+/* Glossary Padding */
+
+.glos {
+    margin-left: 1%;
+}
+
+.modalList {
+    text-align: left;
+}
+
+.gloshead {
+    color: gold;
+    font-size: 35px;
+}
