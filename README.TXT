@@ -1,4 +1,4 @@
-In Order to Run the page as its full potential, An internet connection is needed.
+In Order to Run the page at its full potential, An internet connection is needed.
 -> this is because some fonts are in the bootstrap library.
 
 Instructions.
