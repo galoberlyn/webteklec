@@ -3,10 +3,9 @@ In Order to Run the page at its full potential, An internet connection is needed
 
 Instructions.
 1. Extract the ZIP file 9433ACourseWebsite.ZIP
-A directory and 2 files will be extracted.
+A directory and a file will be extracted.
 CourseWebsite 
-Prelim CommitLog 
-peer.jpg
+README.txt
 
 2. 
 Option A: -->Transfer the CourseWebsite directory to www directory in WAMP because 
