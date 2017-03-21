@@ -4,11 +4,8 @@ In Order to Run the page as its full potential, An internet connection is needed
 Instructions.
 1. Extract the ZIP file Group2.ZIP
 The folder CourseWebsite will be extracted.
-2. Inside the Course Website Directory open index.html 
-3. Upon opening the page :
-	nav consists of 5 items--> Webtek, Services, Activities, Glossary, Team
-4. Clicking on the following:
-	Webtek-->navigates on the top page.
-	Services-->navigates to the services section
-	team-->navigates to the services team
+2. Transfer the CourseWebsite directory to www directory in WAMP because 
+	Respond.js doesn't work if you view the page via file://
+3. In your browser, type in localhost/CourseWebsite. 
+
 	
