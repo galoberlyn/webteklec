@@ -39,6 +39,31 @@ Transitional – depreciated
 Strict
 Frameset
 The Elements of HTML
+Index of Attributes
+Grouping
+Categories
+  Flow:
+•	Heading
+•	Sectioning
+•	Interaction
+•	Phrasing
+•	Embedded
+•	Metadata
+Content
+-	Flow content is expected
+•	Content Model
+-	Phrasing Content
+•	Content Attribute
+-	Global Attribute
+Ex. Id, title, long, alt, src
+ARIA state and property attributes
+•	Global ARIA – attributes
+DOM interface
+-	interface HTML Paragraph Element : HTML Element
+
+Paragraph in HTML is Thematic a content
+Content in w/c this element can be used: Embedded Content
+Tag Omission in text HTML: No end tag
 
 Summary of HTML Elements
 Html
