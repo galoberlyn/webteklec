@@ -108,61 +108,64 @@ Html
 			colgroup, col
 CASCADING STYLE SHEET (CSS)
 CSS 
-language used to specify the presentational aspects
-Developed by Hakon Wium Lie (CHSS) and Bert Bos (SSP)
+•	language used to specify the presentational aspects
+•	Developed by Hakon Wium Lie (CHSS) and Bert Bos (SSP)
 Versions
-css 1 , css 2.1, css3
+•	css 1 , css 2.1, css3
 CSS Preprocessors, CSS Frameworks
-Sass, Less, 960 Grid System, Bootstrap, Foundation, Materializa, etc
+•	Sass, Less, 960 Grid System, Bootstrap, Foundation, Materializa, etc
 ===HTML/XHTML STYLESHEETS===
-author styles (external stylesheets,embedded styles, inline styles)
-user style
-user agent styles (example default css 2.1 stylesheet for HTML 4)
+•	author styles (external stylesheets,embedded styles, inline styles)
+•	user style
+•	user agent styles (example default css 2.1 stylesheet for HTML 4)
 * Reset CSS – overide the default stylesheet
 ===CSS Statements===
-At-Rules
-@charset, @font-face @import ‘global.css’
-css rule sets (a.k.a CSS rules, style rules)
-consults of a selector, followed by a declaration block.
+•	At-Rules
+◦	@charset, @font-face @import ‘global.css’, @namespace, @document, @font-face, @key frames, @media, @page
+•	css rule sets (a.k.a CSS rules, style rules)
+◦	consults of a selector, followed by a declaration block.
 ===CSS Selectors===
-Simple Selector
-either a type selector or universal selector followed by zero or more attribute selector , ID selectors or pseudo  classes.
-Selector 
-chain of simple selector separated by combinators.
-Type selector 
-matches the name of a document language element type. 
-Universal selector 
-written "*", matches the name of any element type.
-Attribute selector
-		[att] 
-		[att=val]
-		[att~=val]
-		[att|=val]
-ID selector
+•	Simple Selector
+◦	either a type selector or universal selector followed by zero or more attribute selector , ID selectors or pseudo  classes.
+•	Selector Syntax
+◦	Chain of one or more sequence of simple selectors by combinators.
+•	Type selector 
+◦	matches the name of a document language element type. 
+•	Universal selector 
+◦	written "*", matches the name of any element type.
+•	Attribute selector
+		[attr] 
+		[attr=value] 
+		[attr~=value]      – space separated values
+		[attr|=value]      –target long attribute
+		[attr^=value]       -beginning (CSS3)
+		[attr$=value]       –End (CSS3)
+		[attr*=value] 	 –Everywhere (CSS3)
+•	ID selector
 		 - match an element instance based on its identifier. 
 		 -A CSS ID selector contains a "#" followed by ID value.
-Pseudo classes 
-classify elements on characteristic other than their name, attributes or content.
-there's is implicit class associated with.
-Dynamic pseudo class
-ink pseudo class
-link - link that have not yet visited.
-visited - link that have been visited.
-user action pseudo class	
-hover
-action - active a link
-focus -  move particular element
-target pseudo classes
-language pseudo classes
+•	Pseudo classes 
+	classify elements on characteristic other than their name, attributes or content.
+	there's is implicit class associated with.
+•	Dynamic pseudo class
+	link pseudo-classes
+o	link - link that have not yet visited.
+o	visited - link that have been visited.
+	user action pseudo class	
+o	hover
+o	action - active a link
+o	focus -  move particular element
+o	target pseudo classes
+o	language pseudo classes
 				:lang()
-UI element states pseudo classes
-			-:enabled
-			-:disabled
-			-:checked
-			-
-Structural 
-			-:root
-			-:first-child
+•	UI element states pseudo classes
+			-:enabled (CSS3)
+			-:disabled (CSS3)
+			-:checked (CSS3)
+			-:inderminate (css3)
+•	Structural 
+			-:root 
+			-:first-child  
 			-:last-child
 			-only-child
 			-:nth-child
@@ -175,8 +178,8 @@ Structural
 			-:empty
 			negation
 				:not() - negates the logic of the selector.
-Combinators
-descendant combinator (whitespace i.e. space, tab, line feed, carriage return, form feed)
+•	Combinators
+◦	descendant combinator (whitespace i.e. space, tab, line feed, carriage return, form feed)
 		--child combinator(>)
 			adjacent sibling combinator (+)
 			general sibling combinator (~)
@@ -187,48 +190,56 @@ descendant combinator (whitespace i.e. space, tab, line feed, carriage return, f
 		:: after		:after
 
 	===CSS Rule Precedence===
-===CSS Rule Precedence===
-	by origin and importance
-		user agent important declarations
-		user important declarations
-		author important declarations
-		author normal declarations
-		user normal declarations
-		user agent nor mal declarations
-	by specificity
-		inline – more specific
-		number of ID selectors
-		number of class selectors, attribute selectors and pseudo selectors
-		number of type selectors and pseudo elements
-	by order
+•	by origin and importance
+1.	Transition Declarations
+2.	Override declaration
+3.	User declaration
+4.	Animation Declaration
+o	user agent important declarations
+o	user important declarations
+o	author important declarations
+o	author normal declarations
+o	user normal declarations
+o	user agent nor mal declarations
+•	by specificity
+o	inline – more specific
+o	number of ID selectors
+o	number of class selectors, attribute selectors and pseudo selectors
+o	number of type selectors and pseudo elements
+•	by order
 ===CSS Declarations===
-	short hand properties
-		background , font
-	vendor specific extension (aka vendor prefixes)
-	values
-	keywords
-		inherit, 
-	numbers 
-	measurements
-		length units
-			font relative
-				em, ex, ch, rem
-			viewport percentage
-				vw, vh,vmin, vmax
-			absolute lengths
-				cm,mm,q, in pt, pc, px
-		angle units
-			deg, grad, rad, turn
-		duration units
-			s, ms
-		frequency units
-			hz, khz
-		resolution units
-			dpi, dpcm, dppx
-	percentages
-	URLs and URIs
-	Colors
-		Rgb( , , ), #rgb,rgba, hsl, hsla
-	Strings
-	Functions
-		calc(), attr(), count(), linear-gradient(), translate(), scale(), rotate(), etc.
+•	Properties
+o	short hand properties
+	background , font
+o	vendor specific extension (aka vendor prefixes)
+•	values
+o	keywords
+	inherit, 
+o	numbers 
+o	measurements
+	length units
+•	font relative
+o	em, ex, ch, rem
+•	viewport percentage
+o	vw, vh,vmin, vmax
+•	absolute lengths
+o	cm,mm,q, in pt, pc, px
+	angle units
+•	deg, grad, rad, turn
+	duration units
+•	s, ms
+	frequency units
+•	hz, khz
+	resolution units
+•	dpi, dpcm, dppx
+•	percentages
+•	URLs and URIs
+•	Colors
+o	Rgb( , , ), #rgb,rgba, hsl, hsla
+•	Strings
+•	Functions
+o	calc(), attr(), count(), linear-gradient(), translate(), scale(), rotate(), etc.
+
+Values and Units Module Level 3
+	CSS Preprocessors, CSS Framework
+•	SCSS(Sassy Cascading Stylesheet), 60 Grid System, Bootstrap, Foundation, materials, etc.
