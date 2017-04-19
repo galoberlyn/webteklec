@@ -243,3 +243,102 @@ o	calc(), attr(), count(), linear-gradient(), translate(), scale(), rotate(), et
 Values and Units Module Level 3
 	CSS Preprocessors, CSS Framework
 •	SCSS(Sassy Cascading Stylesheet), 60 Grid System, Bootstrap, Foundation, materials, etc.
+
+
+
+
+JAVASCRIPT CLIENT SIDE SCRIPTING
+Javascript
+-	used for computations
+-	It has scripting knowledge, and it is a C base language
+-	It is a lightweight interpreted or JIT-compiled programming language with first-class functions
+-	Standard – ECMA 262
+	ECMA 5 – Almost all browser support this
+
+Different ways to script:
+1.	console.log(‘externally linked script….’);
+2.	<script>                                                                -(global)
+	   console.log(‘embedded script….’);
+		function callme(){
+			console.log(‘you added me’);
+		}
+	</script>
+3.	<button onclick = ‘console.log(“inline script…”);’> click me </button>
+
+Script –it should be executing in a ‘sandbox’
+•	Defer- to execute other part of the document
+•	Async – intermix in rendering, don’t wait until the whole document is executed.
+*  <no script>  - only display if a user doesn’t have script
+Attribute
+•	Global attribute
+	Example:
+		window.navigator.vendor(app version, etc)
+		window.screen.
+		window.document.getElementByID(‘h’)
+
+		h = document.getElementByID(‘h’)
+		<h1 id= “h”>
+		    <p> Javascript</p>
+		</h1>
+•	Certain attribute
+
+
+		
+W3C:
+Document Object Model Core
+Document = Node
+	document extends node
+Interface Node
+   Node- is the primary datatype for the entire Document Object Model.\
+- represents a single mode in the document tree
+Node Name	Node Type	Node Value
+“#text”	3	“hi”
+“#document”	9	null
+
+
+
+
+Child Nodes
+Ex.
+ document.body.childNodes[0]
+document.body.childNodes[length]
+document.body.firstChild
+document.body.firstChild.nextSibling
+
+others:
+insertBefore
+replaceChild
+removeChild
+appendChild
+hasChildNode()
+
+Variable, Let, Constant (var, let, const)
+
+Variable- associated with global content
+	Example:
+	<script>
+		var x = 100;
+		function f() {
+			var x =200;
+			{
+				var x = 300;
+			}
+		} </script>
+let- not associated w/ global content
+Example:
+	<script>
+		let x = 100;
+		function f() {
+			let x =200;
+			{
+				let x = 300;
+			}
+		} </script>
+Const- cannot modify value
+	- have constant value
+
+
+Standard Objects
+	- get to know standerd built-in objects Array, Booleans, Date, Error, Function, JSON, Math, Number, Object and others
+Expressions and Operatiors
+	- learn more about the behavior of Java Scripts operators instance of typeOff, new, this, the operator precedence and more
