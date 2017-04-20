@@ -150,3 +150,7 @@ text-transform: none;
     color: gold;
     font-size: 35px;
 }
+
+ul {
+    list-style-type: none;
+}
