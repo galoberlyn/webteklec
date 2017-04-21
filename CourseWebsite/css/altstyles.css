@@ -154,3 +154,10 @@ text-transform: none;
 ul {
     list-style-type: none;
 }
+
+/*pre left align*/
+.leftAl{
+    text-align: justify;
+    width: auto;
+    overflow: auto;
+}
