@@ -369,3 +369,28 @@ Methods
 	.every() – if a condition is satisfied, it wil return true
 	.map() – returns a certain values of the site.
 	.reduce() - accumulator
+
+
+
+
+
+
+Researches:
+CSS
+Cascading Style Sheets (CSS) is a style sheet language written in a markup language, is used for formatting Web pages layout. While HTML is for the structure and content of a Web pages, CSS is a language used to specify the presentation aspects of web pages. It is used to design HTML; define text styles, layout display, format table sizes and other formatting aspects for HTML. 
+
+History
+	CSS like HTML, W3C standardized CSS and make it open for all and released in 1996. It was first proposed and developed by Hakon Wium Lie (CHSS) on October 10, 1994 and Bert Bos (SSP) who become the co-author of CSS. But it was not a new idea that time, Tim Berners-Lee on 1990 wrote his NeXT browser/editor specify a simple style sheet.
+
+Versions
+CSS 1
+	Hakon Wium Lie and Bert Bos developed the first CSS and was standardized and recommended officially by W3C. It is the CSS level 1 and it was published December 17, 1996. It is capable of: formatting font properties; Changing of color of some elements such as text and backgrounds; Layout of text, tables, and images; Capable of making and editing paddings, border, margin and positioning of elements. It can also specify foreground and background color, as well as background images. 
+CSS 2
+	 Developed by W3C, CSS level 2 was published and recommended by W3C on May 1998. It added some capabilities like making boxes that behaves like tables, availability of powerful selectors, specification of positioning of elements, availability of media types, style rules, added some font properties and bidirectional text. It was revised and called CSS 2.1, due to the fixing of errors and removes poorly supported features. CSS 2.1 become a Candidate Recommendation first on Febraury 25, 2004 and was developed further more until it was become a W3C recommendation on June 7, 2011.
+CSS 3
+	CSS3 was divided into what they called ‘modules,’ meaning it was separated into several documents. Each module can be a recommendation by different people, but some specifications are implemented by any browsers. Some module have new capabilities, some have extended features. Drafts of CSS 3 was released June of 1999. 50 CSS 3 modules was released as of June 2012, but only four of these are considered formal recommendations such as: Media Queries, Namespaces, Selectors Level 3 and Color.
+CSS 4 
+	It doesn’t have a single CSS 4 specification, and there is no standard name CSS 4, but it is divided into modules, and it does have level 4 modules. These level 4 modules are preceding the functionalities of level 3 modules, like the modules Selectors, Image Values and Background & Borders. 
+References: 
+https://www.w3.org/Style/LieBos2e/history/Overview.html
+http://www.corelangs.com/css/basics/versions.html
