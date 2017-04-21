@@ -376,6 +376,35 @@ Methods
 
 
 Researches:
+
+Html 
+
+Definition
+HTML or HyperText Markup Language is computer language that is used to create webiste. It is use for the content of a website. And the tools besides of HTML are generally used to describe a webpage's appearance/presentation (CSS) or functionality (JavaScript).
+According to MDN or Mozilla Developer Network that “HyperText refers to links that connect webpages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web. And HTML uses markup to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as <head>, <title>, <body>, <header>, <article>, <section>, <p>, <div>, <span>, <img>, and many others.”
+
+HTML. (n.d.). Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTML
+
+History
+Berners-Lee developed and defined the HTML language, which was created and defined using SGML, during the development cycle for the first Web browser/editor from October to December 1990. The first version of the browser initially ran only on the NeXT platform and was only processing text files, but it was a start. Berners-Lee later put the code and specifications for the project (including HTML) on the Internet in the summer of 1991. During the next few years the system introduced by Berners-Lee caught on in the Internet community - and the 'web' of documents available was steadily growing. A common library of code was available to programmers to easily create the needed capabilities to access web documents. Browsers quickly became available for a wide variety of platforms. As the number of implementations grew, the variety did also. The HTML language originally specified by Berners-Lee had developed and extended far beyond its initial form and no real standard had yet been developed.
+
+Wilson, B. (n.d.). HTML Overview. Retrieved from http://www.blooberry.com/indexdot/history/html.htm
+
+Quick version
+Version	Year	Specification Document
+HTML 1.0	1990	No Official Documentation
+HTML 2.0	1995	RFC 1866
+HTML 3.0	1995	W3C Recommendation
+HTML 4.0	1997	W3C Recommendation
+HTML 4.1	1999	W3C Recommendation
+XHTML 1.0	2000	W3C Recommendation
+XHTML 1.1	2001	W3C Recommendation
+HTML 5.0	2014	W3C Recommendation
+HTML 5.1	2016	W3C Recommendation
+
+
+
+
 CSS
 Cascading Style Sheets (CSS) is a style sheet language written in a markup language, is used for formatting Web pages layout. While HTML is for the structure and content of a Web pages, CSS is a language used to specify the presentation aspects of web pages. It is used to design HTML; define text styles, layout display, format table sizes and other formatting aspects for HTML. 
 
