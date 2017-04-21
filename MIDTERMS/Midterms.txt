@@ -342,3 +342,30 @@ Standard Objects
 	- get to know standerd built-in objects Array, Booleans, Date, Error, Function, JSON, Math, Number, Object and others
 Expressions and Operatiors
 	- learn more about the behavior of Java Scripts operators instance of typeOff, new, this, the operator precedence and more
+
+Array
+Example:
+var emptyArray = new Array();
+var alsoEmptyArray = [];
+
+var arrayWithLengthFive = new Array(5);
+
+var array = new Array(‘5’);
+var sameArray = [‘5’];
+
+
+Methods
+•	Mutator methods
+- Method use to modify the target.
+- It does change the target array.
+•	Accessor
+- Don’t modify the target array
+
+	ex.
+	.pop()  - remove the last element
+	.push() – adds into the end of array
+	.splice
+	.sort()
+	.every() – if a condition is satisfied, it wil return true
+	.map() – returns a certain values of the site.
+	.reduce() - accumulator
