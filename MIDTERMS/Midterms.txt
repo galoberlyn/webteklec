@@ -461,3 +461,90 @@ References:
 https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
 http://reference.sitepoint.com/css/statements 
 https://www.sitepoint.com/web-foundations/css-selectors/ 
+
+Javascript
+JavaScript Basics
+JavaScript is a scripting language that dynamically provides interaction to web applications. It was invented by Brendan Eich, co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation. JavaScript is a compact but very flexible because of that, it has expanded from its core concepts and developers had developed different extensive functionalities, and these are:  
+•	Browser Application Programming Interfaces (API’s) – Built into a web browser that provides different functionality like manipulating HTML documents and dynamically creating CSS styles, or generating 3D images.
+•	Third party API’s that allows to integrate the functionality of a site to another content providers. 
+•	Third-party frameworks and libraries that helps developers to create site and application in a more faster than before.
+To start it off, we will be discussing the basics of JavaScript:
+Variables
+Variables lets you store values. In declaring a variable, use the “var” keyword then the name of the variable. Variables can be globally or locally scoped. It means that it can be used within a block or anywhere inside the script based on how you declare the variable.  
+Note: JavaScript is case-sensitive, that means that “webtek” is different from “WEBTEK”. Also, you can name anything to a variable, but there are some restrictions:
+•	Variable names cannot start with a number(i.e. 1thing, 3ck)
+•	Variables cannot have any mathematical operators (i.e. you+me, somthing*27)
+•	Any punctuation marks are not allowed to be used in declaring a name (i.e. web&tek), but, you can use underscores”_”.
+•	Just like in java in declaring a variable names it must not have spaces.
+•	And also like in java you cannot use the reserve word as your variable name. 
+In declaring variable there are two way in Javascript you can use “let” and “const”. 
+A variable defined with “let” is locally scoped. This variable can be created within a function, for and while-loop and many more. A “let” variable can be changed only where you declared the variable.
+function varTest() {
+  var x = 1;
+  if (true) {
+    var x = 2;  // same variable!
+    console.log(x);  // 2
+  }
+  console.log(x);  // 2
+}
+
+function letTest() {
+  let x = 1;
+  if (true) {
+    let x = 2;  // different variable
+    console.log(x);  // 2
+  }
+  console.log(x);  // 1
+}
+console.log('Global scope: ', letVar1); // Is undefined 
+A variable with “const” defined is locally scoped and it creates as read-only reference to a value therefore it can’t be re-assigned or re-declared.
+(function() {
+    const constVar1 = 'const variable 1 value in parent scope';
+    (function() {
+        // Scope 1
+        const constVar1 = 'const variable 1 value in scope 1';
+        console.log('scope 1: ', constVar1);
+        // scope 1:  const variable 1 value in parent scope
+    }());
+    console.log('Patent scope: ', constVar1);
+    // Patent scope:  const variable 1 value in parent scope
+}());
+Comments
+You can put comments to your code using “//” at the top of your code or after an end of a line, and “/* */” for multi-line comments.
+// A single line JavaScript comment
+var iNum = 100;
+var iTwo = 2; // A comment at the end of line
+/*
+multi-line 
+JavaScript comment
+*/
+
+Operators
+•	Arithmetic Operators –  +, -, *,  /, %, ++, and --
+•	Assignment Operators –=, +=, -=, *=, /=, %=
+•	String Operators – + and +=
+•	Comparison Operators – ==, ===, !=, !==, >, <, >=, <=
+•	Logical Operators - &&, ||, !
+•	Bitwise Operators - &, | , ~ , ^ , << , >>
+•	typeof Operator – returns the type of a variable, object, or function
+Functions
+In creating a code, you can reuse a block of task by using function where you can call whenever you need it to perform certain task. 
+function multiply(num1,num2) {
+  var result = num1 * num2;
+  return result;
+}
+multiply(4,7); //28
+multiply(20,20); //400
+multiply(0.5,3); //1.5
+
+Events
+In JavaScript, you can target certain events in the browser to execute an interaction with the users such as generating report, pop-up dialog box or calculate a certain value. 
+The example below shows a pop-up in the browser if an element with an id of btn is clicked:
+document.getElementById('btn').onclick = function() {
+    alert('Ouch! Stop poking me!');
+}
+   
+ References:
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+http://www.codelifter.com/main/tips/tip_020.shtml
+https://www.w3schools.com/jsref/jsref_operators.asp
