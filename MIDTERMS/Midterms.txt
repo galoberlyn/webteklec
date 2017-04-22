@@ -423,3 +423,24 @@ CSS 4
 References: 
 https://www.w3.org/Style/LieBos2e/history/Overview.html
 http://www.corelangs.com/css/basics/versions.html
+
+
+HTML/XHTML STYLESHEETS
+
+•	AUTHOR STYLES (External stylesheets, Embedded styles, Inline styles)
+	Author is the one who made the codes of the CSS and embeds it to use it for websites. Author styles is the CSS file that is linked into the HTML. It is the default CSS style that the author of the code made.
+	External Style Sheet 
+- External CSS files that is in .css format contains stylesheet rules that will be included together with your HTML document that will be linked using the <link> tag.
+	Internal Style Sheet 
+- It is the CSS stylesheet rules that is embedded inside of your HTML document. It is located inside of the header section by the <style> tag
+	Inline Style Sheet 
+- Using the style attribute, you can define the style rules that will be apply directly into your specific HTML elements. It is good to use for making a particular style for one element, because it overrides the rules of an External CSS rules.  
+•	USER STYLE
+	The users or the site’s visitors are the one who is viewing your website. User style allows the users to optionally override the style of the author, by defining their own stylesheets. They can set rules about font sizes, system colors and others to satisfy their own preferences. 
+
+•	USER AGENT STYLES (example default CSS 2.1 stylesheet for HTML 4)
+	Browser applications such as Google Chrome and Mozilla Firefox are examples of the User Agent. We use these browsers to view websites. User agents has its own default stylesheet, but you can inspect the properties of the website that you are viewing.    
+
+References:
+http://stackoverflow.com/questions/7022344/whats-difference-between-authors-style-readers-style-agents-style-or-aut
+https://www.tutorialspoint.com/html/html_style_sheet.htm
