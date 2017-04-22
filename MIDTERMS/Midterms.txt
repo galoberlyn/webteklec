@@ -444,3 +444,20 @@ HTML/XHTML STYLESHEETS
 References:
 http://stackoverflow.com/questions/7022344/whats-difference-between-authors-style-readers-style-agents-style-or-aut
 https://www.tutorialspoint.com/html/html_style_sheet.htm
+
+CSS STATEMENTS/ SYNTAX
+	CSS style sheets contains statements that has two kinds which are Rulesets and At-rules. It is a building block which starts with characters that are non-space and ends with braces, parenthesis or semi-colon. 
+	Rule Sets
+- main building block of CSS, which is a collection of CSS declarations that comprises by the selector. The rule is applied to all elements having the same selector that is specified in the declaration block.
+At-rules
+- It is an instruction to CSS parser that starts with ‘@’ character, followed by a specified identifier. It was limited by the statement, or by the open and close curly braces or terminated by semicolon. It has its own semantics and also includes internal syntax.
+
+CSS SELECTORS
+	Selectors are patterns that forms several technologies that will be used for the selection of nodes. It is part of the style sheet rule that specifies the content that will be using the style. 
+
+
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
+http://reference.sitepoint.com/css/statements 
+https://www.sitepoint.com/web-foundations/css-selectors/ 
