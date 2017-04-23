@@ -731,5 +731,59 @@ References:
 https://docs.microsoft.com/en-us/scripting/javascript/data-types-javascript#see-also
 https://www.w3schools.com/js/js_datatypes.asp
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+A function is a reusable block of code which can call anywhere therefore it reduces the writing of same code again and again. It helps the developer to divide big program into smaller and manageable code. Developer can also write their own function. And function can be nested.
+In creating a function. Type the word function then followed by a function name, a list of parameters and a statement block surrounded by curly braces (“{}”). 
+A JavaScript function has no return type, and can be any type of value. All functions return a value, and when they don’t, it returns “undefined.”
+	Example of function:
+		<script type="text/javascript">
+   			<!--
+     				 function functionname(parameter-list){
+         					statements
+     				 }
+  			 //-->
+</script>
+Function without name are called Anonymous functions which is another type of JavaScript functions. It is compiled during run time. 
+The following is an example of an anonymous function:
+		var sampleHello = function() {
+		alert("It is a sample");
+		}
+Calling it would be: 
+		sampleHello();
+Arrow functions are also anonymous. They make use of the fat arrow “ => “.
+Example:
+var absValue = (number) => {     if (number < 0) {     return -number;   }
+Recursive functions are functions that call itself.
+Example:
+var x= function sayHello() {  // statements go here };
+There are three ways a function can call itself:
+1.	sampleHello
+2.	arguments.callee()
+3.	x()
+
+
+
+
+
+References: 
+T. (n.d.). JavaScript Functions. Retrieved from 
+https://www.tutorialspoint.com/javascript/javascript_functions.htm
+Arrow Functions. (n.d.). Retrieved April 5, 2017 from 
+https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+Functions. (n.d.). Retrieved April 5, 2017 from 
+https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Functions
+Six Ways to Declare JavaScript Functions. (n.d.). Retrieved April 5, 2017 from https://rainsoft.io/6-ways-
+to-declare-javascript-functions/
+JavaScript Object Methods. (n.d.). Retrieved April 5, 2017 from 
+https://www.w3schools.com/js/js_object_methods.asp
+JavaScript Functions. (n.d.). Retrieved April 5, 2017 from 
+https://www.w3schools.com/js/js_functions.asp
+Java – Methods. (n.d.). Retrieved April 5, 2017 from 
+https://www.tutorialspoint.com/java/java_methods.htm
+JavaScript Comparison and Logical Operators. (n.d.). Retrieved April 5, 2017 from 
+https://www.w3schools.com/js/js_comparisons.asp
+Equality comparisons and sameness. (n.d.). Retrieved April 5, 2017 from  
+https://developer.mozilla.org/en-
+US/docs/Web/JavaScript/Equality_comparisons_and_sameness
+
 
 
