@@ -1,57 +1,57 @@
 <?php
 if(isset($_POST['submit'])){
-    if(isset($choice1)){
-        $choice1 = $_POST['choice1'];
-    }else{
-        $choice1 = "..";
-    }
-    if(isset($choice2)){   
-        $choice2 = $_POST['choice2'];
-    }else{
-        $choice2 = "..";
-    }
-    if(isset($choice3)){
-        $choice3 = $_POST['choice3'];
-    }else{
-        $choice3 = "..";
-    }
-    if(isset($choice4)){
-        $choice4 = $_POST['choice4'];
-    }else{
-        $choice4 = "..";
-    }
-    if(isset($choice5)){
-        $choice5 = $_POST['choice5'];
-    }else{
-        $choice5 = ".,";
-    }
-    if(isset($choice6)){
-        $choice6 = $_POST['choice6'];
-    }else{
-        $choice6 = ",,";
-    }
-    if(isset($choice7)){
-        $choice7 = $_POST['choice7'];
-    }else{
-        $choice7 = "..";
-    }
-    if(isset($choice8)){
-        $choice8 = $_POST['choice8'];        
-    }else{
-        $choice8="..";
-    }
-    if(isset($choice9)){
-        $choice9 = $_POST['choice9'];
-    }else{
-        $choice9 = "..";
-    }
-    if(isset($choice10)){
-        $choice10 = $_POST['choice10'];        
-    }else{
-        $choice10 = "..";
-    }
+        if(isset($_POST['choice1'])){
+            $choice1 = $_POST['choice1'];
+        }else{
+            $choice1 = "..";
+        }
+        if(isset($_POST['choice2'])){
+            $choice2 = $_POST['choice2'];
+        }else{
+            $choice2 = "..";
+        }
+        if(isset($_POST['choice3'])){
+            $choice3 = $_POST['choice3'];
+        }else{
+            $choice3 = "..";
+        }
+        if(isset($_POST['choice4'])){
+            $choice4 = $_POST['choice4'];
+        }else{
+            $choice4 = "..";
+        }
+        if(isset($_POST['choice5'])){
+            $choice5 = $_POST['choice5'];
+        }else{
+            $choice5 = "..";
+        }
+        if(isset($_POST['choice6'])){
+            $choice6 = $_POST['choice6'];
+        }else{
+            $choice6 = "..";
+        }
+        if(isset($_POST['choice7'])){
+            $choice7 = $_POST['choice7'];
+        }else{
+            $choice7 = "..";
+        }
+        if(isset($_POST['choice8'])){
+            $choice8 = $_POST['choice8'];
+            }else{
+                $choice8 = "..";
+            }        
+        if(isset($_POST['choice9'])){
+            $choice9 = $_POST['choice9'];
+        }else{
+            $choice9 = "..";
+        }
+        if(isset($_POST['choice10'])){
+            $choice10 = $_POST['choice10'];
+        }else{
+                $choice10 = "..";
+        
+        }        
     $score = 0;
-
     if($choice1=='Tim Berners-Lee'){
         $score++;
     }
