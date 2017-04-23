@@ -72,6 +72,7 @@
                    <h4>HTML</h4>
                     <ul>
                         <li>Tim Berners-Lee</li>
+                        <li>Tim Berners-Lee</li>
                         <li>is the standard markup language for creating web pages and web applications.</li>
                         <li>Takes document using markup</li>
                         <li>Structure and Content is its main focus</li>
@@ -169,7 +170,7 @@ Html
         em, strong, small
         cite, q
         dfn, abbr
-        ruby, rb, rt, rtc, rp --→ ruby annotations
+        ruby, rb, rt, rtc, rp --→ ruby anotations
         data, time
         code, vaar, samp, kbd
         sup, sub
@@ -189,7 +190,414 @@ Html
             input
             button
             select, data
-                    </pre>
+        </pre>
+           <table class="table">
+                    <tr>
+                        <th>Tag</th>
+                        <th>What it is</th>
+                        <th>When to use it</th>
+
+                    </tr>
+                    <tr>
+                        <td><b>&lt;A&gt;</b></td>
+                        <td>Anchor (most commonly a link)</td>
+                        <td>Vital. Use to create links in content. Use the title attribute whenever the contents of the <b>&lt;a&gt;&#8230;&lt;/a&gt;</b> pair do not accurately describe what you&#8217;ll get from selecting the link. Title attribute often displays as a tooltip in visual browsers, which may be a helpful usability aid.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;ABBR&gt;</b></td>
+                        <td>Defines an abbreviation</td>
+                        <td>Works in a similar way to <b>&lt;dfn&gt;</b> and <b>&lt;acronym&gt;</b>, using a <b>title</b> attribute (displays a tooltip in standard visual browsers). e.g. <b>&lt;abbr title=”Hypertext markup language”&gt;HTML&lt;/abbr&gt;</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;ACRONYM&gt;</b></td>
+                        <td>Defines an acronym</td>
+                        <td>Works in a similar way to <b>&lt;abbr&gt;</b> and <b>&lt;dfn&gt;</b>, using a <b>title</b> attribute (displays a tooltip in standard visual browsers).</td>
+                    </tr>
+                        <tr>
+                        <td><b>&lt;ADDRESS&gt;</b></td>
+                        <td>Used for marking up a physical (e.g. mailing) address</td>
+                        <td>Not commonly used. Recommend looking into microformats, which allow for more detail and interoperability.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;APPLET&gt;</b></td>
+                        <td>Inserts a Java applet</td>
+                        <td>The old way to insert a Java app. Use <b>&lt;object&gt;</b> instead today.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;AREA&gt;</b></td>
+                        <td>Hotspot in image map</td>
+                        <td>Avoid image maps where possible. Occasionally necessary.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;BASE&gt;</b></td>
+                        <td>Specifies the base location of the document.</td>
+                        <td>Use only when necessary. Adjusts any relative links and paths within the document.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;BASEFONT&gt;</b></td>
+                        <td>Sets default font size</td>
+                        <td>Display info – never use it</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;BIG&gt;</b></td>
+                        <td>Larger text</td>
+                        <td>Display info – never use it</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;BLINK&gt;</b></td>
+                        <td>Makes text blink</td>
+                        <td>You go to hell if you use this</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;BLOCKQUOTE&gt;</b></td>
+                        <td>Large quoted block of text</td>
+                        <td>Use for any quoted text that constitutes one or more paragraphs (note: should contain &lt;p&gt; tags as well). Use <b>&lt;q&gt;</b> for quotations within a paragraph. Often used in conjunction with <b>&lt;cite&gt;</b> to cite the quotation&#8217;s source.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;BODY&gt;</b></td>
+                        <td>Document body</td>
+                        <td>Essential (unless you&#8217;re using frames)</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;BR&gt;</b></td>
+                        <td>Line break</td>
+                        <td>This is arguably display information. Still in common use, but use with restraint.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;B&gt;</b></td>
+                        <td>Bold text</td>
+                        <td>Display info – never use it</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;BUTTON&gt;</b></td>
+                        <td>Used for a standard clickable button within a form</td>
+                        <td>Often better than <b>&lt;input type=”button” /&gt;</b> or <b>&lt;input type=”submit” /&gt;</b>, as it allows you to assign different styles based on the HTML element alone, whereas differentiating style based on the type of input is less well supported.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;CAPTION&gt;</b></td>
+                        <td>Caption for a table: describes the table&#8217;s contents</td>
+                        <td>The correct way to assign a title to a table</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;CENTER&gt;</b></td>
+                        <td>Centred block</td>
+                        <td>Display info – never use it. Use <b>&lt;div&gt;</b> or some other block-level tag with the style text-align:center instead</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;CITE&gt;</b></td>
+                        <td>Defines a citation</td>
+                        <td>Defines the source of a quotation (in conjunction with content in <b>&lt;q&gt;</b> or <b>&lt;blockquote&gt;</b> pairs).</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;CODE&gt;</b></td>
+                        <td>Defines an extract of code</td>
+                        <td>Not commonly used. Similar to <b>&lt;pre&gt;</b> tag, but collapses consecutive white spaces and line breaks in the source.</td>
+                    </tr>
+                        <tr>
+                        <td><b>&lt;COL&gt;</b></td>
+                        <td>Identifies a particular column in a table</td>
+                        <td>Can be very useful. e.g. <b>&lt;col class=”namecol”&gt;</b> can be applied to each first column in a series of tables, then the width of each column may be set to be equal in the stylesheet, overriding the table&#8217;s natural tendency to adjust its own column widths to fit its contents.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;DFN&gt;</b></td>
+                        <td>Definition of a term</td>
+                        <td>Works in a similar way to <b>&lt;abbr&gt;</b> and <b>&lt;acronym&gt;</b>, using a <b>title</b> attribute (displays a tooltip in standard visual browsers).</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;DIR&gt;</b></td>
+                        <td>Directory list</td>
+                        <td>Now deprecated. Use a standard <b>&lt;ul&gt;</b> or other list instead.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;DIV&gt;</b></td>
+                        <td>Division</td>
+                        <td>Specifies a logical division within a document. Use it to separate or identify chunks of content that are not otherwise distinguished naturally using other tags.</p>
+                        <p>One of the most common HTML tags.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;DL&gt;</b></td>
+                        <td>Definition list</td>
+                        <td>Contains one or more definition-term / definition-description pairs.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;DT&gt;</b></td>
+                        <td>Definition term</td>
+                        <td rowspan="2">Used as part of a <b>&lt;dt&gt;&lt;/dt&gt;&lt;dd&gt;&lt;/dd&gt;</b> pair within a definition list (<b>&lt;dl&gt;&lt;/dl&gt;</b>)</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;DD&gt;</b></td>
+                        <td>Definition description</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;EM&gt;</b></td>
+                        <td>Emphasis</td>
+                        <td>Commonly used in place of the old <b>&lt;i&gt; </b>(italics) tag to indicate emphasis (but less than <b>&lt;strong&gt;</b>)</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;FONT&gt;</b></td>
+                        <td>Font settings</td>
+                        <td>Display info – never use it</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;FORM&gt;</b></td>
+                        <td>Input form</td>
+                        <td>Essential for data input</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;H1&gt;</b></td>
+                        <td>Level 1 header</td>
+                        <td>Aim to have one H1 on each page, containing a description of what the page is about.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;H2&gt;</b></td>
+                        <td>Level 2 header</td>
+                        <td>Defines a section of the page</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;H3&gt;</b></td>
+                        <td>Level 3 header</td>
+                        <td>Defines a sub-section of the page (should always follow an H2 in the logical hierarchy)</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;H4&gt;</b></td>
+                        <td>Level 4 header</td>
+                        <td>Etc. Less commonly used</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;H5&gt;</b></td>
+                        <td>Level 5 header</td>
+                        <td>Less commonly used. Only complex academic documents will break down to this level of detail.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;H6&gt;</b></td>
+                        <td>Level 6 header</td>
+                        <td>Less commonly used</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;HEAD&gt;</b></td>
+                        <td>Document head</td>
+                        <td>Essential. Contains information about a page that does not constitute content to be communicated as part of the page.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;HR&gt;</b></td>
+                        <td>Horizontal rule</td>
+                        <td>Display info with no semantic value – never use it. “Horizontal”, by definition, is a visual attribute.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;HTML&gt;</b></td>
+                        <td></td>
+                        <td>Core element of every web page.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;IMG &gt;</b></td>
+                        <td>Show an image</td>
+                        <td>Vital. Always use the <b>alt</b> or <b>longdesc</b> attributes when the image has content value</td>
+                     </tr>
+                     <tr>
+                        <td><b>&lt;INPUT&gt;</b></td>
+                        <td>Input fields within forms</td>
+                        <td>Vital. (I prefer to use <b>&lt;button&gt;</b> for buttons and submit buttons though)</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;ISINDEX&gt;</b></td>
+                        <td>Old type of search input</td>
+                        <td>Not really used any more. Use <b>&lt;form&gt;</b> instead.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;I&gt;</b></td>
+                        <td>Italicised text</td>
+                        <td>Display info – never use it</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;KBD&gt;</b></td>
+                        <td>Keyboard input</td>
+                        <td>Display info – never use it</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;LINK&gt;</b></td>
+                        <td>Defines a relationship to another document</td>
+                        <td>Commonly used to reference external stylesheets, but has other minor uses</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;LI&gt;</b></td>
+                        <td>List item</td>
+                        <td>Specifies an item in an unordered or ordered list (<b>&lt;ul&gt;</b> or <b>&lt;ol&gt;</b>)</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;MAP&gt;</b></td>
+                        <td>Client-side imagemap</td>
+                        <td>May have occasional value, but only use when absolutely necessary</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;MARQUEE&gt;</b></td>
+                        <td>Makes text scroll across the screen</td>
+                        <td>See <b>&lt;blink&gt;</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;MENU&gt;</b></td>
+                        <td>Menu item list</td>
+                        <td>Deprecated. Do not use. Use other standard list types instead.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;META&gt;</b></td>
+                        <td>Meta-information</td>
+                        <td>Useful way to insert relevant information into the &lt;head&gt; section of the page that does not need to be displayed.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;OL&gt;</b></td>
+                        <td>Ordered list</td>
+                        <td>Type of list where the order of elements has some meaning. Generally rendered with item numbers (best managed with CSS).</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;OPTION&gt;</b></td>
+                        <td>Selection list option</td>
+                        <td>Vital for options within a drop-down control.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;PARAM&gt;</b></td>
+                        <td>Parameter for Java applet</td>
+                        <td>Used in conjunction with an <b>&lt;object&gt;</b> or <b>&lt;applet&gt;</b> tag to pass additional setting information at runtime.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;PRE&gt;</b></td>
+                        <td>Preformatted text</td>
+                        <td>Renders text in a pre-formatted style, preserving line breaks and all spaces present in the source. May be useful. <i>(This one&#8217;s a paradox, as it is strictly display info that applies only to visual browsing, but it&#8217;s still so commonly used and useful that I&#8217;m hesitant to advise against using it.)</i></td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;P&gt;</b></td>
+                        <td>Paragraph</td>
+                        <td>Only use to denote a paragraph of text. Never use for spacing alone.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;Q&gt;</b></td>
+                        <td>Short quotation</td>
+                        <td>Use for inline quotations (whereas <b>&lt;blockquote&gt;</b> should be used for quotations of a paragraph or more). Often used in conjunction with <b>&lt;cite&gt;</b> to cite the quotation&#8217;s source.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;SAMP&gt;</b></td>
+                        <td>Denotes sample output text</td>
+                        <td>Similar to the &lt;code&gt; tag. Rarely used. Avoid.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;SCRIPT&gt;</b></td>
+                        <td>Inline script (e.g. JavaScript)</td>
+                        <td>It&#8217;s better to have all scripts as separate files than to write inline or in the <b>&lt;head&gt; </b>section, however still has its uses.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;SELECT&gt;</b></td>
+                        <td>Selection list</td>
+                        <td>A drop-down selector for a form.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;SMALL&gt;</b></td>
+                        <td>Smaller text</td>
+                        <td>Display info – never use it</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;SPAN&gt;</b></td>
+                        <td>An inline span within text</td>
+                        <td>Use to apply meaning (and style) to a span of text that goes with the flow of content (whereas a <b>&lt;div&gt;</b> tag is block-level and breaks the flow)</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;Strikeout&gt;</b></td>
+                        <td></td>
+                        <td>Display info – never use it</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;STRONG&gt;</b></td>
+                        <td>Strong emphasis</td>
+                        <td>Use this instead of the old <b>&lt;b&gt;</b> tag.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;STYLE&gt;</b></td>
+                        <td>CSS style settings</td>
+                        <td>Normally used in <b>&lt;head&gt;</b> section of a page. Try to use external stylesheets, to enable you to apply different styles for different output media.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;SUB&gt;</b></td>
+                        <td>Subscript text</td>
+                        <td rowspan="2">Arguably display info – recommend using alternative tags (e.g. <b>&lt;cite&gt;</b>). May be required in some academic uses, e.g. Chemical formulas.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;SUP&gt;</b></td>
+                        <td>Superscript text</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;TABLE&gt;</b></td>
+                        <td>Table</td>
+                        <td>Use for repeated data that has a naturally tabular form. Never use for layout purposes.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;TD&gt;</b></td>
+                        <td>Table data cell</td>
+                        <td>A cell containing actual data. If a cell actually contains a descriptor or identifier for a row or column, use a <b>&lt;th&gt;</b> (table header) tag, not a <b>&lt;td&gt;.</b> This usually applies to column headers (within a <b>&lt;thead&gt;</b>), column footers (within a <b>&lt;tfoot&gt;</b>), as well as row headers (usually the first cell in a row in the <b>&lt;tbody&gt;</b>).</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;TEXTAREA&gt;</b></td>
+                        <td>Multi-line text input area in a form</td>
+                        <td>Essential</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;TH&gt;</b></td>
+                        <td>Table column or row header cell</td>
+                        <td>May appear in a <b>&lt;thead&gt;</b> (to denote a column header cell), <b>&lt;tbody&gt;</b> (to denote a row header), and in <b>&lt;tfoot&gt;</b> (to denote a column foot cell, e.g. a total)</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;TBODY&gt;</b></td>
+                        <td>Indicates the main body of a data table</td>
+                        <td>It is always worth using this tag, as well as using <b>&lt;thead&gt;</b> and <b>&lt;tfoot&gt;</b> where appropriate.
+                        Note that it is permissible to have more than one <b>&lt;tbody&gt;</b>, <b>&lt;thead&gt;</b>, and <b>&lt;tfoot&gt;</b> in the same table.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;THEAD&gt;</b></td>
+                        <td>The head section of a table</td>
+                        <td>The place to put column header cells (<b>&lt;th&gt;</b>)</td>
+                   </tr>
+                   <tr>
+                        <td><b>&lt;TFOOT&gt;</b></td>
+                        <td>The foot section of a table</td>
+                        <td>Good place to put e.g. summary data, such as totals. Note that it goes before the <b>&lt;tbody&gt;</b> tag!</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;TITLE&gt;</b></td>
+                        <td>Document title</td>
+                        <td>Essential</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;TR&gt;</b></td>
+                        <td>Table row</td>
+                        <td>Essential with tables</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;TT&gt;</b></td>
+                        <td>“Teletype” &#8211; simulates typewriter output</td>
+                        <td>Similar to &lt;pre&gt;, except that it collapses white space like normal HTML (whereas &lt;pre&gt; leaves all consecutive white space intact). Avoid if possible</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;UL&gt;</b></td>
+                        <td>Unordered list</td>
+                        <td>Essential. Use for lists where the order or items has no particular importance.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;U&gt;</b></td>
+                        <td>Underline text</td>
+                        <td>Display info – never use it</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;VAR&gt;</b></td>
+                        <td>Variable in computer code</td>
+                        <td>Obscure tag, may only be useful in academic documents. Avoid.</td>
+                    </tr>  
+
+                    
+                </table>
+                            <p>
+                    Quinn, L. (n.d.). Choosing a DOCTYPE. Retrieved from
+ http://www.htmlhelp.com/tools/validator/doctype.html
+
+                </p>
+                    
+                    
             </div>
             
     
@@ -209,10 +617,14 @@ Html
             </h3>
             <p> Cascading Style Sheets (CSS) is a style sheet language written in a markup language, is used for formatting Web pages layout. While HTML is for the structure and content of a Web pages, CSS is a language used to specify the presentation aspects of web pages. It is used to design HTML; define text styles, layout display, format table sizes and other formatting aspects for HTML.</p>
 
-            <h4>HISTORY</h4>
+             <h3 class="sub-topic">
+            History
+            </h3>
             <p>CSS like HTML, W3C standardized CSS and make it open for all and released in 1996. It was first proposed and developed by Hakon Wium Lie (CHSS) on October 10, 1994 and Bert Bos (SSP) who become the co-author of CSS. But it was not a new idea that time, Tim Berners-Lee on 1990 wrote his NeXT browser/editor specify a simple style sheet.<p>
 
-            <h4>VERSIONS</h4>
+            <h3 class="sub-topic">
+            Versions
+            </h3>
 
             <h5>CSS 1</h5>
             <p>Hakon Wium Lie and Bert Bos developed the first CSS and was standardized and recommended officially by W3C. It is the CSS level 1 and it was published December 17, 1996. It is capable of: formatting font properties; Changing of color of some elements such as text and backgrounds; Layout of text, tables, and images; Capable of making and editing paddings, border, margin and positioning of elements. It can also specify foreground and background color, as well as background images. </p>
@@ -226,39 +638,301 @@ Html
             <h5>CSS 4</h5>
             <p>It doesn’t have a single CSS 4 specification, and there is no standard name CSS 4, but it is divided into modules, and it does have level 4 modules. These level 4 modules are preceding the functionalities of level 3 modules, like the modules Selectors, Image Values and Background & Borders. </p>
             
+ <h3 class="sub-topic">
+                HTML/XHTML Stylesheet
+            </h3>
+                <div>
+                <ul>
+                    <li>
+                        <h4>AUTHOR STYLES</h4>
+                        <p>Author is the one who made the codes of the CSS and embeds it to use it for websites. Author styles is the CSS file that is linked into the HTML. It is the default CSS style that the author of the code made.</p>
+                        <ul>
+                            <li>
+                                <h5>External Style Sheet </h5>
+                                <p>- External CSS files that is in .css format contains stylesheet rules that will be included together with your HTML document that will be linked using the &lt;link&gt; tag.</p>
+                            </li>
+                            <li>
+                                <h5>Internal Style Sheet </h5>
+                                <p>- It is the CSS stylesheet rules that is embedded inside of your HTML document. It is located inside of the header section by the &lt;style&gt; tag</p>
+                            </li>
+                            <li>
+                                <h5>Inline Style Sheet</h5>
+                                <p>- Using the style attribute, you can define the style rules that will be apply directly into your specific HTML elements. It is good to use for making a particular style for one element, because it overrides the rules of an External CSS rules.  </p>
+                            </li>                            
+                        </ul>
+                    
+                    </li>
+                    <li>
+                        <h4>USER STYLE</h4>
+                        <p>The users or the site’s visitors are the one who is viewing your website. User style allows the users to optionally override the style of the author, by defining their own stylesheets. They can set rules about font sizes, system colors and others to satisfy their own preferences. </p>                      
+                    
+                    </li>
+                      <li>
+                        <h4>USER AGENT STYLES </h4>
+                        <p>Browser applications such as Google Chrome and Mozilla Firefox are examples of the User Agent. We use these browsers to view websites. User agents has its own default stylesheet, but you can inspect the properties of the website that you are viewing.    </p>                        
+                    </li>
+                </ul>
+                </div>
+                
+           <h3 class="sub-topic">
+                CSS Statement
+            </h3>
+                <div>
+                    <p>CSS style sheets contains statements that has two kinds which are Rulesets and At-rules. It is a building block which starts with characters that are non-space and ends with braces, parenthesis or semi-colon. </p>
+                
+                <ul>
+                    <li>
+                        <h4>Rule Sets (a.k.a CSS rules, style rules)</h4>
+                        <p>- main building block of CSS, which is a collection of CSS declarations that comprises by the selector. The rule is applied to all elements having the same selector that is specified in the declaration block.</p>
+                        <ul>
+                            <li>
+                            @charset
+                            </li>
+                            <li>
+                            @font-face
+                            </li>
+                            <li>
+                             @import ‘global.css’
+                            </li>
+                            <li>
+                             @namespace
+                            </li>
+                            <li>
+                            @document
+                            </li>
+                            <li>
+                            @font-face
+                            </li>
+                            <li>
+                            @keyframes
+                            </li>
+                            <li>
+                            @media
+                            </li>
+                            <li>
+                            @page
+                            </li>
+                            <li>
+                            
+                            </li>
+                        </ul>
+                    </li>    
+                    <li>
+                        <h4>At-rules</h4>
+                        <p>- It is an instruction to CSS parser that starts with ‘@’ character, followed by a specified identifier. It was limited by the statement, or by the open and close curly braces or terminated by semicolon. It has its own semantics and also includes internal syntax.  </p>
+                    </li>
+                </ul>
+                </div>
+                
+           <h3 class="sub-topic">
+               CSS Selector
+            </h3>
+                <div>
+                <p>Selectors are patterns that forms several technologies that will be used for the selection of nodes. It is part of the style sheet rule that specifies the content that will be using the style. </p>
+                
+                <ul>
+                    <li>
+                        <h4>Simple Selector</h4>
+                        <p>Either a type selector or universal selector followed by zero or more attribute selector , ID selectors or pseudo  classes.</p>
+                    </li>
+                    <li>
+                        <h4>Selector Syntax</h4>
+                        <p>Chain of one or more sequence of simple selectors by combinators.</p>
+                    </li>
+                    <li>
+                        <h4>Type Selector</h4>
+                        <p>matches the name of a document language element type. </p>
+                    </li>
+                    <li>
+                        <h4>Universal Selector</h4>
+                        <p>Written "*", matches the name of any element type.</p>
+                    </li>
+                    <li>
+                        <h4>Attribute Selector </h4>
+                            <ul>
+                                <li>
+                                    <h5>[attr]</h5> 
+                                </li>
+                                <li>
+                                    <h5>[attr=value] </h5>
+                                </li>
+                                <li>
+                                    <h5>[attr~=value]</h5>
+                                    <p>space separated values</p>
+                                </li>
+                                <li>
+                                    <h5>[attr|=value]      </h5>
+                                    <p>target long attribute</p>
+                                </li>
+                                <li>
+                                    <h5>[attr^=value]       </h5>
+                                    <p>beginning (CSS3)</p>
+                                </li>
+                                <li>
+                                     <h5>[attr$=value]       </h5>
+                                    <p>End (CSS3)</p>
+                                </li>
+                                <li>
+                                     <h5>[attr*=value] </h5>
+                                    <p>Everywhere (CSS3)</p>
+                                </li>
+                         
+                            </ul>
+                    </li>
+                    <li>
+                        <h4>ID Selector</h4>
+                        <p> - match an element instance based on its identifier. </p>
+                        <p> -A CSS ID selector contains a "#" followed by ID value.</p>
+                                                   
+                         
+                    </li>
+                    <li>
+                         <h4>Pseudo classes </h4>
+                                <p>Classify elements on characteristic other than their name, attributes or content.</p>
+                                <p>There's is implicit class associated with.</p>
+                                <ul>
+                                <li>
+                                    <h5>Dynamic Pseudo-classes</h5>
+                                    <ul>
+                                        <li>
+                                            <h6>Link Pseudo-classes</h6>
+                                            <ul>
+                                            <li>
+                                            <p><b>Link </b>- link that have not yet visited.</p>
 
-            <h4>HTML/XHTML STYLESHEETS</h4>
+                                            </li>
+                                            <li>
+                                            <p><b>Visited </b> - link that have been visited.</p>
+                                                
+                                            </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h6>User Action Pseudo-class</h6>
+                                            <p><b></b></p>
+                                            <ul>
+                                                <li><b>Hover</b></li>
+                                                <li><b>Action</b> - active a link</li>
+                                                <li><b>Focus</b> -  move particular element</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                          
+                                </li>
+                                <li>
+                                    <h5>Target Pseudo-class</h5>
+                                        <p>:target - targets the id</p>
+                                </li>
+                                <li>
+                                    <h5>Language Psuedo Class</h5>
+                                    <p>:lang()</p>
+                                </li>
+                                <li>
+                                    <h5>UI Element States Pseudo-classes</h5>
+                                    <ul>
+                                    <li>:enabled</li>
+                                    <li>:disabled</li>
+                                    <li>:checked</li>
+                                    <li>:indeterminate</li>
+                                        
+                                    </ul>
+                                </li>
+                                 <li>
+                                    <h5>Structural Pseudo-classes</h5>
+                                    <ul>
+                                    <li>:root</li>
+                                    <li>:first-child</li>
+                                    <li>:last-child</li>
+                                    <li>:only-chikd</li>
+                                    <li>:nth-child</li>
+                                    <li>:nth-last-child</li>
+                                    <li>:first-of-type</li>
+                                    <li>:last-of-type</li>
+                                    <li>:only-of-type</li>
+                                    <li>:nth-of-type</li>
+                                    <li>:nth-last-type</li>
+                                    <li>:empty</li>
+                                    </ul>
+                                </li>
+                                         <li>
+                                    <h5>Negation Pseudo-classes</h5>
+                                    <ul>
+                                    <li>:not() - negates the logic of the selector</li>
+                           
+                                    </ul>
+                                </li>
+                                </ul>
+                    </li>
+                    <li>
+                        <h4>Combinators</h4>
+                        <ul>
+                            <li>descendant combinator (whitespace i.e. space, tab, line feed, carriage return, form feed)</li>
+                            <li>child combinator(>)</li>
+                            <li>adjacent sibling combinator (+)</li>
+                            <li>general sibling combinator (~)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Pseudo elements</h4>
+                        <ul>
+                            <li>::first-letter (:fist-letter)</li>
+                            <li>::first-line (:first-line)</li>
+                            <li>::before (:before)</li>
+                            <li>::after (:after)</li>
+         
 
-            <h5>AUTHOR STYLES</h5>
-            <p>Author is the one who made the codes of the CSS and embeds it to use it for websites. Author styles is the CSS file that is linked into the HTML. It is the default CSS style that the author of the code made.</p>
-
-            <ul><h5 class="name">External Style Sheet</h5>
-            <p>External CSS files that is in .css format contains stylesheet rules that will be included together with your HTML document that will be linked using the 'link' tag.</p></ul>
-
-            <ul><h5 class="name">Internal Style Sheet</h5>
-            <p>It is the CSS stylesheet rules that is embedded inside of your HTML document. It is located inside of the header section by the 'style' tag.</p></ul>
-
-            <ul><h5 class="name"> Inline Style Sheet </h5>
-            <p>Using the style attribute, you can define the style rules that will be apply directly into your specific HTML elements. It is good to use for making a particular style for one element, because it overrides the rules of an External CSS rules.  </p></ul>
-
-            <h5>USER STYLE</h5>
-            <p>The users or the site’s visitors are the one who is viewing your website. User style allows the users to optionally override the style of the author, by defining their own stylesheets. They can set rules about font sizes, system colors and others to satisfy their own preferences. </p>
-
-            <h5>USER AGENT STYLES</h5>
-            <p>Browser applications such as Google Chrome and Mozilla Firefox are examples of the User Agent. We use these browsers to view websites. User agents has its own default stylesheet, but you can inspect the properties of the website that you are viewing.    </p>
-
+                        </ul>
+                    </li>
+                   
+                    <li>
+                    
+                    </li>
+                    <li>
+                    
+                    </li>
+                    
+                </ul>
+                </div>
+                
+                
+            <h3 class="sub-topic">
+               CSS Rule Precedence
+            </h3>
+                
+            <h3 class="sub-topic">
+            CSS preprocessor & CSS   frameworks
+            </h3>
+                
+            
 
 
     
         </div>
     </section>
 
-    <section id="JavaScript">
+    <section id="JavaScript" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">JavaScript (Client Side Scripting)</h2>
                 </div>
+                 <h3 class="sub-topic">
+                History
+                </h3>
+                <ul>
+                    <li>
+                    JavaScript was invented by Brendan Eich in May 1995, who at that time was working at Netscape Communications 
+                        corporation. Marc Andreessen, founder of Netscape, chose mocha to be the first code name of the scripting 4
+                        language he had in mind. The scripting language was based on the ideals of being dynamic in the web. At that 
+                        time Netscape partnered itself to Sun to implement the scripting language along with Sun’s Java. In May the 
+                        Netscape Marketing change the name to LiveScript. In December of the same year the scripting language was 
+                        renamed as JavaScript, upon receiving the trademark license from Sun and with the rise of Sun’s Java 
+                        programming language. The European Computer Manufacturer’s Association (ECMA) made a standard 
+                        specification that implements the JavaScript, which other browser vendors can implement to achieve
+                        consistency in the web. ECMAScript the name of the official standard that implements JavaScript.
+                        It was release in the ECMA-262. ECMAScript is now on its 7<sup>th</sup> edition.
+                    </li>
+                </ul>
                 <h3 class="sub-topic">
                 Brief Description
                 </h3>
@@ -285,9 +959,34 @@ Html
                 
                 <h6>Different Ways to Script: </h6>
                 <ol>
-                    <li>console.log('externally linked script');</li>
+                    <li>externally linked script</li>
+                    <ul>
+                        <li>
+                            With the use of  &lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;
+                        </li>
+                    </ul>
                     <li></li>
                 </ol>
+                
+                <h3 class="sub-topic">
+                JavaScript Basics   
+                </h3>
+                
+                <h3 class="sub-topic">
+                Variables
+                </h3>
+                
+                <h3 class="sub-topic">
+                Variables
+                </h3>
+                
+                <h3 class="sub-topic">
+                Variables
+                </h3>
+                
+                <h3 class="sub-topic">
+                Variables
+                </h3>
             </div>
         </div>
     </section>
