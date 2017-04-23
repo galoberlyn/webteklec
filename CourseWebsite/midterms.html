@@ -142,10 +142,10 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">The Elements of HTML</h2>
                     <pre class="leftAl">
-Html
+html
     head
         title, base, link, meta, style
-    Body
+    body
         article, aside, nav, section
         header, footer
         main
@@ -979,17 +979,59 @@ Html
                 Variables
                 </h3>
                 
-                <h3 class="sub-topic">
-                Variables
-                </h3>
+                <p>Variables lets you store values. In declaring a variable, use the “var” keyword then the name of the variable. Variables can be globally or locally scoped. It means that it can be used within a block or anywhere inside the script based on how you declare the variable.  
+                Note: JavaScript is case-sensitive, that means that “webtek” is different from “WEBTEK”. Also, you can name anything to a variable, but there are some restrictions:
+                </p>
                 
-                <h3 class="sub-topic">
-                Variables
-                </h3>
-                
-                <h3 class="sub-topic">
-                Variables
-                </h3>
+                <ul>
+                    <li>Variable names cannot start with a number(i.e. 1thing, 3ck)</li>
+                    <li>Variables cannot have any mathematical operators (i.e. you+me, somthing*27)</li>
+                    <li>Any punctuation marks are not allowed to be used in declaring a name (i.e. web&tek), but, you can use underscores”_”.</li>
+                    <li>Just like in java in declaring a variable names it must not have spaces.</li>
+                    <li>And also like in java you cannot use the reserve word as your variable name. </li>
+                </ul>
+                <p>In declaring variable there are two way in Javascript you can use “let” and “const”. </p>
+                <p>A variable defined with “let” is locally scoped. This variable can be created within a function, for and while-loop and many more. A “let” variable can be changed only where you declared the variable.</p>
+               
+               <pre>
+            function varTest() {
+  var x = 1;
+  if (true) {
+    var x = 2;  // same variable!
+    console.log(x);  // 2
+  }
+  console.log(x);  // 2
+}
+
+function letTest() {
+  let x = 1;
+  if (true) {
+    let x = 2;  // different variable
+    console.log(x);  // 2
+  }
+  console.log(x);  // 1
+}
+    
+               </pre>
+               <p>console.log('Global scope: ', letVar1); // Is undefined </p>
+               <p>A variable with “const” defined is locally scoped and it creates as read-only reference to a value therefore it can’t be re-assigned or re-declared.</p>
+               <pre>
+                   (function() {
+    const constVar1 = 'const variable 1 value in parent scope';
+    (function() {
+        // Scope 1
+        const constVar1 = 'const variable 1 value in scope 1';
+        console.log('scope 1: ', constVar1);
+        // scope 1:  const variable 1 value in parent scope
+    }());
+    console.log('Patent scope: ', constVar1);
+    // Patent scope:  const variable 1 value in parent scope
+}());
+
+               </pre>
+               
+               <h3>Comments</h3>
+               
             </div>
         </div>
     </section>
