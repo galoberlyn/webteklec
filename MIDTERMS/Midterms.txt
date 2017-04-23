@@ -413,7 +413,88 @@ Frameset is a variant of HTML 4 Transitional for documents that use frames.
 
 Quinn, L. (n.d.). Choosing a DOCTYPE. Retrieved from
  http://www.htmlhelp.com/tools/validator/doctype.html
-
+Tag	What it is	When to use it
+<A>	Anchor (most commonly a link)	Vital. Use to create links in content. Use the title attribute whenever the contents of the <a>…</a> pair do not accurately describe what you’ll get from selecting the link. Title attribute often displays as a tooltip in visual browsers, which may be a helpful usability aid.
+<ABBR>	Defines an abbreviation	Works in a similar way to <dfn> and <acronym>, using a title attribute (displays a tooltip in standard visual browsers). e.g. <abbr title=”Hypertext markup language”>HTML</abbr>
+<ACRONYM>	Defines an acronym	Works in a similar way to <abbr> and <dfn>, using a title attribute (displays a tooltip in standard visual browsers).
+<ADDRESS>	Used for marking up a physical (e.g. mailing) address	Not commonly used. Recommend looking into microformats, which allow for more detail and interoperability.
+<APPLET>	Inserts a Java applet	The old way to insert a Java app. Use <object> instead today.
+<AREA>	Hotspot in image map	Avoid image maps where possible. Occasionally necessary.
+<BASE>	Specifies the base location of the document.	Use only when necessary. Adjusts any relative links and paths within the document.
+<BASEFONT>	Sets default font size	Display info – never use it
+<BIG>	Larger text	Display info – never use it
+<BLINK>	Makes text blink	You go to hell if you use this
+<BLOCKQUOTE>	Large quoted block of text	Use for any quoted text that constitutes one or more paragraphs (note: should contain <p> tags as well). Use <q> for quotations within a paragraph. Often used in conjunction with <cite> to cite the quotation’s source.
+<BODY>	Document body	Essential (unless you’re using frames)
+<BR>	Line break	This is arguably display information. Still in common use, but use with restraint.
+<B>	Bold text	Display info – never use it
+<BUTTON>	Used for a standard clickable button within a form	Often better than <input type=”button” /> or <input type=”submit” />, as it allows you to assign different styles based on the HTML element alone, whereas differentiating style based on the type of input is less well supported.
+<CAPTION>	Caption for a table: describes the table’s contents	The correct way to assign a title to a table
+<CENTER>	Centred block	Display info – never use it. Use <div> or some other block-level tag with the style text-align:center instead
+<CITE>	Defines a citation	Defines the source of a quotation (in conjunction with content in <q> or <blockquote> pairs).
+<CODE>	Defines an extract of code	Not commonly used. Similar to <pre> tag, but collapses consecutive white spaces and line breaks in the source.
+<COL>	Identifies a particular column in a table	Can be very useful. e.g. <col class=”namecol”> can be applied to each first column in a series of tables, then the width of each column may be set to be equal in the stylesheet, overriding the table’s natural tendency to adjust its own column widths to fit its contents.
+<DFN>	Definition of a term	Works in a similar way to <abbr> and <acronym>, using a title attribute (displays a tooltip in standard visual browsers).
+<DIR>	Directory list	Now deprecated. Use a standard <ul> or other list instead.
+<DIV>	Division	Specifies a logical division within a document. Use it to separate or identify chunks of content that are not otherwise distinguished naturally using other tags.
+One of the most common HTML tags.
+<DL>	Definition list	Contains one or more definition-term / definition-description pairs.
+<DT>	Definition term	Used as part of a <dt></dt><dd></dd>pair within a definition list (<dl></dl>)
+<DD>	Definition description	
+<EM>	Emphasis	Commonly used in place of the old <i>(italics) tag to indicate emphasis (but less than <strong>)
+<FONT>	Font settings	Display info – never use it
+<FORM>	Input form	Essential for data input
+<H1>	Level 1 header	Aim to have one H1 on each page, containing a description of what the page is about.
+<H2>	Level 2 header	Defines a section of the page
+<H3>	Level 3 header	Defines a sub-section of the page (should always follow an H2 in the logical hierarchy)
+<H4>	Level 4 header	Etc. Less commonly used
+<H5>	Level 5 header	Less commonly used. Only complex academic documents will break down to this level of detail.
+<H6>	Level 6 header	Less commonly used
+<HEAD>	Document head	Essential. Contains information about a page that does not constitute content to be communicated as part of the page.
+<HR>	Horizontal rule	Display info with no semantic value – never use it. “Horizontal”, by definition, is a visual attribute.
+<HTML>		Core element of every web page.
+<IMG >	Show an image	Vital. Always use the alt or longdescattributes when the image has content value
+<INPUT>	Input fields within forms	Vital. (I prefer to use <button> for buttons and submit buttons though)
+<ISINDEX>	Old type of search input	Not really used any more. Use <form>instead.
+<I>	Italicised text	Display info – never use it
+<KBD>	Keyboard input	Display info – never use it
+<LINK>	Defines a relationship to another document	Commonly used to reference external stylesheets, but has other minor uses
+<LI>	List item	Specifies an item in an unordered or ordered list (<ul> or <ol>)
+<MAP>	Client-side imagemap	May have occasional value, but only use when absolutely necessary
+<MARQUEE>	Makes text scroll across the screen	See <blink>
+<MENU>	Menu item list	Deprecated. Do not use. Use other standard list types instead.
+<META>	Meta-information	Useful way to insert relevant information into the <head> section of the page that does not need to be displayed.
+<OL>	Ordered list	Type of list where the order of elements has some meaning. Generally rendered with item numbers (best managed with CSS).
+<OPTION>	Selection list option	Vital for options within a drop-down control.
+<PARAM>	Parameter for Java applet	Used in conjunction with an <object> or <applet> tag to pass additional setting information at runtime.
+<PRE>	Preformatted text	Renders text in a pre-formatted style, preserving line breaks and all spaces present in the source. May be useful. (This one’s a paradox, as it is strictly display info that applies only to visual browsing, but it’s still so commonly used and useful that I’m hesitant to advise against using it.)
+<P>	Paragraph	Only use to denote a paragraph of text. Never use for spacing alone.
+<Q>	Short quotation	Use for inline quotations (whereas <blockquote> should be used for quotations of a paragraph or more). Often used in conjunction with <cite> to cite the quotation’s source.
+<SAMP>	Denotes sample output text	Similar to the <code> tag. Rarely used. Avoid.
+<SCRIPT>	Inline script (e.g. JavaScript)	It’s better to have all scripts as separate files than to write inline or in the <head>section, however still has its uses.
+<SELECT>	Selection list	A drop-down selector for a form.
+<SMALL>	Smaller text	Display info – never use it
+<SPAN>	An inline span within text	Use to apply meaning (and style) to a span of text that goes with the flow of content (whereas a <div> tag is block-level and breaks the flow)
+<Strikeout>		Display info – never use it
+<STRONG>	Strong emphasis	Use this instead of the old <b> tag.
+<STYLE>	CSS style settings	Normally used in <head> section of a page. Try to use external stylesheets, to enable you to apply different styles for different output media.
+<SUB>	Subscript text	Arguably display info – recommend using alternative tags (e.g. <cite>). May be required in some academic uses, e.g. Chemical formulas.
+<SUP>	Superscript text	
+<TABLE>	Table	Use for repeated data that has a naturally tabular form. Never use for layout purposes.
+<TD>	Table data cell	A cell containing actual data. If a cell actually contains a descriptor or identifier for a row or column, use a <th>(table header) tag, not a <td>. This usually applies to column headers (within a <thead>), column footers (within a <tfoot>), as well as row headers (usually the first cell in a row in the <tbody>).
+<TEXTAREA>	Multi-line text input area in a form	Essential
+<TH>	Table column or row header cell	May appear in a <thead> (to denote a column header cell), <tbody> (to denote a row header), and in <tfoot> (to denote a column foot cell, e.g. a total)
+<TBODY>	Indicates the main body of a data table	It is always worth using this tag, as well as using <thead> and <tfoot> where appropriate.
+Note that it is permissible to have more than one <tbody>, <thead>, and <tfoot>in the same table.
+<THEAD>	The head section of a table	The place to put column header cells (<th>)
+<TFOOT>	The foot section of a table	Good place to put e.g. summary data, such as totals. Note that it goes before the <tbody> tag!
+<TITLE>	Document title	Essential
+<TR>	Table row	Essential with tables
+<TT>	“Teletype” – simulates typewriter output	Similar to <pre>, except that it collapses white space like normal HTML (whereas <pre> leaves all consecutive white space intact). Avoid if possible
+<UL>	Unordered list	Essential. Use for lists where the order or items has no particular importance.
+<U>	Underline text	Display info – never use it
+<VAR>	Variable in computer code	Obscure tag, may only be useful in academic documents. Avoid.
+Hunt, B. (2016, January 27). HTML Tags List. Retrieved from http://webdesignfromscratch.com/html-css/html-tags/
 
 
 CSS
