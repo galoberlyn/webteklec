@@ -1031,7 +1031,50 @@ function letTest() {
                </pre>
                
                <h3>Comments</h3>
-               
+               <p>You can put comments to your code using “//” at the top of your code or after an end of a line, and “/* */” for multi-line comments.</p>
+
+               <pre>// A single line JavaScript comment
+                var iNum = 100;
+                var iTwo = 2; // A comment at the end of line
+                /*
+                multi-line 
+                JavaScript comment
+                */
+                </pre>
+
+                <h4>Operators</h4>
+
+                <ul>
+                    <li>Arithmetic Operators –  +, -, *,  /, %, ++, and --</li>
+                    <li>Assignment Operators –=, +=, -=, *=, /=, %=</li>
+                    <li>String Operators – + and +=</li>
+                    <li>Comparison Operators – ==, ===, !=, !==, >, <, >=, <=</li>
+                    <li>Logical Operators - &&, ||, !</li>
+                    <li>Bitwise Operators - &, | , ~ , ^ , << , >></li>
+                    <li>typeof Operator – returns the type of a variable, object, or function</li>
+                
+                </ul>
+
+                <h4>Functions</h4>
+                <p>In creating a code, you can reuse a block of task by using function where you can call whenever you need it to perform certain task. </p>
+               <pre>function multiply(num1,num2) {
+                var result = num1 * num2;
+                return result;
+                }
+                multiply(4,7); //28
+                multiply(20,20); //400
+                multiply(0.5,3); //1.5
+                </pre>
+
+                <h4>Events</h4>
+                <p>In JavaScript, you can target certain events in the browser to execute an interaction with the users such as generating report, pop-up dialog box or calculate a certain value. 
+                The example below shows a pop-up in the browser if an element with an id of btn is clicked:
+                 </p>
+                 <pre>document.getElementById('btn').onclick = function() {
+                    alert('Ouch! Stop poking me!');
+                }
+                </pre>
+
             </div>
         </div>
     </section>
