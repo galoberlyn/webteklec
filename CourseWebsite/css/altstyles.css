@@ -209,4 +209,6 @@ text-transform: none;
 .asd {
     font-size: 2em;
 }
-
+.quizForm{
+dispay: block;
+}
