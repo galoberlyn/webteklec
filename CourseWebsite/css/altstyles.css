@@ -187,3 +187,8 @@ ul {
     width: auto;
     overflow: auto;
 }
+
+.column1 {
+    text-align: left;
+}
+
