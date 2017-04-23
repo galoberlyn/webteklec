@@ -898,13 +898,199 @@ html
                 </div>
                 
                 
+               
             <h3 class="sub-topic">
                CSS Rule Precedence
             </h3>
-                
+                <div>
+                    <ul>
+                    <li>By Origin and Importance</li>
+                        <ol class="list-num">
+                            <li>transition Declaration</li>
+                            <li>Override Declaration</li>
+                            <li>User Declaration</li>
+                            <li>Animation Declaration</li>
+                        </ol>
+                        <ul>
+                            <li>User Agent Important Declarations</li>
+                            <li>UserImportant Declarations</li>
+                            <li>Author Important Declarations</li>
+                            <li>Author Normal Declarations</li>
+                            <li>User Normal Declarations</li>
+                            <li>User Agent Normal Declarations</li>
+                        </ul>
+                    <li>By Specificity</li>
+                        <ul>
+                            <li>Inline – more specific</li>
+                            <li>Number of ID selectors</li>
+                            <li>Number of class selectors, attribute selectors and pseudo selectors</li>
+                            <li>Number of type selectors and pseudo elements</li>
+                        
+                        </ul>
+                    <li>By Order</li>
+
+
+                    </ul>
+                </div>
             <h3 class="sub-topic">
-            CSS preprocessor & CSS   frameworks
+            CSS Declarations
             </h3>
+                
+            <div>
+                <p>CSS declaration is composed of value and CSS property name, and it separated and ends with a semi-colon. Declaration block is a container that is composed of one or more declaration, and it is limited inside the curly braces.</p>
+            <ul>
+                <li>
+                    <h4>Properties</h4>
+                    <p>It is a specific value that is given by the CSS property. A property is always followed by a semi-colon, and specified the value of that property. </p>
+                    <ul>
+                        <li>
+                            <h5>Short Hand Properties</h5>
+                            <p>It allows using of a single shorthand property but specifying several properties on it.</p>
+                        </li>
+                        <li>
+                            <h5>Vendor Specific Extension(aka vendor prefixes)</h5>
+                            <p>Usually starts with ‘-‘ or ‘_’ and followed by the browser project extension. It is often use to test features of browsers. </p>
+                        </li>  
+                    </ul>
+                </li>
+                <li>
+                    <h4>Values</h4>
+                    <p>It is the style specified to the property. It can be specified using different ways, depending on syntax and restrictions. It can be expressed using keywords, inherit, numbers, measurements, percentages, URLs and URIs, Colors, Strings, Functions and others.</p>
+                     <ul>
+                        <li>
+                            <h5>Keywords</h5>
+                            <p>It is an identifier.</p>
+                            <p>e.g. yellow, inherit, auto</p>
+                        </li>  
+                         <li>
+                            <h5>Numbers</h5>
+                            <p>It is specified in decimal notation. Either an integer or a decimal and have a sign(- or +)</p>
+                        </li> 
+                         <li>
+                            <h5>Measurements</h5>
+                            <p></p>
+                             <ul>
+                             <li>Length Units</li>
+                                 <ul>
+                                    <li>Font Relative</li>
+                                       <ul>
+                                           <li>em</li>
+                                           <li>ex</li>
+                                           <li>ch</li>
+                                            <li>rem</li>
+                                        </ul>
+                                    <li>Viewport Percentage</li>
+                                        <ul>
+                                           <li>vw</li>
+                                           <li>vh</li>
+                                           <li>vmin</li>
+                                            <li>vmax</li>
+                                        </ul>
+                                    
+                                    <li>Absolute Langths</li>
+                                        <ul>
+                                           <li>cm</li>
+                                           <li>mm</li>
+                                           <li>q</li>
+                                            <li>c</li>
+                                            <li>in</li>
+                                            <li>pt</li>
+                                            <li>pc</li>
+                                            <li>px</li>
+                                        </ul>
+                                    
+                                 </ul>
+                             <li>Angle Units</li>
+                                   <ul>
+                                    <li>deg</li>
+                                    <li>grad</li>
+                                    <li>rad</li>
+                                    <li>turn</li>
+                                 </ul>
+                             <li>Duratiion Units</li>
+                                   <ul>
+                                    <li>s</li>
+                                    <li>ms</li>
+                                 </ul>
+                             <li>Frequecy Units</li>
+                                   <ul>
+                                    <li>hz</li>
+                                    <li>khz</li>
+                                 </ul>
+                             <li>Resolution Units</li>
+                                   <ul>
+                                    <li>dpi</li>
+                                    <li>dpcm</li>
+                                    <li>dppx</li>
+     
+                                 </ul>
+                           
+                             </ul>
+                        </li> 
+                         <li>
+                            <h5>Percentages</h5>
+                            <p>It is either an integer or a decimal that ends with a percent sign (%).</p>
+                        </li> 
+                         <li>
+                            <h5>URLs and URIs</h5>
+                            <p>It is expressed with the syntax: url(URI).</p>
+                        </li> 
+                         <li>
+                            <h5>Colors</h5>
+                            <p>It is in hexadecimal notation (#0099ff) or in decimal notation.</p>
+                        </li> 
+                         <li>
+                            <h5>Strings</h5>
+                            <p> Values that are enclosed in double or single quotes.</p>
+                        </li> 
+                         <li>
+                            <h5>Functions</h5>
+                            <p></p>
+                        </li> 
+                    </ul>
+                </li>
+            </ul>    
+            </div>
+            <h3 class="sub-topic">
+            CSS Preprocessor
+            </h3>
+
+                <div>
+                    <p>Pre-processors are developed to maintain and reduce the CSS codes that the user will do. It extends. It does converts data type into another. It extends functions, variables, operators and others. It is usable for making or maintaining big projects, such as using Ruby in working projects.  
+                    </p>    
+                    <ul>
+                        <li>
+                            <h4>Haml (HTML abstraction markup language)</h4>
+                            <p>It is a markup language, it promotes dry and well-structured coding without the use of inline code. </p>
+                        </li>
+                        <li>
+                            <h4>SASS (Syntactically Awesome Stylesheets)</h4>
+                            <p>It is an extension of CSS preprocessing languages. It is a strict indented syntax, means it is very strict in terms of structuring the codes, even indention could lead you to an error. It keeps stylesheet organized and will keep it run faster.</p>
+                        </li>
+                        <li>
+                            <h4>SCSS(Sassy Cascading Stylesheet)</h4>
+                            <p>It like SASS it is a preprocessing language. It is like SASS but it is more flexible that you can write plain CSS. Standard of CSS is much likely the same, or can run into SCSS.  It needs curly bracket, and semi-colon, and doesn’t care about indention. It encourages to write with proper nesting of rules.</p>
+                        </li>
+                    </ul>
+                </div>
+            <h3 class="sub-topic">
+            CSS Frameworks
+            </h3>
+                <div>
+                    <p>It is a prepared software meant for using an easier and standard design of web pages using CSS. It is an abstract that provides functionalities by user-written code of CSS. It is reusable and universal that provides functionalities. Framework can be defined as a standard code that contains files and folders that is within a package. Some Popular CSS Frameworks are:</p>
+                
+                    <ul>
+                        <li>
+                            <h4>BootStrap</h4>
+                            <p>It is an open-source framework that is a front-end in designing using HTML and CSS templates. It allows web pages dynamically changing, it means the web page is responsive. It is popular among users today and have a large community support, many themes and support Less or Sass.</p>
+                        </li>
+                        <li>
+                            <h4>Foundation</h4>
+                            <p>It is an open-source framework that is in front-end and it is dynamic or responsive. It is much similar to Bootstrap framework functionalities but it is more customizable, more grid system and has built-in widgets.</p>
+                        </li>
+                    </ul>
+                </div>
+
                 
             
 
