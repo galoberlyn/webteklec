@@ -29,6 +29,19 @@
 	font-family: ;
 	font-size: 2em;
 }
+
+#header-font3{
+	font-family: ;
+	font-size: 4em;
+    color: #fed136;
+}
+
+#header-font4{
+	font-family: ;
+	font-size: 2em;
+    color: #fed136;
+}
+
 #quote{
 	font-style: italic;
 }
@@ -80,6 +93,19 @@ header#header3 {
 
 header#header4 {
   background-image: url('../img/web.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+header#header5 {
+  background-image: url('../img/star.jpg')    ;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
