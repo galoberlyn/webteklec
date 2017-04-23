@@ -402,6 +402,17 @@ XHTML 1.1	2001	W3C Recommendation
 HTML 5.0	2014	W3C Recommendation
 HTML 5.1	2016	W3C Recommendation
 
+HTML Syntax
+In HTML 4.1 there are 3 DTD:
+Strict 
+Strict is a trimmed down version of HTML 4.1. It emphasizes the structure over presentation. In HTML 4 strict, deprecated element and attributes such as attributes use in presentation, frames and link targets are not allowed. Writing in HTML 4 strict developer can achieve accessible, structurally rich documents that easily adapt to style sheets and different browsing situations but documents may look bland on very old browsers that lack support for style sheets.
+Transitional 
+HTML 4 Transitional includes all elements and attributes of HTML 4 Strict but adds presentational attributes, deprecated elements, and link targets.
+Frameset 
+Frameset is a variant of HTML 4 Transitional for documents that use frames.
+
+Quinn, L. (n.d.). Choosing a DOCTYPE. Retrieved from
+ http://www.htmlhelp.com/tools/validator/doctype.html
 
 
 
