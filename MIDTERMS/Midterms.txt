@@ -554,6 +554,33 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
 http://reference.sitepoint.com/css/statements 
 https://www.sitepoint.com/web-foundations/css-selectors/ 
 
+Values and Units Module Level 3
+
+CSS Pre-processors
+	Pre-processors are developed to maintain and reduce the CSS codes that the user will do. It extends. It does converts data type into another. It extends functions, variables, operators and others. It is usable for making or maintaining big projects, such as using Ruby in working projects.  
+
+•	Haml (HTML abstraction markup language)
+- It is a markup language, it promotes dry and well-structured coding without the use of inline code. 
+	
+•	SASS (Syntactically Awesome Stylesheets)
+- It is an extension of CSS preprocessing languages. It is a strict indented syntax, means it is very strict in terms of structuring the codes, even indention could lead you to an error. It keeps stylesheet organized and will keep it run faster.
+•	SCSS(Sassy Cascading Stylesheet)
+- It like SASS it is a preprocessing language. It is like SASS but it is more flexible that you can write plain CSS. Standard of CSS is much likely the same, or can run into SCSS.  It needs curly bracket, and semi-colon, and doesn’t care about indention. It encourages to write with proper nesting of rules.
+
+CSS Frameworks
+	It is a prepared software meant for using an easier and standard design of web pages using CSS. It is an abstract that provides functionalities by user-written code of CSS. It is reusable and universal that provides functionalities. Framework can be defined as a standard code that contains files and folders that is within a package. Some Popular CSS Frameworks are:
+•	Bootstrap
+- It is an open-source framework that is a front-end in designing using HTML and CSS templates. It allows web pages dynamically changing, it means the web page is responsive. It is popular among users today and have a large community support, many themes and support Less or Sass.
+•	Foundation
+- It is an open-source framework that is in front-end and it is dynamic or responsive. It is much similar to Bootstrap framework functionalities but it is more customizable, more grid system and has built-in widgets.
+
+
+References: 
+https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus
+https://www.codementor.io/css/tutorial/bootstrap-3-vs-foundation-5-front-end-framework-comparison
+
+
+
 Javascript
 JavaScript Basics
 JavaScript is a scripting language that dynamically provides interaction to web applications. It was invented by Brendan Eich, co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation. JavaScript is a compact but very flexible because of that, it has expanded from its core concepts and developers had developed different extensive functionalities, and these are:  
