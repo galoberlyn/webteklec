@@ -554,6 +554,18 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
 http://reference.sitepoint.com/css/statements 
 https://www.sitepoint.com/web-foundations/css-selectors/ 
 
+CSS Declaration
+	CSS declaration is composed of value and CSS property name, and it separated and ends with a semi-colon. Declaration block is a container that is composed of one or more declaration, and it is limited inside the curly braces.
+•	Property
+- it is a specific value that is given by the CSS property. A property is always followed by a semi-colon, and specified the value of that property. 
+Shorthand properties – it allows using of a single shorthand property but specifying several properties on it. 
+Vendor-Specific properties- usually starts with ‘-‘ or ‘_’ and followed by the browser project extension. It is often use to test features of browsers. 
+
+•	Values 
+•	- It is the style specified to the property. It can be specified using different ways, depending on syntax and restrictions. It can be expressed using keywords, inherit, numbers, measurements, percentages, URLs and URIs, Colors, Strings, Functions and others.
+
+
+
 Values and Units Module Level 3
 
 CSS Pre-processors
