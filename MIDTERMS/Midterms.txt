@@ -548,3 +548,57 @@ document.getElementById('btn').onclick = function() {
 https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
 http://www.codelifter.com/main/tips/tip_020.shtml
 https://www.w3schools.com/jsref/jsref_operators.asp
+
+JavaScript Data Types
+JavaScript is a dynamic language and there’s no need to specify the data type of a variable whenever you are declaring it. In declaring a variable you need to use the keyword “var” and initialize it to know the type of the variable therefore a variable can be a number, String or even a Boolean.
+var sam = 42;    // sam is now a Number
+var sam = 'bar'; // sam is now a String
+var sam = true;  // sam is now a Boolean
+
+The latest ECMAScript standard defines seven data types:
+•	Boolean – Represents the value true or false. And in comparing two value it always return a Boolean value it is either true or false.
+
+var y = 20; 
+var x = (y == 20);
+
+The value y is compared if it is equal to 20. The result of this comparison is true and that value is assigned to var x. 
+
+•	Null – Null value has no valid number, String, boolean, Array, or Object.
+
+var person = null;
+console.log(typeof person); // returns object
+
+In may be considered to be a bug for developers that the typeof null returns an object, but the reason why typeof null returns null is that the definition of null is the primitive value that represents the intentional absence of any object value.
+
+•	Undefined – Undefined value is returned when you explicitly use a variable or an object that is not defined and not existing. You can compare a variable if it is existing to undefined or check the type by using typeof.
+
+var x;  
+
+// This method works.  
+if (x == undefined) {  
+    document.write("comparing x to undefined <br/>");  
+}  
+.  
+// This method doesn't work - you must check for the string "undefined".  
+if (typeof(x) == undefined) {  
+    document.write("comparing the type of x to undefined <br/>");  
+}  
+// This method does work.   
+if (typeof(x) == "undefined") {  
+    document.write("comparing the type of x to the string 'undefined'");  
+}  
+
+// Output:   
+// comparing x to undefined   
+// comparing the type of x to the string 'undefined'  
+
+•	Number – In JavaScript, integer and floating-point values have no difference to each other. Integer values are positive and negative whole numbers and zero where they can be represented as decimal, hexadecimal, and octal. Floating-point values are whole numbers that contains a decimal point and values can be represented in scientific notation using the lowercase e. 
+•	String – a sequence of characters the represents a message or anything that is textual in contrast. They are written inside double quotes. 
+•	Objects – It is value pair (name:value) that is written with curly brackets (“{}”) and separated by commas. Users can declare an object as an object literal, creating an instance, or using the Object constructor.
+•	Arrays – Arrays are collection of similar type of elements. Users can declare an array as an array literal (“[]”), creating an instance, or using the Array constructor.
+References: 
+https://docs.microsoft.com/en-us/scripting/javascript/data-types-javascript#see-also
+https://www.w3schools.com/js/js_datatypes.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+
