@@ -1,0 +1,24 @@
+FINALS 
+SCOPE
+SERVER-SIDE WEB SCRIPTING
+•	JAVA (SERVLET AND JSP)
+•	PHP
+•	Node.js
+•	ASP.NET (if there’s still time)
+
+Java Programming Language Platforms:
+Java Platform, Standard Edition (Java SE)
+Java Platform, Micro Edition (Java ME)
+Java Platform, Enterprise Edition (Java EE)
+•	It used in larger scale
+•	Used in Development of Server
+•	Used for Java Web
+Java Web Application
+In Netbeans in creating a web services you can either Apache Tomcat or Glassfish.
+
+Java Servlet
+JSP
+
+
+
+
