@@ -1,0 +1,112 @@
+FINALS 
+SCOPE
+SERVER-SIDE WEB SCRIPTING
+•	JAVA (SERVLET AND JSP)
+•	PHP
+•	Node.js
+•	ASP.NET (if there’s still time)
+
+Java Programming Language Platforms:
+Java Platform, Standard Edition (Java SE)
+Java Platform, Micro Edition (Java ME)
+Java Platform, Enterprise Edition (Java EE)
+•	It used in larger scale
+•	Used in Development of Server
+•	Used for Java Web
+
+Java EE versions:
+Java EE 7 Web
+Java EE 6 Web
+Java EE 8 Web
+
+
+Web server/ Application Server:
+Java Web Application
+In Netbeans in creating a web services you can either 
+•	Apache Tomcat  8.0.27.0
+•	Glassfish server 4.1.1
+
+	Web Pages (folder)
+•	META-INF
+•	WEB-INF
+•	images
+
+
+
+Servlet
+- Serving Binary Content
+- Handling Request Parameters (GET)
+- Request Dispatching
+
+Java Servlet - JSP
+
+@WebServelet container
+@WebServlet(name = “Hello Servlet”, urlPatterns = (“/HelloServlet”)
+
+	getInputStream() – Servlet Input Stream
+	getOutputStream() - Servlet Output Stream
+
+@Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException { }
+
+Portimage = request.getPart(“image”) – get the name
+
+Request Dispatching
+•	God Class – a class that does a lot of things
+•	Long Method – 
+•	Divide & Conquer
+
+set/ get Atribute
+
+request.setAttribute(“productlist”, productList);
+request.setAttribute(“productlist”);
+
+	include component – either can be static, or dynamic
+Session Handling
+- “Stateless Http”
+- extending Features : Cookies
+-State of correlated transaction
+
+Extended Features
+Cookies 
+	–small textual information, generated from the web application
+	- stored by the client in the browser (Cookie Jar)
+	- identifier
+      set.cookie.ck1
+	- non-persistent cookies
+		(as long as the browser is open)
+	- can set the time
+	- can set by HTTPS
+		HTTP – only can be access by javascript
+     Scoped objects
+	- context scopes
+
+PHP
+- does have many framework
+- striplets to JSP
+- there is a PHP API on Web services
+- Switch in and out blocks in PHP
+-Object-Oriented (close with Java)
+
+echo- PHP print statement
+Array – is an associative structured
+<form action = “x.php” method = GET>
+	<input type = “text” name = “user”
+	<input type = “submit”>
+</form>
+
+isset function 
+	isset ($_GET[‘user’]
+Variable – SUPERGLOBALS:
+$GLOBALS 
+$_SERVER
+$_GET
+$_POST
+$_FILES
+$_COOKIE
+$_SESSION
+$_REQUEST
+$_ENV
+
+
