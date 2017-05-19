@@ -128,63 +128,63 @@ if(isset($_POST['submit'])){
                    <form method='POST' action='results.php'>
                     <h4>1. Who is the father of html?</h4>
                   
-                    <span class='quizForm'><input type="radio" name='choice1' value='Tim-Berners Lee'>Tim-Berners Lee</span>
-                    <span class='quizForm'><input type="radio" name='choice1' value='Tim Berners-Lee'>Tim Berners-Lee</span>
-                    <span class='quizForm'><input type="radio" name='choice1' value='Tim-Bernard Lee'>Tim-Bernard Lee</span>
-                    <span class='quizForm'><input type="radio" name='choice1' value='Tim Bernard-Lee'>Tim Bernard-Lee</span>
+                    <span class='quizForm'><input type="radio" name='choice1' value='Tim-Berners Lee'> Tim-Berners Lee</span>
+                    <span class='quizForm'><input type="radio" name='choice1' value='Tim Berners-Lee'> Tim Berners-Lee</span>
+                    <span class='quizForm'><input type="radio" name='choice1' value='Tim-Bernard Lee'> Tim-Bernard Lee</span>
+                    <span class='quizForm'><input type="radio" name='choice1' value='Tim Bernard-Lee'> Tim Bernard-Lee</span>
 
                     <h4>2. What is a collection of web resources?</h4>
 
-                    <span class='quizForm'><input type="radio" name='choice2' value='Website'>Website</span>
-                    <span class='quizForm'><input type="radio" name='choice2' value='Web Page'>Web Page</span>
-                    <span class='quizForm'><input type="radio" name='choice2' value='Software'>Software</span>
-                    <span class='quizForm'><input type="radio" name='choice2' value='Program'>Program</span>
+                    <span class='quizForm'><input type="radio" name='choice2' value='Website'> Website</span>
+                    <span class='quizForm'><input type="radio" name='choice2' value='Web Page'> Web Page</span>
+                    <span class='quizForm'><input type="radio" name='choice2' value='Software'> Software</span>
+                    <span class='quizForm'><input type="radio" name='choice2' value='Program'> Program</span>
 
                     <h4>3. What is the status code for Request Timeout?</h4>
 
-                    <span class='quizForm'><input type="radio" name='choice3' value='404'>404</span>
-                    <span class='quizForm'><input type="radio" name='choice3' value='408'>408</span>
-                    <span class='quizForm'><input type="radio" name='choice3' value='303'>303</span>
-                    <span class='quizForm'><input type="radio" name='choice3' value='410'>410</span>
+                    <span class='quizForm'><input type="radio" name='choice3' value='404'> 404</span>
+                    <span class='quizForm'><input type="radio" name='choice3' value='408'> 408</span>
+                    <span class='quizForm'><input type="radio" name='choice3' value='303'> 303</span>
+                    <span class='quizForm'><input type="radio" name='choice3' value='410'> 410</span>
 
                     <h4>4. Is an international community that develops open standards to ensure the long-term growth of the web.</h4>
 
-                    <span class='quizForm'><input type="radio" name='choice4' value='W3C'>W3C</span>
-                    <span class='quizForm'><input type="radio" name='choice4' value='WWW'>WWW</span>
-                    <span class='quizForm'><input type="radio" name='choice4' value='XHMTL TEAM'>XHMTL TEAM</span>
-                    <span class='quizForm'><input type="radio" name='choice4' value='JAVA SE'>JAVA SE</span>
+                    <span class='quizForm'><input type="radio" name='choice4' value='W3C'> W3C</span>
+                    <span class='quizForm'><input type="radio" name='choice4' value='WWW'> WWW</span>
+                    <span class='quizForm'><input type="radio" name='choice4' value='XHMTL TEAM'> XHMTL TEAM</span>
+                    <span class='quizForm'><input type="radio" name='choice4' value='JAVA SE'> JAVA SE</span>
 
                     <h4>5. How do you log data on JavaScript? </h4>
 
-                    <span class='quizForm'><input type="radio" name='choice5' value='console.print();'>console.print();</span>
-                    <span class='quizForm'><input type="radio" name='choice5' value='System.printf'>System.printf</span>
-                    <span class='quizForm'><input type="radio" name='choice5' value='console.log()'>console.log()</span>
-                    <span class='quizForm'><input type="radio" name='choice5' value='console.loger()'>console.loger()</span>
+                    <span class='quizForm'><input type="radio" name='choice5' value='console.print();'> console.print();</span>
+                    <span class='quizForm'><input type="radio" name='choice5' value='System.printf'> System.printf</span>
+                    <span class='quizForm'><input type="radio" name='choice5' value='console.log()'> console.log()</span>
+                    <span class='quizForm'><input type="radio" name='choice5' value='console.loger()'> console.loger()</span>
 
                     <h4>6. CSS is a programming language. </h4>
 
-                    <span class='quizForm'><input type="radio" name='choice6' value='True'>True</span>
-                    <span class='quizForm'><input type="radio" name='choice6' value='False'>False</span> 
+                    <span class='quizForm'><input type="radio" name='choice6' value='True'> True</span>
+                    <span class='quizForm'><input type="radio" name='choice6' value='False'> False</span> 
 
                     <h4>7. JavaScript is also a server side scripting language </h4>
 
-                    <span class='quizForm'><input type="radio" name='choice7' value='True'>True</span>
-                    <span class='quizForm'><input type="radio" name='choice7' value='False'>False</span>
+                    <span class='quizForm'><input type="radio" name='choice7' value='True'> True</span>
+                    <span class='quizForm'><input type="radio" name='choice7' value='False'> False</span>
 
                     <h4>8. JavaScript can generate HTML </h4>
 
-                    <span class='quizForm'><input type="radio" name='choice8' value='True'>True</span>
-                    <span class='quizForm'><input type="radio" name='choice8' value='False'>False</span>   
+                    <span class='quizForm'><input type="radio" name='choice8' value='True'> True</span>
+                    <span class='quizForm'><input type="radio" name='choice8' value='False'> False</span>   
 
                     <h4>9. We can use the br tag on multiple lines to format our html page</h4>
 
-                    <span class='quizForm'><input type="radio" name='choice9' value='True'>True</span>
-                    <span class='quizForm'><input type="radio" name='choice9' value='False'>False</span> 
+                    <span class='quizForm'><input type="radio" name='choice9' value='True'> True</span>
+                    <span class='quizForm'><input type="radio" name='choice9' value='False'> False</span> 
 
                     <h4>10. What will the code below output?</h4>
-                     console.log(0.1 + 0.2 == 0.3);
-                    <span class='quizForm'><input type="radio" name='choice10' value='True'>True</span>
-                    <span class='quizForm'><input type="radio" name='choice10' value='False'>False</span> <br>
+                    <span class='quizForm'>console.log(0.1 + 0.2 == 0.3);</span>
+                    <span class='quizForm'><input type="radio" name='choice10' value='True'> True</span>
+                    <span class='quizForm'><input type="radio" name='choice10' value='False'> False</span> <br>
 
                    <input class="img-center" name='submit' type='submit'>
                     </form>
