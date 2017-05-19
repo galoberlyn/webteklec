@@ -109,4 +109,92 @@ $_SESSION
 $_REQUEST
 $_ENV
 
+Example:
+<?php fpreach ($_SERVER as $Key = $values) {
+	echo “<p> $key = $ values </p>”;
+	} ?>
+
+HTTP Request Headers
+HTTP_HOST = Localhost
+HTTP_CONNECTION = Keep-alive
+HTTP_CACHE_CONTROL =max-age = 0
+HTTP_UPGRADE_INSECURE_ReQUESTS = 2
+HTTP_USER_AGENT= Mozilla/5.0
+HTTP_ACCEPT
+HTTP_OUT
+REMOTE_PORT = 50625
+GATEWAY_INTERFACE = CGI 1.1
+SERVER_PROTOCOL = HTTP 11.1
+REQUEST_METHOD_GET
+QUERY_STRING=
+REQUEST_URI =
+SCRIPT_NAME
+PHP_SELF
+
+NODE.JS Serverside
+
+MEAN
+M – Monggo DB
+E – Express JS
+A – Angular framework
+N – Node.JS
+
+BJON – Binary JSON Format
+
+API Node.JS Features
+index.js(simple webserver)
+var http require (‘http’)
+var server = http.createServer();
+server.on(‘request handler’);
+
+function handle(request, response) {
+	response end(hello, nodeJs!!);
+}
+
+function handler (request, response) {
+	var method = request.method;
+	var url = request.url;
+	var headers = request.headers;
+
+	console.log(‘Request Method: ${method}’);
+	console.log(‘Request URL: ${url}’);
+	console.log(‘Request Headers: \n ${JSON.String}’);
+
+•	asynchronous handler – callback handler
+•	synchronous handler
+
+
+SECURITY
+
+OWASP Top Ten Project
+	Top Ten Security Vulnerability in the Web.
+(2017)
+1.	Injection
+2.	Broken Authentication and Session Management
+3.	Cross-Site Scripting (XSS)
+4.	Broken Access Control 
+5.	Security Misconfiguration
+6.	Sensitive Data Exposure
+7.	Insufficient Attack Protection (IAP)
+8.	Cross-site Request Forgery (CSRF)
+9.	Using components with known vulnerabilities
+10.	Under protected API
+
+Digital Certificate 
+	- encrypting of the Website
+letsencrypt.org – website for free Digital certificate
+
+HASH Algorithm
+ - function
+- One-way function
+-intractable
+
+ex. 
+MD5
+SHA1
+SHA2
+
+_SALTED 
+	(‘pwd’ + salt) = HASH
+	
 
