@@ -280,6 +280,160 @@
                             <li> 9.  Using components with known vulnerabilities</li>
                             <li> 10. Under protected API</li>
 
+                        </ul>
+
+           <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">PHP</h2>
+                </div>
+            
+                    
+                <p>PHP “Hypertext Preprosessor” and was originally called “Personal Home Page” is a server scripting language that free and widely used by web developers. Developed by Rasmus Lerdorf in 1994. It is used for developing interactive and dynamic web pages that uses general-purpose programming language.</p>
+                
+                <ul>
+                    <li>Does have many framework</li>
+                    <li>Striplets to JSP</li>
+                    <li>There is a PHP API on web services</li>
+                    <li>Switch in and out blocks in PHP</li>
+                    <li>Object-oriented (close with java)</li>
+                </ul>
+                
+                
+                <h5>echo - PHP print statement</h5>
+                <h5>Array - is an associative structured</h5>
+                <pre>
+                &lt;form action = “x.php” method = GET&gt;
+                   &lt;input type = “text” name = “user”
+                   &lt;input type = “submit”&gt;
+                &lt;/form&gt;
+                
+                isset function 
+    isset ($_GET[‘user’]
+
+                </pre>
+                
+                <h4>Variable</h4>
+                <p>Variable starts with a dollar sign ($) and followed by the name of the variable. Variable name is case-sensitive.</p>
+                
+                <h4>Superglobals</h4>
+                <p>Built-in variables that are always available in all scopes.</p>
+                
+                <ul>
+                    <li>$GLOBALS</li>
+                    <ul>
+                        <li>containing references to all variables which are defined in the global scope of the script.</li>
+                    </ul>
+                    
+                    <li>$_SERVER</li>
+                    <ul>
+                        <li>array containing information such as headers, paths and script location.</li>
+                    </ul>
+                    
+                    <li>$_GET</li>
+                        <ul>
+                            <li>associative array of variables passed to the current script via the URL parameters.</li>
+                        </ul>
+                        
+                    <li>$_POST</li>
+                        <ul>
+                            <li>associative array of variables passed to the current script via the HTTP POST method when using application/x-www-form-urlencoded or multipart/form-data as the HTTP Content-Type in the request.</li>
+                        </ul>
+                        
+                        <li>$_FILES</li>
+                        <ul>
+                            <li>associative array of items uploaded to the current script via the HTTP POST method. The structure of this array is outlined in the POST method uploads section.</li>
+                        </ul>
+                        
+                        
+                        <li>$_COOKIE</li>
+                        <ul>
+                            <li>associative array of variables passed to the current script via HTTP Cookies.</li>
+                        </ul>
+                        
+                        <li>$_SESSION</li>
+                        <ul>
+                            <li>associative array containing session variables available to the current script. See the Session functions documentation for more information on how this is used.</li>
+                        </ul>
+                        
+                        <li>$_REQUEST</li>
+                        <ul>
+                            <li>associative array that by default contains the contents of $_GET, $_POST and $_COOKIE.</li>
+                        </ul>
+                        
+                    <li>$_ENV</li>
+                        <ul>
+                            <li>associative array of variables passed to the current script via the environment method.</li>
+                            <li>associative array of variables passed to the current script via the environment method.</li>
+                        </ul>  
+                </ul>
+                
+                <h3>Variable – SUPERGLOBALS</h3>
+                
+                <ul>
+                    <li>$GLOBALS</li> 
+                    <li>$_SERVER</li>
+                    <li>$_GET</li>
+                    <li>$_POST</li>
+                    <li>$_FILES</li>
+                    <li>$_COOKIE</li>
+                    <li>$_SESSION</li>
+                    <li>$_REQUEST</li>
+                    <li>$_ENV</li>
+                </ul>
+                
+                
+                <h3>HTTP Request Headers</h3>
+                <li>HTTP_HOST = Localhost</li>
+                <li>HTTP_CONNECTION = Keep-alive</li>
+                <li>HTTP_CACHE_CONTROL =max-age = 0</li>
+                <li>HTTP_UPGRADE_INSECURE_ReQUESTS = 2</li>
+                <li>HTTP_USER_AGENT= Mozilla/5.0</li>
+                <li>HTTP_ACCEPT</li>
+                <li>HTTP_OUT</li>
+                <li>REMOTE_PORT = 50625</li>
+                <li>GATEWAY_INTERFACE = CGI 1.1</li>
+                <li>SERVER_PROTOCOL = HTTP 11.1</li>
+                <li>REQUEST_METHOD_GET</li>
+                <li>QUERY_STRING=</li>
+                <li>REQUEST_URI =</li>
+                <li>SCRIPT_NAME</li>
+                <li>PHP_SELF</li>
+                
+                <h2>NODE.JS Serverside</h2>
+                <p>Node.Js a free asynchronous cross-platform JavaScript run-time environment used for developing server-side web pages, designed to create scalable network applications. It is also used for developing dynamic web pages in the server-side. Developed in 2009 by Ryan Dahl. It collects “modules” for file system IO, data streams, networking, binary data that handles core functionalities. Functions of Node.JS are designed that when input script was been executed, it just simply enters the loop because it is designed non-blocking.</p>
+
+           
+               <h3>MEAN</h3>
+               <h4>M</h4><p>Monggo DB</p>
+               <h4>E</h4><p>Express JS</p>
+               <h4>A</h4><p>Angular framework</p>
+               <h4>N</h4><P>Node.JS</P>
+               
+               <p><strong>BJON</strong> - Binary JSON format</p>
+               <p>API Node.JS Features</p>
+               <pre>index.js(simple webserver)
+var http require (‘http’)
+var server = http.createServer();
+server.on(‘request handler’);
+
+function handle(request, response) {
+    response end(hello, nodeJs!!);
+}
+
+function handler (request, response) {
+    var method = request.method;
+    var url = request.url;
+    var headers = request.headers;
+
+    console.log(‘Request Method: ${method}’);
+    console.log(‘Request URL: ${url}’);
+    console.log(‘Request Headers: \n ${JSON.String}’);
+</pre>
+           
+           <ul>
+               <li><strong>asynchronous handler </strong> -callback handler</li>
+               <li><strong>synchronous handler</strong></li>
+           </ul>
+
 
                 
             </div>
