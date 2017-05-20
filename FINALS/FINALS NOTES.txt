@@ -4,18 +4,18 @@ SERVER-SIDE WEB SCRIPTING
 Server-side scripts are technique used by back-end web developers for web development which uses scripts on the web server side and make responses to client’s side depending on the request to the web server on the website. These scripts can be written in different server-side programming languages, such as PHP, Python, C#, C++, Java and Erlang.  These languages are used for the communication of the server, client and database. 
 	Server-side scripting is used in many ways such as: for customizing interface for the client; hide source codes; Facilitates the transferring of data into the browser; controls on what to share on applications. 
 
-JAVA (SERVLET AND JSP)
-PHP
-Node.js
-ASP.NET (if there’s still time)
+•	JAVA (SERVLET AND JSP)
+•	PHP
+•	Node.js
+•	ASP.NET (if there’s still time)
 
 Java Programming Language Platforms:
 Java Platform, Standard Edition (Java SE)
 Java Platform, Micro Edition (Java ME)
 Java Platform, Enterprise Edition (Java EE)
-It used in larger scale
-Used in Development of Server
-Used for Java Web
+•	It used in larger scale
+•	Used in Development of Server
+•	Used for Java Web
 
 Java EE versions:
 Java EE 7 Web
@@ -26,13 +26,13 @@ Java EE 8 Web
 Web server/ Application Server:
 Java Web Application
 In Netbeans in creating a web services you can either 
-Apache Tomcat  8.0.27.0
-Glassfish server 4.1.1
+•	Apache Tomcat  8.0.27.0
+•	Glassfish server 4.1.1
 
 	Web Pages (folder)
-META-INF
-WEB-INF
-images
+•	META-INF
+•	WEB-INF
+•	images
 
 
 
@@ -59,11 +59,11 @@ SERVLET CONTAINER
 REQUEST DISPATCH
 	It is used for dispatching request to another resource in HTML, servlet or JSP. 
 	It provides two methods:
-public void forward(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException:Forwards a request from a servlet to another resource (servlet, JSP file, or HTML file) on the server.
+?	public void forward(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException:Forwards a request from a servlet to another resource (servlet, JSP file, or HTML file) on the server.
 
 
 
-public void include(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException:Includes the content of a resource (servlet, JSP page, or HTML file) in the response.
+?	public void include(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException:Includes the content of a resource (servlet, JSP page, or HTML file) in the response.
 
 
  
@@ -77,72 +77,72 @@ https://www.javatpoint.com/requestdispatcher-in-servlet
 
 JSP
 	It is used for creating web application just like Servlet. It consists of HTML tags and JSP tags. 
-DIRECTIVES
-It is used to tell the web container how to translate a JSP page into the corresponding servlet.
-Syntax: <%@ directive attribute="value" %>  
+?	DIRECTIVES
+o	It is used to tell the web container how to translate a JSP page into the corresponding servlet.
+o	Syntax: <%@ directive attribute="value" %>  
 
-Three types of directives:
-page directive
-provides instruction to the container that pertains to the current JSP page
-<%@ page attribute = "value" %>
-include directive
-tells the container to merge the content of the other external files with the current JSP during the translation phase.
-<%@ include file = "relative url" >
-taglib directive
-declares that your JSP page uses a set of custom tags and identifies location of the library.
-<%@ taglib uri="uri" prefix = "prefixOfTag" > 
-TEMPLATE TEXT
+o	Three types of directives:
+?	page directive
+•	provides instruction to the container that pertains to the current JSP page
+•	<%@ page attribute = "value" %>
+?	include directive
+•	tells the container to merge the content of the other external files with the current JSP during the translation phase.
+•	<%@ include file = "relative url" >
+?	taglib directive
+•	declares that your JSP page uses a set of custom tags and identifies location of the library.
+•	<%@ taglib uri="uri" prefix = "prefixOfTag" > 
+?	TEMPLATE TEXT
+o	
+?	STANDARD ACTIONS
+o	jsp:include
+?	Includes a file at the time the page is requested.
+o	jsp:useBean
+?	Finds or instantiates a JavaBean.	
+o	jsp:setProperty
+?	Sets the property of a JavaBean.	
+o	jsp:getProperty
+?	Inserts the property of a JavaBean into the output.	
+o	jsp:forward
+?	Forwards the requester to a new page.	
+o	jsp:plugin
+?	Generates browser-specific code that makes an OBJECT or EMBED tag for the Java plugin.
+o	jsp:element
+?	Defines XML elements dynamically.	
+o	jsp:attribute
+?	Defines dynamically-defined XML element's attribute.	
+o	jsp:body
+?	Defines dynamically-defined XML element's body.	
+o	jsp:text
+?	Used to write template text in JSP pages and documents 
+?	EL EXPRESSIONS
+o	it helps to easily access application data which stored in JavaBeans components and allows to create expression both arithmetic and logical.
+o	<jsp:setProperty name = "box" property = "perimeter" value = "100"/>
 
-STANDARD ACTIONS
-jsp:include
-Includes a file at the time the page is requested.
-jsp:useBean
-Finds or instantiates a JavaBean.	
-jsp:setProperty
-Sets the property of a JavaBean.	
-jsp:getProperty
-Inserts the property of a JavaBean into the output.	
-jsp:forward
-Forwards the requester to a new page.	
-jsp:plugin
-Generates browser-specific code that makes an OBJECT or EMBED tag for the Java plugin.
-jsp:element
-Defines XML elements dynamically.	
-jsp:attribute
-Defines dynamically-defined XML element's attribute.	
-jsp:body
-Defines dynamically-defined XML element's body.	
-jsp:text
-Used to write template text in JSP pages and documents 
-EL EXPRESSIONS
-it helps to easily access application data which stored in JavaBeans components and allows to create expression both arithmetic and logical.
-<jsp:setProperty name = "box" property = "perimeter" value = "100"/>
+?	JSP SCRIPLETS
+o	it can contain java language statement, variable or method declarations or expression that are valid in the page scripting language.
+o	<% code fragment %>
 
-JSP SCRIPLETS
-it can contain java language statement, variable or method declarations or expression that are valid in the page scripting language.
-<% code fragment %>
+?	SCRIPLET SCRIPLET
+?	SCRIPLET DECLARATION
+o	declares one or more variable or methods that can be used in Java code in the JSP FILE.
+o	<%! int i = 0; %> 
+o	<%! int a, b, c; %> 
+o	<%! Circle a = new Circle(2.0); %>
 
-SCRIPLET SCRIPLET
-SCRIPLET DECLARATION
-declares one or more variable or methods that can be used in Java code in the JSP FILE.
-<%! int i = 0; %> 
-<%! int a, b, c; %> 
-<%! Circle a = new Circle(2.0); %>
-
-SCRIPLLET EXPRESSION
-contains scripting language expression that is evaluated, converted to a string and inserted where the expression appears in the JSP file.
-<%= expression %>
-<html> 
+?	SCRIPLLET EXPRESSION
+o	contains scripting language expression that is evaluated, converted to a string and inserted where the expression appears in the JSP file.
+o	<%= expression %>
+o	<html> 
    <head><title>A Comment Test</title></head> 
    
    <body>
       <p>Today's date: <%= (new java.util.Date()).toLocaleString()%></p>
    </body> 
 </html>
-JSP COMMENTS
-marks text or statement that the JSP container should ignore.
-<%-- This is JSP comment --%>
-<html> 
+?	JSP COMMENTS
+o	marks text or statement that the JSP container should ignore.
+o	<%-- This is JSP comment --%>
+o	<html> 
    <head><title>A Comment Test</title></head> 
    
    <body> 
@@ -157,19 +157,19 @@ T. (n.d.). JSP Syntax. Retrieved from https://www.tutorialspoint.com/jsp/jsp_syn
 SESSION HANDLING
 	HTTP is a stateless protocol, it means every time a client retrieves a web page, it opens separate connection to the web server and the server doesn’t keep any record of the client’s request.
 MAINTAING SESSION BETWEEN WEB CLIENT AND SERVER
-COOKIES
-it is a key value pair information and it sent by the server to the browser.
-There are two types of cookie
-Session cookies
-temporary cookie and deleted as soon as the client closes the browser.
-Persistent cookies 
-remains on the hard drive and it’s only deleted when it’s deleted or it expired.
-HIDDEN FIELD
-similar to other input fields but these fields are not displayed on the page and  its value is sent as other input fields. 
-URL REWRITING
-It is an approach in which a session identifier gets appended with each request URL that helps the server identify the user session.
-SESSION OBJECT
-It is a representation of the user’s session. It is available in all request and attributes stored in HTTP session in will be available in any servlet or in a JSP.
+?	COOKIES
+o	it is a key value pair information and it sent by the server to the browser.
+?	There are two types of cookie
+•	Session cookies
+o	temporary cookie and deleted as soon as the client closes the browser.
+•	Persistent cookies 
+o	remains on the hard drive and it’s only deleted when it’s deleted or it expired.
+?	HIDDEN FIELD
+o	similar to other input fields but these fields are not displayed on the page and  its value is sent as other input fields. 
+?	URL REWRITING
+o	It is an approach in which a session identifier gets appended with each request URL that helps the server identify the user session.
+?	SESSION OBJECT
+o	It is a representation of the user’s session. It is available in all request and attributes stored in HTTP session in will be available in any servlet or in a JSP.
 Wideskills. (n.d.). Retrieved from http://www.wideskills.com/jsp/jsp-session-tracking-techniques
 T. (n.d.). JSP Session Tracking. Retrieved from 
 https://www.tutorialspoint.com/jsp/jsp_session_tracking.htm
@@ -193,9 +193,9 @@ Java Servlet - JSP
 Portimage = request.getPart(“image”) – get the name
 
 Request Dispatching
-God Class – a class that does a lot of things
-Long Method – 
-Divide & Conquer
+•	God Class – a class that does a lot of things
+•	Long Method – 
+•	Divide & Conquer
 
 set/ get Atribute
 
@@ -225,6 +225,7 @@ Cookies
 
 PHP
 PHP “Hypertext Preprosessor” and was originally called “Personal Home Page” is a server scripting language that free and widely used by web developers. Developed by Rasmus Lerdorf in 1994. It is used for developing interactive and dynamic web pages that uses general-purpose programming language.
+
 - does have many framework
 - striplets to JSP
 - there is a PHP API on Web services
@@ -245,24 +246,24 @@ VARIABLE
 	Valid variable name start with a letter or underscore followed by any number of letters, number or underscores.
 SUPERGLOBALS
 	built-in variables that are always available in all scopes.
-$GLOBALS
-containing references to all variables which are defined in the global scope of the script.
-$_SERVER
-array containing information such as headers, paths and script location.
-$_GET
-associative array of variables passed to the current script via the URL parameters.
-$_POST
-associative array of variables passed to the current script via the HTTP POST method when using application/x-www-form-urlencoded or multipart/form-data as the HTTP Content-Type in the request.
-$_FILES
-associative array of items uploaded to the current script via the HTTP POST method. The structure of this array is outlined in the POST method uploads section.
-$_COOKIE
-associative array of variables passed to the current script via HTTP Cookies.
-$_SESSION
-associative array containing session variables available to the current script. See the Session functions documentation for more information on how this is used.
-$_REQUEST
-associative array that by default contains the contents of $_GET, $_POST and $_COOKIE.
-$_ENV
-associative array of variables passed to the current script via the environment method.
+?	$GLOBALS
+o	containing references to all variables which are defined in the global scope of the script.
+?	$_SERVER
+o	array containing information such as headers, paths and script location.
+?	$_GET
+o	associative array of variables passed to the current script via the URL parameters.
+?	$_POST
+o	associative array of variables passed to the current script via the HTTP POST method when using application/x-www-form-urlencoded or multipart/form-data as the HTTP Content-Type in the request.
+?	$_FILES
+o	associative array of items uploaded to the current script via the HTTP POST method. The structure of this array is outlined in the POST method uploads section.
+?	$_COOKIE
+o	associative array of variables passed to the current script via HTTP Cookies.
+?	$_SESSION
+o	associative array containing session variables available to the current script. See the Session functions documentation for more information on how this is used.
+?	$_REQUEST
+o	associative array that by default contains the contents of $_GET, $_POST and $_COOKIE.
+?	$_ENV
+o	associative array of variables passed to the current script via the environment method.
 
 PHP Manual. (2017, May 19). Retrieved from http://php.net/manual/en/index.php
 
@@ -301,13 +302,24 @@ PHP_SELF
 
 NODE.JS Serverside
 Node.Js a free asynchronous cross-platform JavaScript run-time environment used for developing server-side web pages, designed to create scalable network applications. It is also used for developing dynamic web pages in the server-side. Developed in 2009 by Ryan Dahl. It collects “modules” for file system IO, data streams, networking, binary data that handles core functionalities. Functions of Node.JS are designed that when input script was been executed, it just simply enters the loop because it is designed non-blocking.
+
 MEAN
-M – Monggo DB
-E – Express JS
-A – Angular framework
+is a free and open-source JavaScript software stack for building dynamic web sites and web applications.
+
+M – Monggo DB – NoSQL database 
+E – Express JS – web app framework that runs on Node.js
+A – Angular framework – JavaScript MVC framework that run in browser JavaScript engines
 N – Node.JS
 
 BJON – Binary JSON Format
+Threading
+Node.js operates on a single thread, using non-blocking I/O calls, allowing it to support tens of thousands of concurrent connections without incurring the cost of thread context switching.
+Package management 
+npm – pre-installed package manager for Node.js server platform. It is used for installing Node.js program from npm registry.
+Unified API
+It can be combined with a browser, a database supporting JSON data and JSON for an unified JavaScript development stack.
+Event loop
+Node.js registers itself with the operating system in order to be notified when a connection is made, and the operating system will issue a callback. Within the Node.js runtime, each connection is a small heap allocation.
 
 API Node.JS Features
 index.js(simple webserver)
@@ -328,8 +340,8 @@ function handler (request, response) {
 	console.log(‘Request URL: ${url}’);
 	console.log(‘Request Headers: \n ${JSON.String}’);
 
-asynchronous handler – callback handler
-synchronous handler
+•	asynchronous handler – callback handler
+•	synchronous handler
 
 
 SECURITY
@@ -337,16 +349,16 @@ SECURITY
 OWASP Top Ten Project
 	Top Ten Security Vulnerability in the Web.
 (2017)
-Injection
-Broken Authentication and Session Management
-Cross-Site Scripting (XSS)
-Broken Access Control 
-Security Misconfiguration
-Sensitive Data Exposure
-Insufficient Attack Protection (IAP)
-Cross-site Request Forgery (CSRF)
-Using components with known vulnerabilities
-Under protected API
+1.	Injection
+2.	Broken Authentication and Session Management
+3.	Cross-Site Scripting (XSS)
+4.	Broken Access Control 
+5.	Security Misconfiguration
+6.	Sensitive Data Exposure
+7.	Insufficient Attack Protection (IAP)
+8.	Cross-site Request Forgery (CSRF)
+9.	Using components with known vulnerabilities
+10.	Under protected API
 
 Digital Certificate 
 	- encrypting of the Website
@@ -386,4 +398,5 @@ src:
 https://www.upwork.com/hiring/development/server-side-scripting-back-end-web-development-technology/
 http://php.net/manual/en/intro-whatis.php
 http://www.theserverside.com/definition/Java-Server-Page-JSP
+Node.js. (2017, May 18). Retrieved from https://en.wikipedia.org/wiki/Node.js
 https://nodejs.org/en/about/
