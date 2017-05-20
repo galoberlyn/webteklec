@@ -133,16 +133,96 @@
                     <span class='quizForm'><input type="radio" name='choice10' value='False'> False</span> 
 
                     <h4> 11 - 20 Give the following meaning of the acronyms </h4>
-                    <span class='quizForm' >CSRF <input type='text' name='choice11'></span> <br>
-                    <span class='quizForm' >XSS <input type='text' name='choice12'></span> <br>
-                    <span class='quizForm' >HTML <input type='text' name='choice13'></span> <br>
-                    <span class='quizForm' >HTTP <input type='text' name='choice14'></span> <br>
-                    <span class='quizForm' >CSS <input type='text' name='choice15'></span> <br>
-                    <span class='quizForm' >SCSS <input type='text' name='choice16'></span> <br>
-                    <span class='quizForm' >JSP <input type='text' name='choice17'></span> <br>
-                    <span class='quizForm' >JSTL <input type='text' name='choice18'></span> <br>
-                    <span class='quizForm' >RFC <input type='text' name='choice19'></span> <br>
-                    <span class='quizForm' >URL <input type='text' name='choice20'></span> 
+                    <div class="row">
+                        <div class="col-md-1"><span class='quizForm' >CSRF </span></div>    
+                    <div class="col-md-4"><input type='text' name='choice11'></div>
+                    </div>
+                    <br>
+                    
+                    <div class="row">
+                        <div class="col-md-1">
+                            <span class='quizForm' >XSS</span>
+                        </div>
+                        <div class="col-md-1">
+                        <input type='text' name='choice12'>
+                            
+                        </div>
+                        
+                    </div><br>
+                    
+                    <div class="row">
+                        <div class="col-md-1">
+                            <span class='quizForm' >HTML</span>
+                        </div>
+                        <div class="col-md-1">
+                        <input type='text' name='choice13'>
+                        </div>
+                    </div><br>
+                    
+                    <div class="row">
+                        <div class="col-md-1">
+                            <span class='quizForm' >HTTP</span>
+                        </div>
+                        <div class="col-md-1">
+                        <input type='text' name='choice14'>
+                        </div>
+                    </div><br>
+                    
+                    <div class="row">
+                        <div class="col-md-1">
+                            <span class='quizForm' >CSS</span>
+                        </div>
+                        <div class="col-md-1">
+                        <input type='text' name='choice15'>
+                        </div>
+                    </div><br>
+                    
+                    <div class="row">
+                        <div class="col-md-1">
+                            <span class='quizForm' >SCSS</span>
+                        </div>
+                        <div class="col-md-1">
+                        <input type='text' name='choice16'>
+                        </div>
+                    </div><br>
+                    
+                    <div class="row">
+                        <div class="col-md-1">
+                            <span class='quizForm' >JSP</span>
+                        </div>
+                        <div class="col-md-1">
+                        <input type='text' name='choice17'>
+                        </div>
+                    </div><br>
+                    
+                    <div class="row">
+                        <div class="col-md-1">
+                            <span class='quizForm' >JSTL</span>
+                        </div>
+                        <div class="col-md-1">
+                        <input type='text' name='choice18'>
+                        </div>
+                    </div><br>
+                    
+                      
+                      <div class="row">
+                        <div class="col-md-1">
+                            <span class='quizForm' >RFC</span>
+                        </div>
+                        <div class="col-md-1">
+                        <input type='text' name='choice19'>
+                        </div>
+                    </div><br>
+                       
+                    <div class="row">
+                        <div class="col-md-1">
+                            <span class='quizForm' >URL</span>
+                        </div>
+                        <div class="col-md-1">
+                        <input type='text' name='choice20'>
+                        </div>
+                    </div><br>   
+                    
 
 
                    <input class="img-center" name='submit' type='submit'>
@@ -172,7 +252,6 @@
     <script src="js/contact_me.js"></script>
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
-    <div class="container">
 
   <!-- Trigger the modal with a button -->
 </div>
