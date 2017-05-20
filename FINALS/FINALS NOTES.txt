@@ -179,7 +179,7 @@ https://www.tutorialspoint.com/jsp/jsp_session_tracking.htm
 - Request Dispatching
 
 Java Servlet - JSP
-
+“Java Server Page,” developed by Sun Microsystems in 1999. It is a technology that controls the content or interface of Web pages through the use of the Java Servlet. JSP are pretty similar to ASP and PHP, but it does use of the Java programming language. To deploy and run  the server, they use a servlet container such as Apache Tomcat, Glassfish or Jelly. JSP is useful in developing and maintaining dynamic Web pages, and accessing database on the Web server.
 @WebServelet container
 @WebServlet(name = “Hello Servlet”, urlPatterns = (“/HelloServlet”)
 
@@ -224,7 +224,7 @@ Cookies
 	- context scopes
 
 PHP
-
+PHP “Hypertext Preprosessor” and was originally called “Personal Home Page” is a server scripting language that free and widely used by web developers. Developed by Rasmus Lerdorf in 1994. It is used for developing interactive and dynamic web pages that uses general-purpose programming language.
 - does have many framework
 - striplets to JSP
 - there is a PHP API on Web services
@@ -384,5 +384,5 @@ _SALTED
 
 src:
 https://www.upwork.com/hiring/development/server-side-scripting-back-end-web-development-technology/
-
-
+http://php.net/manual/en/intro-whatis.php
+http://www.theserverside.com/definition/Java-Server-Page-JSP
