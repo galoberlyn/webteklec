@@ -300,7 +300,7 @@ SCRIPT_NAME
 PHP_SELF
 
 NODE.JS Serverside
-
+Node.Js a free asynchronous cross-platform JavaScript run-time environment used for developing server-side web pages, designed to create scalable network applications. It is also used for developing dynamic web pages in the server-side. Developed in 2009 by Ryan Dahl. It collects “modules” for file system IO, data streams, networking, binary data that handles core functionalities. Functions of Node.JS are designed that when input script was been executed, it just simply enters the loop because it is designed non-blocking.
 MEAN
 M – Monggo DB
 E – Express JS
@@ -386,3 +386,4 @@ src:
 https://www.upwork.com/hiring/development/server-side-scripting-back-end-web-development-technology/
 http://php.net/manual/en/intro-whatis.php
 http://www.theserverside.com/definition/Java-Server-Page-JSP
+https://nodejs.org/en/about/
