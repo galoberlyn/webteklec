@@ -1,57 +1,3 @@
-<?php
-if(isset($_POST['submit'])){
-    $choice1 = $_POST['choice1'];
-    $choice2 = $_POST['choice2'];
-    $choice3 = $_POST['choice3'];
-    $choice4 = $_POST['choice4'];
-    $choice5 = $_POST['choice5'];
-    $choice6 = $_POST['choice6'];
-    $choice7 = $_POST['choice7'];
-    $choice8 = $_POST['choice8'];
-    $choice9 = $_POST['choice9'];
-    $choice10 = $_POST['choice10'];
-    $score = 0;
-
-    if($choice1=='Tim Berners-Lee'){
-        $score++;
-    }
-    if($choice2=='Website'){
-        $score++;
-    }
-    if($choice3=='408'){
-        $score++;
-    }
-    if($choice4=='W3C'){
-        $score++;
-    }
-    if($choice5=='console.log()'){
-        $score++;
-    }
-    if($choice6=='False'){
-        $score++;
-    }
-    if($choice7=='False'){
-        $score++;
-    }
-    if($choice8=='True'){
-        $score++;
-    }
-    if($choice9=='False'){
-        $score++;
-    }
-    if($choice10=='False'){
-        $score++;
-    }
-
-    if($score == 10){
-        echo "<script> function score(){console.log('".$score."') }</script>";
-    }else if($score >= 7){
-        echo "<script> function score(){console.log('".$score."') }</script>"; 
-    }else{
-        echo "<script>  function score(){console.log('".$score."') }</script>";
-    }
-}
-
 
 ?>
 <!DOCTYPE html>
@@ -184,7 +130,20 @@ if(isset($_POST['submit'])){
                     <h4>10. What will the code below output?</h4>
                     <span class='quizForm'>console.log(0.1 + 0.2 == 0.3);</span>
                     <span class='quizForm'><input type="radio" name='choice10' value='True'> True</span>
-                    <span class='quizForm'><input type="radio" name='choice10' value='False'> False</span> <br>
+                    <span class='quizForm'><input type="radio" name='choice10' value='False'> False</span> 
+
+                    <h4> 11 - 20 Give the following meaning of the acronyms </h4>
+                    <span class='quizForm' >CSRF <input type='text' name='choice11'></span> <br>
+                    <span class='quizForm' >XSS <input type='text' name='choice12'></span> <br>
+                    <span class='quizForm' >HTML <input type='text' name='choice13'></span> <br>
+                    <span class='quizForm' >HTTP <input type='text' name='choice14'></span> <br>
+                    <span class='quizForm' >CSS <input type='text' name='choice15'></span> <br>
+                    <span class='quizForm' >SCSS <input type='text' name='choice16'></span> <br>
+                    <span class='quizForm' >JSP <input type='text' name='choice17'></span> <br>
+                    <span class='quizForm' >JSTL <input type='text' name='choice18'></span> <br>
+                    <span class='quizForm' >RFC <input type='text' name='choice19'></span> <br>
+                    <span class='quizForm' >URL <input type='text' name='choice20'></span> 
+
 
                    <input class="img-center" name='submit' type='submit'>
                     </form>
