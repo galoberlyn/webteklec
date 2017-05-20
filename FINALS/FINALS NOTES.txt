@@ -1,6 +1,9 @@
 FINALS 
 SCOPE
 SERVER-SIDE WEB SCRIPTING
+Server-side scripts are technique used by back-end web developers for web development which uses scripts on the web server side and make responses to client’s side depending on the request to the web server on the website. These scripts can be written in different server-side programming languages, such as PHP, Python, C#, C++, Java and Erlang.  These languages are used for the communication of the server, client and database. 
+	Server-side scripting is used in many ways such as: for customizing interface for the client; hide source codes; Facilitates the transferring of data into the browser; controls on what to share on applications. 
+
 •	JAVA (SERVLET AND JSP)
 •	PHP
 •	Node.js
@@ -197,4 +200,13 @@ SHA2
 _SALTED 
 	(‘pwd’ + salt) = HASH
 	
+
+
+
+
+
+
+
+src:
+https://www.upwork.com/hiring/development/server-side-scripting-back-end-web-development-technology/
 
